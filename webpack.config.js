@@ -1,7 +1,7 @@
 module.exports = {
   entry: './source/assets/javascripts/application.js',
   output: {
-    path: '/build',
+    path: __dirname,
     filename: 'application.js'
   },
   module: {
