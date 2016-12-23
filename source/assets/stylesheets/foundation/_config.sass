@@ -9,7 +9,7 @@
 //   @font-face
 // -------------------------------------
 
-// ...
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500')
 
 // -------------------------------------
 //   Colors
@@ -17,17 +17,17 @@
 
 // ----- Palette ----- //
 
-$blue: #2faae0
-$brown: #755400
-$green: #77b830
-$orange: #dc4d1f
-$yellow: #fabf00
+$blue: #5DB3D0
+$green: #93D0AA
+$orange: #EEAE6B
+$purple: #CB9CDA
+$red: #D37776
 
 // ----- Grayscale ----- //
 
-$gray-light: #eaeaea
-$gray: #555555
-$gray-dark: #333333
+$gray-light: #E3E8E9
+$gray: #7F8E96
+$gray-dark: #3B4F5B
 
 // -------------------------------------
 //   Base
@@ -35,16 +35,16 @@ $gray-dark: #333333
 
 // ----- Borders & Box Shadow ----- //
 
-$b-borderRadius: 4px
+$b-borderRadius: 5px
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle darken($gray-light, 5%)
+$b-border: $b-borderWidth $b-borderStyle $gray-light
 $b-boxShadow: rgba(black, 0.2) 0 1px 3px 0
-$b-boxShadow-lg: rgba(black, 0.1) 0 5px 25px 0
 
 // ----- Sizing ----- //
 
-$b-space: 20px
+$b-space: 10px
+$b-maxWidth: 1200px
 
 // ----- Transitions ----- //
 
@@ -52,9 +52,7 @@ $b-transition: all 400ms cubic-bezier(.55,0,.1,1)
 
 // ----- Layering ----- //
 
-$z-navbar: 30
-$z-sidebar: 10
-$z-window: 20
+// $z-
 
 // -------------------------------------
 //   Typography
@@ -62,7 +60,7 @@ $z-window: 20
 
 // ----- Family ----- //
 
-$t-fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif
+$t-fontFamily: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
 
 // ----- Line Height ----- //
 
