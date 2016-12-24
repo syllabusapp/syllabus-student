@@ -89,10 +89,10 @@
 	          _react2.default.createElement(_CourseNavigation2.default, null),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "g" },
+	            { className: "g g--stretch" },
 	            _react2.default.createElement(
 	              "aside",
-	              { className: "g-b g-b--3of12" },
+	              { className: "g-b g-b--3of12 g-b--spaceBetween" },
 	              _react2.default.createElement(
 	                "nav",
 	                null,
@@ -106,6 +106,27 @@
 	                  "a",
 	                  { href: "#" },
 	                  "Documents"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "footer",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "http://syllabusapp.com" },
+	                  "Sign Out"
+	                ),
+	                _react2.default.createElement("br", null),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Support"
+	                ),
+	                _react2.default.createElement("br", null),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Privacy Policy"
 	                )
 	              )
 	            ),
