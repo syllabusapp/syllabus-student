@@ -68,26 +68,71 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Index = function (_React$Component) {
-	  _inherits(Index, _React$Component);
+	var AppFrame = function (_React$Component) {
+	  _inherits(AppFrame, _React$Component);
 
-	  function Index() {
-	    _classCallCheck(this, Index);
+	  function AppFrame() {
+	    _classCallCheck(this, AppFrame);
 
-	    return _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (AppFrame.__proto__ || Object.getPrototypeOf(AppFrame)).apply(this, arguments));
 	  }
 
-	  _createClass(Index, [{
+	  _createClass(AppFrame, [{
 	    key: "render",
 	    value: function render() {
-	      return _react2.default.createElement(_CourseNavigation2.default, null);
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "row" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "cell" },
+	          _react2.default.createElement(_CourseNavigation2.default, null),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g" },
+	            _react2.default.createElement(
+	              "aside",
+	              { className: "g-b g-b--3of12" },
+	              _react2.default.createElement(
+	                "nav",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Courses"
+	                ),
+	                _react2.default.createElement("br", null),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Documents"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "main",
+	              { className: "g-b g-b--9of12" },
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--s" },
+	                "My Current Courses"
+	              ),
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--s" },
+	                "Upcoming Courses"
+	              )
+	            )
+	          )
+	        )
+	      );
 	    }
 	  }]);
 
-	  return Index;
+	  return AppFrame;
 	}(_react2.default.Component);
 
-	_reactDom2.default.render(_react2.default.createElement(Index, null), document.getElementById("app"));
+	_reactDom2.default.render(_react2.default.createElement(AppFrame, null), document.getElementById("app"));
 
 /***/ },
 /* 1 */
@@ -126,47 +171,39 @@
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "header",
-	        { className: "row" },
+	        "div",
+	        { className: "g g--center header" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell" },
+	          { className: "g-b g-b--3of12" },
+	          _react2.default.createElement(_CourseLogo2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "header-items g-b g-b--9of12" },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "g g--center header" },
+	            "h1",
+	            { className: "heading" },
+	            "Courses"
+	          ),
+	          _react2.default.createElement(
+	            "nav",
+	            null,
 	            _react2.default.createElement(
-	              "div",
-	              { className: "g-b g-b--3of12" },
-	              _react2.default.createElement(_CourseLogo2.default, null)
+	              "a",
+	              { href: "#", className: "button button--heading" },
+	              _react2.default.createElement(
+	                "span",
+	                null,
+	                "3"
+	              ),
+	              " Messages"
 	            ),
 	            _react2.default.createElement(
-	              "div",
-	              { className: "header-items g-b g-b--9of12" },
-	              _react2.default.createElement(
-	                "h1",
-	                { className: "heading" },
-	                "Courses"
-	              ),
-	              _react2.default.createElement(
-	                "nav",
-	                null,
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "button button--heading" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "3"
-	                  ),
-	                  " Messages"
-	                ),
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "button button--heading button--outline" },
-	                  _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
-	                  "My Account"
-	                )
-	              )
+	              "a",
+	              { href: "#", className: "button button--heading button--outline" },
+	              _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
+	              "My Account"
 	            )
 	          )
 	        )
