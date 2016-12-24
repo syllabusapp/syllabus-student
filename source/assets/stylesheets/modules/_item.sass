@@ -1,0 +1,87 @@
+// *************************************
+//
+//   Item
+//   -> Main action list item
+//
+// *************************************
+
+.item
+  border-bottom: $b-border
+  display: block
+  padding: ($b-space * 3) 0
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.item--disabled
+  pointer-events: none
+  .item-title
+    color: $c-gray-dark
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+.item.is-caution,
+.item.is-complete,
+.item.is-urgent
+  .item-status
+    color: white
+
+.item.is-caution
+  .item-status
+    background: $c-orange
+  .item-title
+    color: $c-orange
+
+.item.is-complete
+  .item-status
+    background: $c-green
+  .item-title
+    color: $c-green
+
+.item.is-urgent
+  .item-status
+    background: $c-red
+  .item-title
+    color: $c-red
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-items
+  list-style: none
+  margin-bottom: ($b-space * 3)
+  padding: 0
+  li
+    margin: 0
+    &:last-child .item
+      border-bottom: none
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.item-description
+  color: $c-gray
+  font-size: $t-fontSize-s
+  margin: 0
+
+.item-status
+  align-items: center
+  background: $c-gray-light
+  border-radius: $b-borderRadius
+  display: inline-flex
+  float: left
+  height: ($b-space * 4.5)
+  justify-content: center
+  margin-right: ($b-space * 1.5)
+  position: relative
+  top: 2px
+  width: ($b-space * 4.5)
+
+.item-title
+  font-weight: 400
+  margin: 0
