@@ -17,17 +17,17 @@
 
 // ----- Palette ----- //
 
-$blue: #5DB3D0
-$green: #93D0AA
-$orange: #EEAE6B
-$purple: #CB9CDA
-$red: #D37776
+$c-blue: #5DB3D0
+$c-green: #93D0AA
+$c-orange: #EEAE6B
+$c-purple: #CB9CDA
+$c-red: #D37776
 
 // ----- Grayscale ----- //
 
-$gray-light: #E3E8E9
-$gray: #7F8E96
-$gray-dark: #3B4F5B
+$c-gray-light: #E3E8E9
+$c-gray: #7F8E96
+$c-gray-dark: #3B4F5B
 
 // -------------------------------------
 //   Base
@@ -38,7 +38,7 @@ $gray-dark: #3B4F5B
 $b-borderRadius: 5px
 $b-borderStyle: solid
 $b-borderWidth: 1px
-$b-border: $b-borderWidth $b-borderStyle $gray-light
+$b-border: $b-borderWidth $b-borderStyle $c-gray-light
 $b-boxShadow: rgba(black, 0.2) 0 1px 3px 0
 
 // ----- Sizing ----- //
@@ -68,16 +68,16 @@ $t-lineHeight: 1.5
 
 // ----- Size ----- //
 
-$t-fontSize-xs: 12px
+$t-fontSize-xs: 11px
 $t-fontSize-s: 14px
 $t-fontSize: 16px
 $t-fontSize-l: 18px
 
 // Headings
 
-$t-heading-fontSize-s: 24px
-$t-heading-fontSize: 36px
-$t-heading-fontSize-l: 90px
+$t-heading-fontSize-s: 11px
+$t-heading-fontSize: 18px
+$t-heading-fontSize-l: 32px
 
 // -------------------------------------
 //   Modules
@@ -95,7 +95,7 @@ $g-l: 1024px
 
 $g-columns: 12
 $g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
-$g-gutter: $b-space * 2
+$g-gutter: ($b-space * 5)
 $g-silent: false
 
 // Selector

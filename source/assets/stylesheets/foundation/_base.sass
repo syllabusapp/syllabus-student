@@ -11,8 +11,9 @@
 html
   -webkit-font-smoothing: antialiased
   background-color: white
-  color: $gray
+  color: $c-gray
   font-family: $t-fontFamily
+  font-weight: 400
   font-size: $t-fontSize
   line-height: $t-lineHeight
 
@@ -31,12 +32,6 @@ li
   margin-bottom: $b-space
   margin-top: 0
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4
-  font-weight: 300
-
 // -------------------------------------
 //   Inline Content
 // -------------------------------------
@@ -44,11 +39,11 @@ h4, .h4
 // ----- Links ----- //
 
 a
-  color: $blue
+  color: $c-blue
   text-decoration: none
   &:hover,
   &:focus
-    color: lighten($blue, 10%)
+    color: lighten($c-blue, 10%)
 
 // ----- Images ----- //
 

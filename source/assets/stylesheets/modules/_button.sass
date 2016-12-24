@@ -1,0 +1,73 @@
+// *************************************
+//
+//   Button
+//   -> Main action item links
+//
+// *************************************
+
+.button
+  background: $c-blue
+  border-radius: 1000px
+  color: white
+  display: inline-block
+  font-size: $t-fontSize-s
+  height: ($b-space * 3.5)
+  line-height: ($b-space * 3.5)
+  padding: 0 ($b-space * 2)
+  &:hover, &:focus
+    background: lighten($c-blue, 5%)
+    color: white
+    img
+      opacity: 0.75
+    span
+      background: $c-blue
+  img, span
+    border-radius: 50%
+    float: left
+    height: ($b-space * 3.5)
+    margin-left: ($b-space * -2)
+    margin-right: ($b-space * 1.5)
+    width: ($b-space * 3.5)
+  span
+    align-items: center
+    background: darken($c-blue, 10%)
+    display: inline-flex
+    font-weight: 500
+    justify-content: center
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Layout ----- //
+
+.button--heading
+  margin-left: ($b-space * 2)
+
+// ----- Outline ----- //
+
+.button--outline
+  background: white
+  box-shadow: rgba($c-gray-dark, 0.15) 0 0 0 1px inset
+  color: $c-gray-dark
+  &:hover, &:focus
+    background: darken(white, 5%)
+    color: darken($c-gray-dark, 10%)
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// .mv-module-submodul1
