@@ -19,6 +19,9 @@
 .g--center
   align-items: center
 
+.g--stretch
+  min-height: calc(100vh - #{$b-space * 12})
+
 // -------------------------------------
 //   Scaffolding
 // -------------------------------------
@@ -28,6 +31,13 @@
 .g-b
   padding-left: $g-gutter
   width: 100%
+
+// ----- Modifiers ----- //
+
+.g-b--spaceBetween
+  display: flex
+  flex-flow: column nowrap
+  justify-content: space-between
 
 // -------------------------------------
 //   Setup
