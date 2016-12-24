@@ -127,17 +127,46 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "header",
-	        { className: "header" },
+	        { className: "row" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell well" },
+	          { className: "cell" },
 	          _react2.default.createElement(
 	            "div",
-	            { className: "g" },
+	            { className: "g g--center header" },
 	            _react2.default.createElement(
 	              "div",
 	              { className: "g-b g-b--3of12" },
 	              _react2.default.createElement(_CourseLogo2.default, null)
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "header-items g-b g-b--9of12" },
+	              _react2.default.createElement(
+	                "h1",
+	                { className: "heading" },
+	                "Courses"
+	              ),
+	              _react2.default.createElement(
+	                "nav",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--heading" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "3"
+	                  ),
+	                  " Messages"
+	                ),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--heading button--outline" },
+	                  _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
+	                  "My Account"
+	                )
+	              )
 	            )
 	          )
 	        )
