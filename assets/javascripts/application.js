@@ -98,35 +98,42 @@
 	                null,
 	                _react2.default.createElement(
 	                  "a",
-	                  { href: "#" },
+	                  { href: "#", className: "anchor" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: "anchor-count" },
+	                    "3"
+	                  ),
 	                  "Courses"
 	                ),
-	                _react2.default.createElement("br", null),
 	                _react2.default.createElement(
 	                  "a",
-	                  { href: "#" },
+	                  { href: "#", className: "anchor is-alert" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: "anchor-count" },
+	                    "1"
+	                  ),
 	                  "Documents"
 	                )
 	              ),
 	              _react2.default.createElement(
 	                "footer",
-	                null,
+	                { className: "footer" },
 	                _react2.default.createElement(
 	                  "a",
 	                  { href: "http://syllabusapp.com" },
 	                  "Sign Out"
 	                ),
-	                _react2.default.createElement("br", null),
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "Support"
-	                ),
-	                _react2.default.createElement("br", null),
 	                _react2.default.createElement(
 	                  "a",
 	                  { href: "#" },
 	                  "Privacy Policy"
+	                ),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Support"
 	                )
 	              )
 	            ),
@@ -139,9 +146,100 @@
 	                "My Current Courses"
 	              ),
 	              _react2.default.createElement(
+	                "ul",
+	                { className: "has-items" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#", className: "item is-urgent" },
+	                    _react2.default.createElement(
+	                      "span",
+	                      { className: "item-status" },
+	                      "4"
+	                    ),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#", className: "item is-caution" },
+	                    _react2.default.createElement(
+	                      "span",
+	                      { className: "item-status" },
+	                      "1"
+	                    ),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Modern Entertainment & Media Communication"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MEMC\xA0\xA0\u2022\xA0\xA0Ends on May 1, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#", className: "item is-complete" },
+	                    _react2.default.createElement(
+	                      "span",
+	                      { className: "item-status" },
+	                      "0"
+	                    ),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Art History"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "ARHI\xA0\xA0\u2022\xA0\xA0Ends on July 28, 2017"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
 	                "h2",
 	                { className: "heading heading--s" },
 	                "Upcoming Courses"
+	              ),
+	              _react2.default.createElement(
+	                "ul",
+	                { className: "has-items" },
+	                _react2.default.createElement(
+	                  "li",
+	                  { className: "item item--disabled" },
+	                  _react2.default.createElement(
+	                    "h3",
+	                    { className: "item-title" },
+	                    "Macroeconomics & Corporate Finances"
+	                  ),
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "item-description" },
+	                    "Begins on August 20, 2017"
+	                  )
+	                )
 	              )
 	            )
 	          )
