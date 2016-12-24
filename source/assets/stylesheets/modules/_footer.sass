@@ -1,12 +1,22 @@
 // *************************************
 //
-//   Header
-//   -> Course navigation items
+//   Footer
+//   -> This is an example module
 //
 // *************************************
 
-.header
-  height: $header-height
+.footer
+  margin-bottom: ($b-space * 3)
+  a
+    color: $c-gray
+    display: block
+    font-size: $t-fontSize-s
+    padding: ($b-space * 0.25) 0
+    &:hover, &:focus
+      color: $c-blue
+    &:first-child:hover,
+    &:first-child:focus
+      color: $c-red
 
 // -------------------------------------
 //   Modifiers
@@ -30,7 +40,4 @@
 //   Submodules
 // -------------------------------------
 
-.header-items
-  display: flex
-  flex-flow: row nowrap
-  justify-content: space-between
+// .mv-module-submodules

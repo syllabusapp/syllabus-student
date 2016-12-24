@@ -11,16 +11,19 @@ class AppFrame extends React.Component {
           <div className="g g--stretch">
             <aside className="g-b g-b--3of12 g-b--spaceBetween">
               <nav>
-                <a href="#">Courses</a>
-                <br />
-                <a href="#">Documents</a>
+                <a href="#" className="anchor">
+                  <span className="anchor-count">3</span>
+                  Courses
+                </a>
+                <a href="#" className="anchor is-alert">
+                  <span className="anchor-count">1</span>
+                  Documents
+                </a>
               </nav>
-              <footer>
+              <footer className="footer">
                 <a href="http://syllabusapp.com">Sign Out</a>
-                <br />
-                <a href="#">Support</a>
-                <br />
                 <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
               </footer>
             </aside>
             <main className="g-b g-b--9of12">

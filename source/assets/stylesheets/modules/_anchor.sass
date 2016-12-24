@@ -1,0 +1,63 @@
+// *************************************
+//
+//   Anchor
+//   -> Sidebar navigation anchors
+//
+// *************************************
+
+.anchor
+  clear: both
+  color: $c-gray
+  display: block
+  margin-left: ($b-space * -0.75)
+  padding: ($b-space * 0.5) ($b-space * 0.75)
+  &:hover, &:focus
+    background: lighten($c-blue, 35%)
+    border-radius: $b-borderRadius
+    color: $c-gray-dark
+    .anchor-count
+      background: $c-blue
+      color: white
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+.anchor.is-alert
+  &:hover, &:focus
+    background: lighten($c-red, 30%)
+  .anchor-count
+    background: $c-red
+    color: white
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.anchor-count
+  background: $c-gray-light
+  border-radius: 50%
+  color: $c-gray
+  display: inline-block
+  float: left
+  font-size: $t-fontSize-xs
+  font-weight: 500
+  height: ($b-space * 2)
+  line-height: ($b-space * 2 + 1)
+  margin-right: ($b-space * 0.5)
+  position: relative
+  text-align: center
+  top: 2px
+  width: ($b-space * 2)
