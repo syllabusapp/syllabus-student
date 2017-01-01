@@ -83,162 +83,158 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "row" },
+	        _react2.default.createElement(_CourseNavigation2.default, null),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell" },
-	          _react2.default.createElement(_CourseNavigation2.default, null),
+	          { className: "cell cell--content" },
 	          _react2.default.createElement(
-	            "div",
-	            { className: "g g--stretch" },
+	            "aside",
+	            { className: "sidebar" },
 	            _react2.default.createElement(
-	              "aside",
-	              { className: "g-b g-b--3of12 g-b--spaceBetween" },
+	              "nav",
+	              null,
 	              _react2.default.createElement(
-	                "nav",
-	                null,
+	                "a",
+	                { href: "#", className: "anchor" },
 	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "anchor" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "anchor-count" },
-	                    "3"
-	                  ),
-	                  "Courses"
+	                  "span",
+	                  { className: "anchor-count" },
+	                  "3"
 	                ),
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "anchor is-alert" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "anchor-count" },
-	                    "1"
-	                  ),
-	                  "Documents"
-	                )
+	                "Courses"
 	              ),
 	              _react2.default.createElement(
-	                "footer",
-	                { className: "footer" },
+	                "a",
+	                { href: "#", className: "anchor is-alert" },
 	                _react2.default.createElement(
-	                  "a",
-	                  { href: "http://syllabusapp.com" },
-	                  "Sign Out"
+	                  "span",
+	                  { className: "anchor-count" },
+	                  "1"
 	                ),
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "Privacy Policy"
-	                ),
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
-	                  "Support"
-	                )
+	                "Documents"
 	              )
 	            ),
 	            _react2.default.createElement(
-	              "main",
-	              { className: "g-b g-b--9of12" },
+	              "footer",
+	              { className: "footer" },
 	              _react2.default.createElement(
-	                "h2",
-	                { className: "heading heading--s" },
-	                "My Current Courses"
+	                "a",
+	                { href: "http://syllabusapp.com" },
+	                "Sign Out"
 	              ),
 	              _react2.default.createElement(
-	                "ul",
-	                { className: "has-items" },
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#", className: "item is-urgent" },
-	                    _react2.default.createElement(
-	                      "span",
-	                      { className: "item-status" },
-	                      "4"
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      { className: "item-title" },
-	                      "Microeconomics 101"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#", className: "item is-caution" },
-	                    _react2.default.createElement(
-	                      "span",
-	                      { className: "item-status" },
-	                      "1"
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      { className: "item-title" },
-	                      "Modern Entertainment & Media Communication"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      { className: "item-description" },
-	                      "MEMC\xA0\xA0\u2022\xA0\xA0Ends on May 1, 2017"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    "a",
-	                    { href: "#", className: "item is-complete" },
-	                    _react2.default.createElement(
-	                      "span",
-	                      { className: "item-status" },
-	                      "0"
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      { className: "item-title" },
-	                      "Art History"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      { className: "item-description" },
-	                      "ARHI\xA0\xA0\u2022\xA0\xA0Ends on July 28, 2017"
-	                    )
-	                  )
-	                )
+	                "a",
+	                { href: "#" },
+	                "Privacy Policy"
 	              ),
 	              _react2.default.createElement(
-	                "h2",
-	                { className: "heading heading--s" },
-	                "Upcoming Courses"
-	              ),
+	                "a",
+	                { href: "#" },
+	                "Support"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "main",
+	            { className: "content" },
+	            _react2.default.createElement(
+	              "h2",
+	              { className: "heading heading--s" },
+	              "My Current Courses"
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "has-items" },
 	              _react2.default.createElement(
-	                "ul",
-	                { className: "has-items" },
+	                "li",
+	                null,
 	                _react2.default.createElement(
-	                  "li",
-	                  { className: "item item--disabled" },
+	                  "a",
+	                  { href: "#", className: "item is-urgent" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: "item-status" },
+	                    "4"
+	                  ),
 	                  _react2.default.createElement(
 	                    "h3",
 	                    { className: "item-title" },
-	                    "Macroeconomics & Corporate Finances"
+	                    "Microeconomics 101"
 	                  ),
 	                  _react2.default.createElement(
 	                    "p",
 	                    { className: "item-description" },
-	                    "Begins on August 20, 2017"
+	                    "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
 	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "item is-caution" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: "item-status" },
+	                    "1"
+	                  ),
+	                  _react2.default.createElement(
+	                    "h3",
+	                    { className: "item-title" },
+	                    "Modern Entertainment & Media Communication"
+	                  ),
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "item-description" },
+	                    "MEMC\xA0\xA0\u2022\xA0\xA0Ends on May 1, 2017"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "item is-complete" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    { className: "item-status" },
+	                    "0"
+	                  ),
+	                  _react2.default.createElement(
+	                    "h3",
+	                    { className: "item-title" },
+	                    "Art History"
+	                  ),
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "item-description" },
+	                    "ARHI\xA0\xA0\u2022\xA0\xA0Ends on July 28, 2017"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "h2",
+	              { className: "heading heading--s" },
+	              "Upcoming Courses"
+	            ),
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "has-items" },
+	              _react2.default.createElement(
+	                "li",
+	                { className: "item item--disabled" },
+	                _react2.default.createElement(
+	                  "h3",
+	                  { className: "item-title" },
+	                  "Macroeconomics & Corporate Finances"
+	                ),
+	                _react2.default.createElement(
+	                  "p",
+	                  { className: "item-description" },
+	                  "Begins on August 20, 2017"
 	                )
 	              )
 	            )
@@ -291,38 +287,46 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "g g--center header" },
+	        { className: "header" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "g-b g-b--3of12" },
-	          _react2.default.createElement(_CourseLogo2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "header-items g-b g-b--9of12" },
+	          { className: "cell" },
 	          _react2.default.createElement(
-	            "h1",
-	            { className: "heading" },
-	            "Courses"
-	          ),
-	          _react2.default.createElement(
-	            "nav",
-	            null,
+	            "div",
+	            { className: "g g--center header-grid" },
 	            _react2.default.createElement(
-	              "a",
-	              { href: "#", className: "button button--heading" },
-	              _react2.default.createElement(
-	                "span",
-	                null,
-	                "3"
-	              ),
-	              " Messages"
+	              "div",
+	              { className: "g-b g-b--3of12" },
+	              _react2.default.createElement(_CourseLogo2.default, null)
 	            ),
 	            _react2.default.createElement(
-	              "a",
-	              { href: "#", className: "button button--heading button--outline" },
-	              _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
-	              "My Account"
+	              "div",
+	              { className: "header-items g-b g-b--9of12" },
+	              _react2.default.createElement(
+	                "h1",
+	                { className: "heading" },
+	                "Courses"
+	              ),
+	              _react2.default.createElement(
+	                "nav",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--heading" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "3"
+	                  ),
+	                  " Messages"
+	                ),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--heading button--outline" },
+	                  _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
+	                  "My Account"
+	                )
+	              )
 	            )
 	          )
 	        )
