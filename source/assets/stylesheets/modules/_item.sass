@@ -9,6 +9,18 @@
   border-bottom: $b-border
   display: block
   padding: ($b-space * 3) 0
+  position: relative
+  &:hover, &:focus
+    &::after
+      transform: translateX(-50%) translateY(-50%)
+  &::after
+    content: url('/assets/images/icon-chevron-lg.svg')
+    position: absolute
+    right: 0
+    top: 52%
+    transform: translateY(-50%)
+    transform-origin: 50% 0%
+    transition: all 150ms ease-out
 
 // -------------------------------------
 //   Modifiers
@@ -16,6 +28,8 @@
 
 .item--disabled
   pointer-events: none
+  &::after
+    display: none
   .item-title
     color: $c-gray-dark
 
