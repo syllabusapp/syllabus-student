@@ -1,21 +1,17 @@
 // *************************************
 //
-//   Header
-//   -> Course navigation items
+//   Sidebar
+//   -> Dashboard navigation
 //
 // *************************************
 
-.header
-  background-image: linear-gradient(to bottom, white 75%, rgba(white, 0) 100%)
-  height: $header-height
-  left: 0
-  margin: auto
-  padding: 0 ($b-space * 5)
+.sidebar
+  display: flex
+  flex-flow: column nowrap
+  height: calc(100vh - #{$header-height})
+  justify-content: space-between
   position: fixed
-  right: 0
-  top: 0
-  width: 100%
-  z-index: $z-header
+  width: 25%
 
 // -------------------------------------
 //   Modifiers
@@ -39,10 +35,4 @@
 //   Submodules
 // -------------------------------------
 
-.header-grid
-  height: $header-height
-
-.header-items
-  display: flex
-  flex-flow: row nowrap
-  justify-content: space-between
+// .mv-module-submodules

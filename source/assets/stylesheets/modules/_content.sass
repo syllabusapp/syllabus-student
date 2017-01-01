@@ -1,21 +1,13 @@
 // *************************************
 //
-//   Header
-//   -> Course navigation items
+//   Content
+//   -> Main content wrapper
 //
 // *************************************
 
-.header
-  background-image: linear-gradient(to bottom, white 75%, rgba(white, 0) 100%)
-  height: $header-height
-  left: 0
-  margin: auto
-  padding: 0 ($b-space * 5)
-  position: fixed
-  right: 0
-  top: 0
-  width: 100%
-  z-index: $z-header
+.content
+  float: right
+  width: calc(75% - #{$b-space * 1.25})
 
 // -------------------------------------
 //   Modifiers
@@ -39,10 +31,4 @@
 //   Submodules
 // -------------------------------------
 
-.header-grid
-  height: $header-height
-
-.header-items
-  display: flex
-  flex-flow: row nowrap
-  justify-content: space-between
+// .mv-module-submodules
