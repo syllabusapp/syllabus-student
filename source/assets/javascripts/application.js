@@ -1,30 +1,25 @@
+import CourseChat from "./components/CourseChat"
 import CourseNavigation from "./components/CourseNavigation"
+import DashboardSidebar from "./components/DashboardSidebar"
 import React from "react"
 import ReactDOM from "react-dom"
 
 class AppFrame extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showChat: false
+    }
+  }
+  toggleChat() {
+    console.log("Show Modal")
+  }
   render() {
     return (
       <div className="row">
-        <CourseNavigation />
+        <CourseNavigation toggleChat={this.toggleChat} />
         <div className="cell cell--content">
-          <aside className="sidebar">
-            <nav>
-              <a href="#" className="anchor">
-                <span className="anchor-count">3</span>
-                Courses
-              </a>
-              <a href="#" className="anchor is-alert">
-                <span className="anchor-count">1</span>
-                Documents
-              </a>
-            </nav>
-            <footer className="footer">
-              <a href="http://syllabusapp.com">Sign Out</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Support</a>
-            </footer>
-          </aside>
+          <DashboardSidebar />
           <main className="content">
             <h2 className="heading heading--s">My Current Courses</h2>
             <ul className="has-items">
@@ -59,6 +54,7 @@ class AppFrame extends React.Component {
             </ul>
           </main>
         </div>
+        {this.state.showChat ? <CourseChat /> : null}
       </div>
     );
   }

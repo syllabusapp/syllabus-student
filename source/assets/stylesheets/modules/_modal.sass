@@ -1,0 +1,61 @@
+// *************************************
+//
+//   Modal
+//   -> Content overlay
+//
+// *************************************
+
+.modal
+  display: flex
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: $z-modal
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.modal--chat
+  .modal-content
+    border-radius: 0
+    bottom: 0
+    height: 100vh
+    position: fixed
+    right: 0
+    top: 0
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.modal-content
+  background: white
+  border-radius: $b-borderRadius
+  box-shadow: $b-boxShadow
+  height: ($b-space * 30)
+  margin: auto
+  padding: ($b-space * 5)
+  position: relative
+  width: ($b-space * 50)
+  z-index: $z-modal-content
+
+.modal-overlay
+  background: rgba($c-gray-dark, 0.25)
+  height: 100%
+  left: 0
+  position: fixed
+  top: 0
+  width: 100%
