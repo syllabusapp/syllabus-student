@@ -8,23 +8,26 @@ class AppFrame extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showChat: false
+      chat: false
     }
+    this.handleClick = this.handleClick.bind(this)
   }
-  toggleChat() {
-    console.log("Show Modal")
+  handleClick() {
+    this.setState(prevState => ({
+      chat: !prevState.chat
+    }));
   }
   render() {
     return (
       <div className="row">
-        <CourseNavigation toggleChat={this.toggleChat} />
+        <CourseNavigation />
         <div className="cell cell--content">
           <DashboardSidebar />
           <main className="content">
             <h2 className="heading heading--s">My Current Courses</h2>
             <ul className="has-items">
               <li>
-                <a href="#" className="item is-urgent">
+                <a onClick={this.handleClick} className="item is-urgent">
                   <span className="item-status">4</span>
                   <h3 className="item-title">Microeconomics 101</h3>
                   <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
@@ -54,7 +57,7 @@ class AppFrame extends React.Component {
             </ul>
           </main>
         </div>
-        {this.state.showChat ? <CourseChat /> : null}
+        {this.state.chat ? <CourseChat /> : null}
       </div>
     );
   }
