@@ -1,13 +1,12 @@
-import React from "react"
+import React, { Component } from "react"
+import { Link } from "react-router"
 
-class Logo extends React.Component {
+export default class extends Component {
   render() {
     return (
-      <a href="#">
+      <Link to="/">
         <img src="/assets/images/logo.svg" />
-      </a>
+      </Link>
     );
   }
 }
-
-module.exports = Logo

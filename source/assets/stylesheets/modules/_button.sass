@@ -40,6 +40,28 @@
 //   Modifiers
 // -------------------------------------
 
+// ----- Colors ----- //
+
+.button--green
+  background: $c-green
+  &:hover, &:focus
+    background: lighten($c-green, 5%)
+
+.button--orange
+  background: $c-orange
+  &:hover, &:focus
+    background: lighten($c-orange, 5%)
+
+.button--purple
+  background: $c-purple
+  &:hover, &:focus
+    background: lighten($c-purple, 5%)
+
+.button--red
+  background: $c-red
+  &:hover, &:focus
+    background: lighten($c-red, 5%)
+
 // ----- Layout ----- //
 
 .button--heading
@@ -54,6 +76,17 @@
   &:hover, &:focus
     background: darken(white, 5%)
     color: darken($c-gray-dark, 10%)
+
+// ----- Sizes ----- //
+
+.button--brick
+  border-radius: $b-borderRadius
+  display: block
+  font-size: $t-fontSize
+  height: auto
+  line-height: 1
+  margin-bottom: ($b-space * 2)
+  padding: ($b-space * 1.5) ($b-space * 2)
 
 // -------------------------------------
 //   States

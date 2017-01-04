@@ -1,9 +1,9 @@
-import React from "react"
+import React, { Component } from "react"
 import ReactDOM from "react-dom"
 
-class CourseChat extends React.Component {
+export default class extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.toggleChat = this.toggleChat.bind(this)
   }
   toggleChat() {
@@ -21,8 +21,6 @@ class CourseChat extends React.Component {
           <h1 className="heading">Messages</h1>
         </div>
       </div>
-    );
+    )
   }
 }
-
-module.exports = CourseChat;

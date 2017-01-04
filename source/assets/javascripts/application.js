@@ -2,9 +2,9 @@ import React, { Component } from "react"
 import ReactDOM from "react-dom"
 import { Router, Route, IndexRoute, Link, hashHistory } from "react-router"
 
-import App from "./pages/app.js"
-import Course from "./pages/course.js"
-import Dashboard from "./pages/dashboard.js"
+import App from "./pages/App.js"
+import Course from "./pages/Course.js"
+import Dashboard from "./pages/Dashboard.js"
 
 ReactDOM.render((
   <Router history={hashHistory}>

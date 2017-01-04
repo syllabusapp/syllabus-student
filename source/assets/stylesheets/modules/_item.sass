@@ -54,8 +54,14 @@
 .item.is-complete
   .item-status
     background: $c-green
-  .item-title
-    color: $c-green
+    &::before
+      border-bottom: ($b-borderWidth * 2) $b-borderStyle white
+      border-right: ($b-borderWidth * 2) $b-borderStyle white
+      content: ''
+      height: ($b-space * 2)
+      position: absolute
+      transform: rotate(45deg) translate(#{$b-space * -0.25}, #{$b-space * -0.25})
+      width: $b-space
 
 .item.is-urgent
   .item-status
@@ -100,5 +106,6 @@
   width: ($b-space * 4.5)
 
 .item-title
+  color: $c-gray-dark
   font-weight: 400
   margin: 0

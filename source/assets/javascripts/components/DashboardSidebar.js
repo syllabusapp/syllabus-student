@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Component } from "react"
 import ReactDOM from "react-dom"
 
-class DashboardSidebar extends React.Component {
+export default class extends Component {
   render() {
     return (
       <aside className="sidebar">
@@ -21,8 +21,6 @@ class DashboardSidebar extends React.Component {
           <a href="#">Support</a>
         </footer>
       </aside>
-    );
+    )
   }
 }
-
-module.exports = DashboardSidebar;

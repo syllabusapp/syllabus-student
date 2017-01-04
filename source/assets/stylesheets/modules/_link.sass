@@ -1,21 +1,26 @@
 // *************************************
 //
-//   Header
-//   -> Course navigation items
+//   Link
+//   -> Various link styles for anchors
 //
 // *************************************
 
-.header
-  background-image: linear-gradient(to bottom, white 75%, rgba(white, 0) 100%)
-  height: $header-height
-  left: 0
-  margin: auto
-  padding: 0 ($b-space * 5)
-  position: fixed
-  right: 0
-  top: 0
-  width: 100%
-  z-index: $z-header
+.link
+  align-items: center
+  border-radius: $b-borderRadius
+  color: $c-gray
+  display: inline-flex
+  font-size: $t-fontSize-s
+  margin-left: ($b-space * -0.75)
+  padding: ($b-space * 0.75) ($b-space * 1.25) ($b-space * 0.75) ($b-space * 0.75)
+  &:hover, &:focus
+    background: lighten($c-blue, 35%)
+    color: $c-gray-dark
+    img
+      opacity: 1
+  img
+    margin-right: ($b-space * 0.5)
+    opacity: 0.25
 
 // -------------------------------------
 //   Modifiers
@@ -39,10 +44,4 @@
 //   Submodules
 // -------------------------------------
 
-.header-grid
-  height: $header-height
-
-.header-items
-  display: flex
-  flex-flow: row nowrap
-  justify-content: flex-end
+// .mv-module-submodules

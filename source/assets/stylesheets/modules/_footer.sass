@@ -22,7 +22,22 @@
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.footer--centered
+  border-top: $b-border
+  margin-top: ($b-space * 5)
+  padding: ($b-space * 2) 0
+  text-align: center
+  a
+    display: inline-block
+    padding: ($b-space * 0.5) ($b-space * 1.5)
+    &:hover, &:focus
+      background: lighten($c-blue, 35%)
+      border-radius: $b-borderRadius
+      color: $c-blue
+    &:first-child:hover,
+    &:first-child:focus
+      background: lighten($c-red, 30%)
+      color: $c-red
 
 // -------------------------------------
 //   States

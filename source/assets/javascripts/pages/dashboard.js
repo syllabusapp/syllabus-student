@@ -8,20 +8,11 @@ import DashboardSidebar from "../components/DashboardSidebar"
 export default class extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      chat: false
-    }
-    this.toggleChat = this.toggleChat.bind(this)
-  }
-  toggleChat() {
-    this.setState(prevState => ({
-      chat: !prevState.chat
-    }))
   }
   render() {
     return (
-      <div>
-        <CourseNavigation toggleChat={this.toggleChat} />
+      <div className="row">
+        <CourseNavigation />
         <div className="cell cell--content">
           <DashboardSidebar />
           <main className="content">
@@ -43,7 +34,7 @@ export default class extends Component {
               </li>
               <li>
                 <a href="#" className="item is-complete">
-                  <span className="item-status">0</span>
+                  <span className="item-status"></span>
                   <h3 className="item-title">Art History</h3>
                   <p className="item-description">ARHI&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on July 28, 2017</p>
                 </a>
@@ -58,7 +49,6 @@ export default class extends Component {
             </ul>
           </main>
         </div>
-        {this.state.chat ? <CourseChat toggleChat={this.toggleChat} /> : null}
       </div>
     )
   }

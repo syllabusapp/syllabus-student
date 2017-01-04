@@ -6,14 +6,16 @@
 // *************************************
 
 .anchor
+  align-items: center
+  border-radius: $b-borderRadius
   clear: both
   color: $c-gray
-  display: block
+  display: inline-flex
   margin-left: ($b-space * -0.75)
   padding: ($b-space * 0.5) ($b-space * 0.75)
+  width: 100%
   &:hover, &:focus
     background: lighten($c-blue, 35%)
-    border-radius: $b-borderRadius
     color: $c-gray-dark
     .anchor-count
       background: $c-blue
@@ -23,7 +25,65 @@
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+// ----- Colors ----- //
+
+.anchor--green,
+.anchor--orange,
+.anchor--purple,
+.anchor--red
+  color: white
+  &:hover, &:focus
+    color: white
+  .anchor-count
+    color: white
+
+.anchor--green
+  background: $c-green
+  &:hover, &:focus
+    background: lighten($c-green, 5%)
+    .anchor-count
+      background: $c-green
+  .anchor-count
+    background: darken($c-green, 7%)
+
+.anchor--orange
+  background: $c-orange
+  &:hover, &:focus
+    background: lighten($c-orange, 5%)
+    .anchor-count
+      background: $c-orange
+  .anchor-count
+    background: darken($c-orange, 7%)
+
+.anchor--purple
+  background: $c-purple
+  &:hover, &:focus
+    background: lighten($c-purple, 5%)
+    .anchor-count
+      background: $c-purple
+  .anchor-count
+    background: darken($c-purple, 7%)
+
+.anchor--red
+  background: $c-red
+  &:hover, &:focus
+    background: lighten($c-red, 5%)
+    .anchor-count
+      background: $c-red
+  .anchor-count
+    background: darken($c-red, 7%)
+
+// ----- Sizes ----- //
+
+.anchor--l
+  margin-bottom: ($b-space * 2)
+  margin-left: 0
+  padding: ($b-space * 1.5) ($b-space * 2)
+  .anchor-count
+    font-size: $t-fontSize
+    height: ($b-space * 3.5)
+    margin-right: $b-space
+    width: ($b-space * 3.5)
 
 // -------------------------------------
 //   States
@@ -47,17 +107,15 @@
 // -------------------------------------
 
 .anchor-count
+  align-items: center
   background: $c-gray-light
   border-radius: 50%
   color: $c-gray
-  display: inline-block
-  float: left
+  display: inline-flex
   font-size: $t-fontSize-xs
   font-weight: 500
   height: ($b-space * 2)
-  line-height: ($b-space * 2 + 1)
+  justify-content: center
   margin-right: ($b-space * 0.5)
-  position: relative
   text-align: center
-  top: 2px
   width: ($b-space * 2)
