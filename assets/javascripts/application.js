@@ -87,13 +87,13 @@
 	    _this.state = {
 	      chat: false
 	    };
-	    _this.handleClick = _this.handleClick.bind(_this);
+	    _this.toggleChat = _this.toggleChat.bind(_this);
 	    return _this;
 	  }
 
 	  _createClass(AppFrame, [{
-	    key: "handleClick",
-	    value: function handleClick() {
+	    key: "toggleChat",
+	    value: function toggleChat() {
 	      this.setState(function (prevState) {
 	        return {
 	          chat: !prevState.chat
@@ -106,7 +106,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "row" },
-	        _react2.default.createElement(_CourseNavigation2.default, null),
+	        _react2.default.createElement(_CourseNavigation2.default, { toggleChat: this.toggleChat }),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "cell cell--content" },
@@ -127,7 +127,7 @@
 	                null,
 	                _react2.default.createElement(
 	                  "a",
-	                  { onClick: this.handleClick, className: "item is-urgent" },
+	                  { href: "#", className: "item is-urgent" },
 	                  _react2.default.createElement(
 	                    "span",
 	                    { className: "item-status" },
@@ -217,7 +217,7 @@
 	            )
 	          )
 	        ),
-	        this.state.chat ? _react2.default.createElement(_CourseChat2.default, null) : null
+	        this.state.chat ? _react2.default.createElement(_CourseChat2.default, { toggleChat: this.toggleChat }) : null
 	      );
 	    }
 	  }]);
@@ -254,25 +254,37 @@
 	var CourseChat = function (_React$Component) {
 	  _inherits(CourseChat, _React$Component);
 
-	  function CourseChat() {
+	  function CourseChat(props) {
 	    _classCallCheck(this, CourseChat);
 
-	    return _possibleConstructorReturn(this, (CourseChat.__proto__ || Object.getPrototypeOf(CourseChat)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (CourseChat.__proto__ || Object.getPrototypeOf(CourseChat)).call(this, props));
+
+	    _this.toggleChat = _this.toggleChat.bind(_this);
+	    return _this;
 	  }
 
 	  _createClass(CourseChat, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      var that = this;
+	      document.getElementsByClassName("modal")[0].classList += " is-exiting";
+	      setTimeout(function () {
+	        that.props.toggleChat();
+	      }, 275);
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "modal modal--chat" },
-	        _react2.default.createElement("div", { className: "modal-overlay" }),
+	        _react2.default.createElement("div", { onClick: this.toggleChat, className: "modal-overlay" }),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "modal-content" },
 	          _react2.default.createElement(
 	            "h1",
-	            null,
+	            { className: "heading" },
 	            "Messages"
 	          )
 	        )
@@ -21814,13 +21826,21 @@
 	var CourseNavigation = function (_React$Component) {
 	  _inherits(CourseNavigation, _React$Component);
 
-	  function CourseNavigation() {
+	  function CourseNavigation(props) {
 	    _classCallCheck(this, CourseNavigation);
 
-	    return _possibleConstructorReturn(this, (CourseNavigation.__proto__ || Object.getPrototypeOf(CourseNavigation)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (CourseNavigation.__proto__ || Object.getPrototypeOf(CourseNavigation)).call(this, props));
+
+	    _this.toggleChat = _this.toggleChat.bind(_this);
+	    return _this;
 	  }
 
 	  _createClass(CourseNavigation, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      this.props.toggleChat();
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -21850,7 +21870,7 @@
 	                null,
 	                _react2.default.createElement(
 	                  "a",
-	                  { className: "button button--heading" },
+	                  { onClick: this.toggleChat, className: "button button--heading" },
 	                  _react2.default.createElement(
 	                    "span",
 	                    null,
