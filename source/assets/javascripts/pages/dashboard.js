@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
+import { Link } from "react-router"
 
 import CourseChat from "../components/CourseChat"
 import CourseNavigation from "../components/CourseNavigation"
@@ -27,11 +28,11 @@ export default class extends Component {
             <h2 className="heading heading--s">My Current Courses</h2>
             <ul className="has-items">
               <li>
-                <a href="#" className="item is-urgent">
+                <Link to="/course" className="item is-urgent">
                   <span className="item-status">4</span>
                   <h3 className="item-title">Microeconomics 101</h3>
                   <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="item is-caution">
