@@ -56,17 +56,17 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _app = __webpack_require__(235);
+	var _App = __webpack_require__(235);
 
-	var _app2 = _interopRequireDefault(_app);
+	var _App2 = _interopRequireDefault(_App);
 
-	var _course = __webpack_require__(236);
+	var _Course = __webpack_require__(236);
 
-	var _course2 = _interopRequireDefault(_course);
+	var _Course2 = _interopRequireDefault(_Course);
 
-	var _dashboard = __webpack_require__(239);
+	var _Dashboard = __webpack_require__(239);
 
-	var _dashboard2 = _interopRequireDefault(_dashboard);
+	var _Dashboard2 = _interopRequireDefault(_Dashboard);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -75,9 +75,9 @@
 	  { history: _reactRouter.hashHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: "/", component: _app2.default },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _dashboard2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _course2.default })
+	    { path: "/", component: _App2.default },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Dashboard2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _Course2.default })
 	  )
 	), document.getElementById("app"));
 
@@ -26642,6 +26642,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(179);
+
 	var _CourseNavigation = __webpack_require__(237);
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
@@ -26666,7 +26668,260 @@
 	  _createClass(_class, [{
 	    key: "render",
 	    value: function render() {
-	      return _react2.default.createElement(_CourseNavigation2.default, null);
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_CourseNavigation2.default, null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "cell cell--content" },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "/", className: "link" },
+	            _react2.default.createElement("img", { src: "/assets/images/icon-chevron-sm.svg" }),
+	            "Back to Dashboard"
+	          ),
+	          _react2.default.createElement(
+	            "h1",
+	            { className: "heading heading--l mb5" },
+	            "Modern Entertainment & Media Communication"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--8of12" },
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--s" },
+	                "Late Assignments"
+	              ),
+	              _react2.default.createElement(
+	                "ul",
+	                { className: "has-items" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item is-urgent" },
+	                    _react2.default.createElement(
+	                      "span",
+	                      { className: "item-status" },
+	                      _react2.default.createElement("img", { src: "/assets/images/icon-warning.svg" })
+	                    ),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--s heading--borderless" },
+	                "Current Assignments"
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "heading" },
+	                  _react2.default.createElement(
+	                    "strong",
+	                    null,
+	                    "Week 1"
+	                  ),
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "March 8\u201312"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "ul",
+	                { className: "has-items" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item is-complete" },
+	                    _react2.default.createElement("span", { className: "item-status" }),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item is-complete" },
+	                    _react2.default.createElement("span", { className: "item-status" }),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item" },
+	                    _react2.default.createElement("span", { className: "item-status" }),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item" },
+	                    _react2.default.createElement("span", { className: "item-status" }),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item" },
+	                    _react2.default.createElement("span", { className: "item-status" }),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: "/", className: "item" },
+	                    _react2.default.createElement("span", { className: "item-status" }),
+	                    _react2.default.createElement(
+	                      "h3",
+	                      { className: "item-title" },
+	                      "Microeconomics 101"
+	                    ),
+	                    _react2.default.createElement(
+	                      "p",
+	                      { className: "item-description" },
+	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--s heading--borderless" },
+	                "Course Details"
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "#", className: "anchor anchor--l anchor--red" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "anchor-count" },
+	                  "3"
+	                ),
+	                "Announcements"
+	              ),
+	              _react2.default.createElement(
+	                "a",
+	                { href: "#", className: "anchor anchor--l anchor--orange" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "anchor-count" },
+	                  "2"
+	                ),
+	                "Discussions"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "footer",
+	            { className: "footer footer--centered" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: "http://syllabusapp.com" },
+	              "Sign Out"
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { href: "#" },
+	              "Privacy Policy"
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { href: "#" },
+	              "Support"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "\xA9 2016 The Syllabus Company, Inc. All rights reserved."
+	            )
+	          )
+	        )
+	      );
 	    }
 	  }]);
 
@@ -26681,15 +26936,19 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _CourseLogo = __webpack_require__(238);
-
-	var _CourseLogo2 = _interopRequireDefault(_CourseLogo);
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _CourseLogo = __webpack_require__(238);
+
+	var _CourseLogo2 = _interopRequireDefault(_CourseLogo);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26699,24 +26958,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var CourseNavigation = function (_React$Component) {
-	  _inherits(CourseNavigation, _React$Component);
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
 
-	  function CourseNavigation(props) {
-	    _classCallCheck(this, CourseNavigation);
+	  function _class(props) {
+	    _classCallCheck(this, _class);
 
-	    var _this = _possibleConstructorReturn(this, (CourseNavigation.__proto__ || Object.getPrototypeOf(CourseNavigation)).call(this, props));
-
-	    _this.toggleChat = _this.toggleChat.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 	  }
 
-	  _createClass(CourseNavigation, [{
-	    key: "toggleChat",
-	    value: function toggleChat() {
-	      this.props.toggleChat();
-	    }
-	  }, {
+	  _createClass(_class, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -26734,32 +26985,23 @@
 	              _react2.default.createElement(_CourseLogo2.default, null)
 	            ),
 	            _react2.default.createElement(
-	              "div",
+	              "nav",
 	              { className: "header-items g-b g-b--9of12" },
 	              _react2.default.createElement(
-	                "h1",
-	                { className: "heading" },
-	                "Courses"
+	                "a",
+	                { href: "#", className: "button button--heading" },
+	                _react2.default.createElement(
+	                  "span",
+	                  null,
+	                  "3"
+	                ),
+	                " Messages"
 	              ),
 	              _react2.default.createElement(
-	                "nav",
-	                null,
-	                _react2.default.createElement(
-	                  "a",
-	                  { onClick: this.toggleChat, className: "button button--heading" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    null,
-	                    "3"
-	                  ),
-	                  " Messages"
-	                ),
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "button button--heading button--outline" },
-	                  _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
-	                  "My Account"
-	                )
+	                "a",
+	                { href: "#", className: "button button--heading button--outline" },
+	                _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
+	                "My Account"
 	              )
 	            )
 	          )
@@ -26768,10 +27010,10 @@
 	    }
 	  }]);
 
-	  return CourseNavigation;
-	}(_react2.default.Component);
+	  return _class;
+	}(_react.Component);
 
-	module.exports = CourseNavigation;
+	exports.default = _class;
 
 /***/ },
 /* 238 */
@@ -26779,11 +27021,17 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26793,30 +27041,30 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Logo = function (_React$Component) {
-	  _inherits(Logo, _React$Component);
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
 
-	  function Logo() {
-	    _classCallCheck(this, Logo);
+	  function _class() {
+	    _classCallCheck(this, _class);
 
-	    return _possibleConstructorReturn(this, (Logo.__proto__ || Object.getPrototypeOf(Logo)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	  }
 
-	  _createClass(Logo, [{
+	  _createClass(_class, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "a",
-	        { href: "#" },
+	        _reactRouter.Link,
+	        { to: "/" },
 	        _react2.default.createElement("img", { src: "/assets/images/logo.svg" })
 	      );
 	    }
 	  }]);
 
-	  return Logo;
-	}(_react2.default.Component);
+	  return _class;
+	}(_react.Component);
 
-	module.exports = Logo;
+	exports.default = _class;
 
 /***/ },
 /* 239 */
@@ -26862,31 +27110,16 @@
 	  function _class(props) {
 	    _classCallCheck(this, _class);
 
-	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
-
-	    _this.state = {
-	      chat: false
-	    };
-	    _this.toggleChat = _this.toggleChat.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 	  }
 
 	  _createClass(_class, [{
-	    key: "toggleChat",
-	    value: function toggleChat() {
-	      this.setState(function (prevState) {
-	        return {
-	          chat: !prevState.chat
-	        };
-	      });
-	    }
-	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement(_CourseNavigation2.default, { toggleChat: this.toggleChat }),
+	        _react2.default.createElement(_CourseNavigation2.default, null),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "cell cell--content" },
@@ -26954,11 +27187,7 @@
 	                _react2.default.createElement(
 	                  "a",
 	                  { href: "#", className: "item is-complete" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "item-status" },
-	                    "0"
-	                  ),
+	                  _react2.default.createElement("span", { className: "item-status" }),
 	                  _react2.default.createElement(
 	                    "h3",
 	                    { className: "item-title" },
@@ -26996,8 +27225,7 @@
 	              )
 	            )
 	          )
-	        ),
-	        this.state.chat ? _react2.default.createElement(_CourseChat2.default, { toggleChat: this.toggleChat }) : null
+	        )
 	      );
 	    }
 	  }]);
@@ -27012,6 +27240,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -27031,19 +27263,19 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var CourseChat = function (_React$Component) {
-	  _inherits(CourseChat, _React$Component);
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
 
-	  function CourseChat(props) {
-	    _classCallCheck(this, CourseChat);
+	  function _class(props) {
+	    _classCallCheck(this, _class);
 
-	    var _this = _possibleConstructorReturn(this, (CourseChat.__proto__ || Object.getPrototypeOf(CourseChat)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 
 	    _this.toggleChat = _this.toggleChat.bind(_this);
 	    return _this;
 	  }
 
-	  _createClass(CourseChat, [{
+	  _createClass(_class, [{
 	    key: "toggleChat",
 	    value: function toggleChat() {
 	      var that = this;
@@ -27072,16 +27304,20 @@
 	    }
 	  }]);
 
-	  return CourseChat;
-	}(_react2.default.Component);
+	  return _class;
+	}(_react.Component);
 
-	module.exports = CourseChat;
+	exports.default = _class;
 
 /***/ },
 /* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -27101,16 +27337,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var DashboardSidebar = function (_React$Component) {
-	  _inherits(DashboardSidebar, _React$Component);
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
 
-	  function DashboardSidebar() {
-	    _classCallCheck(this, DashboardSidebar);
+	  function _class() {
+	    _classCallCheck(this, _class);
 
-	    return _possibleConstructorReturn(this, (DashboardSidebar.__proto__ || Object.getPrototypeOf(DashboardSidebar)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
 	  }
 
-	  _createClass(DashboardSidebar, [{
+	  _createClass(_class, [{
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -27157,16 +27393,23 @@
 	            "a",
 	            { href: "#" },
 	            "Support"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "\xA9 2016 The Syllabus Company, Inc.",
+	            _react2.default.createElement("br", null),
+	            "All rights reserved."
 	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return DashboardSidebar;
-	}(_react2.default.Component);
+	  return _class;
+	}(_react.Component);
 
-	module.exports = DashboardSidebar;
+	exports.default = _class;
 
 /***/ }
 /******/ ]);
