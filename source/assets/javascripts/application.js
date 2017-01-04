@@ -10,9 +10,9 @@ class AppFrame extends React.Component {
     this.state = {
       chat: false
     }
-    this.handleClick = this.handleClick.bind(this)
+    this.toggleChat = this.toggleChat.bind(this)
   }
-  handleClick() {
+  toggleChat() {
     this.setState(prevState => ({
       chat: !prevState.chat
     }));
@@ -20,14 +20,14 @@ class AppFrame extends React.Component {
   render() {
     return (
       <div className="row">
-        <CourseNavigation />
+        <CourseNavigation toggleChat={this.toggleChat} />
         <div className="cell cell--content">
           <DashboardSidebar />
           <main className="content">
             <h2 className="heading heading--s">My Current Courses</h2>
             <ul className="has-items">
               <li>
-                <a onClick={this.handleClick} className="item is-urgent">
+                <a href="#" className="item is-urgent">
                   <span className="item-status">4</span>
                   <h3 className="item-title">Microeconomics 101</h3>
                   <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
@@ -57,7 +57,7 @@ class AppFrame extends React.Component {
             </ul>
           </main>
         </div>
-        {this.state.chat ? <CourseChat /> : null}
+        {this.state.chat ? <CourseChat toggleChat={this.toggleChat} /> : null}
       </div>
     );
   }

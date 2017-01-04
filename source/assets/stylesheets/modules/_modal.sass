@@ -20,7 +20,7 @@
 
 .modal--chat
   .modal-content
-    animation: slideLeft 400ms 1 ease-out
+    animation: slideLeft 275ms 1 ease-out
     border-radius: 0
     bottom: 0
     height: 100vh
@@ -31,6 +31,12 @@
 // -------------------------------------
 //   States
 // -------------------------------------
+
+.modal.is-exiting
+  .modal-content
+    animation: slideRight 275ms 1 ease-out
+  .modal-overlay
+    animation: fadeOut 275ms 1 ease-out
 
 // -------------------------------------
 //   Context
@@ -54,7 +60,7 @@
   z-index: $z-modal-content
 
 .modal-overlay
-  animation: fadeIn 400ms 1 ease-out
+  animation: fadeIn 275ms 1 ease-out
   background: rgba($c-gray-dark, 0.25)
   height: 100%
   left: 0
@@ -72,10 +78,20 @@
   to
     opacity: 1
 
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+
 @keyframes slideLeft
   from
-    opacity: 0
     transform: translateX(100%)
   to
-    opacity: 1
     transform: translateX(0%)
+
+@keyframes slideRight
+  from
+    transform: translateX(0%)
+  to
+    transform: translateX(100%)
