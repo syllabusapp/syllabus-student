@@ -19,6 +19,7 @@ export default class extends Component {
           <a href="http://syllabusapp.com">Sign Out</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Support</a>
+          <p>&copy; 2016 The Syllabus Company, Inc.<br/>All rights reserved.</p>
         </footer>
       </aside>
     )

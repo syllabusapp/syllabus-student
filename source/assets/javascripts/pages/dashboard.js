@@ -11,7 +11,7 @@ export default class extends Component {
   }
   render() {
     return (
-      <div className="row">
+      <div>
         <CourseNavigation />
         <div className="cell cell--content">
           <DashboardSidebar />

@@ -1,38 +1,24 @@
 // *************************************
 //
-//   Heading
-//   -> Replacements for h1, h2, etc.
+//   Card
+//   -> Colored content containers
 //
 // *************************************
 
-.heading
-  color: darken($c-gray-dark, 10%)
-  font-size: $t-heading-fontSize
-  font-weight: 400
-  margin: 0
-  span
-    color: $c-gray
-  strong
-    font-weight: 500
-    margin-right: ($b-space * 1.5)
+.card
+  align-items: center
+  background: lighten($c-gray-light, 5%)
+  border-radius: $b-borderRadius
+  display: flex
+  flex-flow: row no-wrap
+  justify-content: center
+  padding: ($b-space * 2.5)
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-.heading--borderless
-  border: none !important
-
-.heading--s
-  border-bottom: $b-border
-  color: $c-gray
-  font-size: $t-heading-fontSize-s
-  padding-bottom: ($b-space * 0.5)
-
-.heading--l
-  font-size: $t-heading-fontSize-l
-  font-weight: 300
-  margin-bottom: ($b-space * 3)
+// .mv-module--modifier
 
 // -------------------------------------
 //   States
