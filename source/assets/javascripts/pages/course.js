@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "react-router"
 
+import CourseGrade from "../components/CourseGrade"
 import CourseNavigation from "../components/CourseNavigation"
 
 export default class extends Component {
@@ -102,28 +103,7 @@ export default class extends Component {
                 <span className="anchor-count">2</span>
                 Discussions
               </a>
-              <div className="card is-expanded">
-                <div className="card-header">
-                  <div className="g">
-                    <div className="g-b g-b--6of12">
-                      <h4 className="heading heading--borderless tcw">Current Grade</h4>
-                      <a href="#">Hide Details</a>
-                    </div>
-                    <div className="g-b g-b--6of12 tar">
-                      <h3 className="heading heading--l mb0 tcw twb">98%</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="card-content">
-                  <ul>
-                    <li>Video &amp; Audio</li>
-                    <li>Reading</li>
-                    <li>Writing</li>
-                    <li>Upload</li>
-                    <li>Questionaires</li>
-                  </ul>
-                </div>
-              </div>
+              <CourseGrade />
               <h2 className="heading heading--s mb2">Quick Actions</h2>
               <ul>
                 <li>

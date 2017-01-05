@@ -38,7 +38,7 @@
 
 .card.is-expanded
   .card-content
-    height: auto
+    height: ($b-space * 20)
     padding-bottom: ($b-space * 1.5)
     padding-top: ($b-space * 1.5)
 
@@ -55,6 +55,7 @@
 .card-content
   height: 0px
   padding: 0 ($b-space * 2)
+  transition: all ($b-transition-time * 0.5) ease-out
 
 .card-header
   background: $c-gray-dark
