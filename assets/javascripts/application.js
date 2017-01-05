@@ -26807,7 +26807,7 @@
 	        _react2.default.createElement(_CourseNavigation2.default, null),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell cell--content" },
+	          { className: "cell cell--animate cell--content" },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: "/", className: "link" },
@@ -27526,13 +27526,92 @@
 
 	var _reactRouter = __webpack_require__(179);
 
+	var _CourseList = __webpack_require__(243);
+
+	var _CourseList2 = _interopRequireDefault(_CourseList);
+
 	var _CourseNavigation = __webpack_require__(239);
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
 
-	var _DashboardSidebar = __webpack_require__(243);
+	var _DashboardSidebar = __webpack_require__(244);
 
 	var _DashboardSidebar2 = _interopRequireDefault(_DashboardSidebar);
+
+	var _DocumentList = __webpack_require__(245);
+
+	var _DocumentList2 = _interopRequireDefault(_DocumentList);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this.togglePage = _this.togglePage.bind(_this);
+	    _this.state = {
+	      page: "courses"
+	    };
+	    return _this;
+	  }
+
+	  _createClass(_class, [{
+	    key: "togglePage",
+	    value: function togglePage(value) {
+	      console.log(value);
+	      this.setState({
+	        page: value
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_CourseNavigation2.default, null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "cell cell--animate cell--content" },
+	          _react2.default.createElement(_DashboardSidebar2.default, { currentPage: this.state.page, togglePage: this.togglePage }),
+	          this.state.page == "courses" ? _react2.default.createElement(_CourseList2.default, null) : this.state.page == "documents" ? _react2.default.createElement(_DocumentList2.default, null) : null
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27555,112 +27634,102 @@
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        null,
-	        _react2.default.createElement(_CourseNavigation2.default, null),
+	        "main",
+	        { className: "content" },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "cell cell--content" },
-	          _react2.default.createElement(_DashboardSidebar2.default, null),
+	          "h2",
+	          { className: "heading heading--s" },
+	          "My Current Courses"
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "has-items" },
 	          _react2.default.createElement(
-	            "main",
-	            { className: "content" },
+	            "li",
+	            null,
 	            _react2.default.createElement(
-	              "h2",
-	              { className: "heading heading--s" },
-	              "My Current Courses"
-	            ),
-	            _react2.default.createElement(
-	              "ul",
-	              { className: "has-items" },
+	              _reactRouter.Link,
+	              { to: "/course", className: "item is-urgent" },
 	              _react2.default.createElement(
-	                "li",
-	                null,
-	                _react2.default.createElement(
-	                  _reactRouter.Link,
-	                  { to: "/course", className: "item is-urgent" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "item-status" },
-	                    "4"
-	                  ),
-	                  _react2.default.createElement(
-	                    "h3",
-	                    { className: "item-title" },
-	                    "Microeconomics 101"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    { className: "item-description" },
-	                    "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
-	                  )
-	                )
+	                "span",
+	                { className: "item-status" },
+	                "4"
 	              ),
 	              _react2.default.createElement(
-	                "li",
-	                null,
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "item is-caution" },
-	                  _react2.default.createElement(
-	                    "span",
-	                    { className: "item-status" },
-	                    "1"
-	                  ),
-	                  _react2.default.createElement(
-	                    "h3",
-	                    { className: "item-title" },
-	                    "Modern Entertainment & Media Communication"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    { className: "item-description" },
-	                    "MEMC\xA0\xA0\u2022\xA0\xA0Ends on May 1, 2017"
-	                  )
-	                )
+	                "h3",
+	                { className: "item-title" },
+	                "Microeconomics 101"
 	              ),
 	              _react2.default.createElement(
-	                "li",
-	                null,
-	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#", className: "item is-complete" },
-	                  _react2.default.createElement("span", { className: "item-status" }),
-	                  _react2.default.createElement(
-	                    "h3",
-	                    { className: "item-title" },
-	                    "Art History"
-	                  ),
-	                  _react2.default.createElement(
-	                    "p",
-	                    { className: "item-description" },
-	                    "ARHI\xA0\xA0\u2022\xA0\xA0Ends on July 28, 2017"
-	                  )
-	                )
+	                "p",
+	                { className: "item-description" },
+	                "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
 	              )
-	            ),
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
 	            _react2.default.createElement(
-	              "h2",
-	              { className: "heading heading--s" },
-	              "Upcoming Courses"
-	            ),
-	            _react2.default.createElement(
-	              "ul",
-	              { className: "has-items" },
+	              "a",
+	              { href: "#", className: "item is-caution" },
 	              _react2.default.createElement(
-	                "li",
-	                { className: "item item--disabled" },
-	                _react2.default.createElement(
-	                  "h3",
-	                  { className: "item-title" },
-	                  "Macroeconomics & Corporate Finances"
-	                ),
-	                _react2.default.createElement(
-	                  "p",
-	                  { className: "item-description" },
-	                  "Begins on August 20, 2017"
-	                )
+	                "span",
+	                { className: "item-status" },
+	                "1"
+	              ),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Modern Entertainment & Media Communication"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "MEMC\xA0\xA0\u2022\xA0\xA0Ends on May 1, 2017"
 	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { href: "#", className: "item is-complete" },
+	              _react2.default.createElement("span", { className: "item-status" }),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Art History"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "ARHI\xA0\xA0\u2022\xA0\xA0Ends on July 28, 2017"
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "heading heading--s" },
+	          "Upcoming Courses"
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "has-items" },
+	          _react2.default.createElement(
+	            "li",
+	            { className: "item item--disabled" },
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "item-title" },
+	              "Macroeconomics & Corporate Finances"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              { className: "item-description" },
+	              "Begins on August 20, 2017"
 	            )
 	          )
 	        )
@@ -27674,7 +27743,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27704,13 +27773,18 @@
 	var _class = function (_Component) {
 	  _inherits(_class, _Component);
 
-	  function _class() {
+	  function _class(props) {
 	    _classCallCheck(this, _class);
 
-	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 	  }
 
 	  _createClass(_class, [{
+	    key: "togglePage",
+	    value: function togglePage(value) {
+	      this.props.togglePage(value);
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -27721,7 +27795,7 @@
 	          null,
 	          _react2.default.createElement(
 	            "a",
-	            { href: "#", className: "anchor" },
+	            { onClick: this.togglePage.bind(this, "courses"), className: this.props.currentPage == "courses" ? "anchor is-current" : "anchor" },
 	            _react2.default.createElement(
 	              "span",
 	              { className: "anchor-count" },
@@ -27731,7 +27805,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "a",
-	            { href: "#", className: "anchor is-alert" },
+	            { onClick: this.togglePage.bind(this, "documents"), className: this.props.currentPage == "documents" ? "anchor is-current is-alert" : "anchor is-alert" },
 	            _react2.default.createElement(
 	              "span",
 	              { className: "anchor-count" },
@@ -27765,6 +27839,66 @@
 	            _react2.default.createElement("br", null),
 	            "All rights reserved."
 	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+	  }
+
+	  _createClass(_class, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "main",
+	        { className: "content" },
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "heading heading--s" },
+	          "Courses"
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "heading heading--s" },
+	          "School"
 	        )
 	      );
 	    }
