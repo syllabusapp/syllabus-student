@@ -6,25 +6,32 @@
 // *************************************
 
 .card
-  align-items: center
   background: lighten($c-gray-light, 5%)
   border-radius: $b-borderRadius
-  display: flex
-  flex-flow: row no-wrap
-  justify-content: center
-  padding: ($b-space * 2.5)
+  margin-bottom: ($b-space * 5)
+  overflow: hidden
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// .mv-module--modifier
+.card--row
+  align-items: center
+  display: flex
+  flex-flow: row no-wrap
+  justify-content: space-between
+  margin-bottom: 0
+  padding: ($b-space * 2)
 
 // -------------------------------------
 //   States
 // -------------------------------------
 
-// .mv-module.is-state
+.card.is-expanded
+  .card-content
+    height: auto
+    padding-bottom: ($b-space * 1.5)
+    padding-top: ($b-space * 1.5)
 
 // -------------------------------------
 //   Context
@@ -36,4 +43,11 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.card-content
+  height: 0px
+  padding: 0 ($b-space * 2)
+
+.card-header
+  background: $c-gray-dark
+  color: white
+  padding: ($b-space * 1.5) ($b-space * 2)

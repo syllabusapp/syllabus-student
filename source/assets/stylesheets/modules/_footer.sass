@@ -6,7 +6,10 @@
 // *************************************
 
 .footer
+  animation: fadeIn ($b-transition-time * 2) $b-transition-time 1 ease-out
+  animation-fill-mode: forwards
   margin-bottom: ($b-space * 3)
+  opacity: 0
   a
     color: $c-gray
     display: block
@@ -18,9 +21,11 @@
     &:first-child:focus
       color: $c-red
   p
+    border-top: $b-border
     color: lighten($c-gray, 10%)
     font-size: $t-fontSize-xs
     margin-top: ($b-space * 2.5)
+    padding-top: ($b-space * 2)
 
 // -------------------------------------
 //   Modifiers
@@ -42,6 +47,9 @@
     &:first-child:focus
       background: lighten($c-red, 30%)
       color: $c-red
+  p
+    border-top: none
+    padding-top: 0
 
 // -------------------------------------
 //   States

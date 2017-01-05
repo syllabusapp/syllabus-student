@@ -64,6 +64,18 @@
 
 // ----- Layout ----- //
 
+.button--circle
+  align-items: center
+  display: flex
+  height: ($b-space * 4.5)
+  justify-content: center
+  padding: 0
+  width: ($b-space * 4.5)
+  img
+    height: auto
+    margin: 0
+    width: ($b-space * 2)
+
 .button--heading
   margin-left: ($b-space * 2)
 
@@ -92,7 +104,10 @@
 //   States
 // -------------------------------------
 
-// .mv-module.is-state
+.button.is-disabled
+  background: darken($c-gray-light, 10%)
+  color: white
+  pointer-events: none
 
 // -------------------------------------
 //   Context

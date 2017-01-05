@@ -26,56 +26,68 @@ export default class extends Component {
                     <span className="item-status">
                       <img src="/assets/images/icon-warning.svg" />
                     </span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+                    <h3 className="item-title">Critical Thought</h3>
+                    <p className="item-description">
+                      <strong>Length:</strong> 5 paragraphs
+                      <strong>Subject:</strong> Macroeconomics and Large Corporations
+                    </p>
                   </Link>
                 </li>
               </ul>
               <h2 className="heading heading--s heading--borderless">Current Assignments</h2>
-              <div className="card">
+              <div className="card card--row">
+                <a href="#" className="button button--circle is-disabled"><img src="/assets/images/icon-arrow-left.svg" /></a>
                 <span className="heading"><strong>Week 1</strong><span>March 8&ndash;12</span></span>
+                <a href="#" className="button button--circle"><img src="/assets/images/icon-arrow-right.svg" /></a>
               </div>
               <ul className="has-items">
                 <li>
                   <Link to="/" className="item is-complete">
                     <span className="item-status"></span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+                    <h3 className="item-title">Reading</h3>
+                    <p className="item-description">
+                      <strong>Length:</strong> Chapters 1&ndash;5
+                      <strong>Book:</strong> Barron’s AP Microeconomics/Macroeconomics AP, 5th Edition
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/" className="item is-complete">
                     <span className="item-status"></span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+                    <h3 className="item-title">Video</h3>
+                    <p className="item-description">
+                      <strong>Length:</strong> 23m 5s
+                      <strong>Subject:</strong> Microeconomics vs. Macroeconomics
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/" className="item">
                     <span className="item-status"></span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+                    <h3 className="item-title">Critical Thought</h3>
+                    <p className="item-description">
+                      <strong>Length:</strong> 5 paragraphs
+                      <strong>Subject:</strong> Macroeconomics and Large Corporations
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/" className="item">
                     <span className="item-status"></span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+                    <h3 className="item-title">Upload</h3>
+                    <p className="item-description">
+                      <strong>Type:</strong> PDF or PSD
+                      <strong>Subject:</strong> Logo &amp; branding for local government
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link to="/" className="item">
                     <span className="item-status"></span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" className="item">
-                    <span className="item-status"></span>
-                    <h3 className="item-title">Microeconomics 101</h3>
-                    <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+                    <h3 className="item-title">Questionaire</h3>
+                    <p className="item-description">
+                      <strong>Length:</strong> 25 questions
+                    </p>
                   </Link>
                 </li>
               </ul>
@@ -90,6 +102,40 @@ export default class extends Component {
                 <span className="anchor-count">2</span>
                 Discussions
               </a>
+              <div className="card is-expanded">
+                <div className="card-header">
+                  <div className="g">
+                    <div className="g-b g-b--6of12">
+                      <h4 className="heading heading--borderless tcw">Current Grade</h4>
+                      <a href="#">Hide Details</a>
+                    </div>
+                    <div className="g-b g-b--6of12 tar">
+                      <h3 className="heading heading--l mb0 tcw twb">98%</h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-content">
+                  <ul>
+                    <li>Video &amp; Audio</li>
+                    <li>Reading</li>
+                    <li>Writing</li>
+                    <li>Upload</li>
+                    <li>Questionaires</li>
+                  </ul>
+                </div>
+              </div>
+              <h2 className="heading heading--s mb2">Quick Actions</h2>
+              <ul>
+                <li>
+                  <a href="#">Contact teacher</a>
+                </li>
+                <li>
+                  <a href="#">Request extension</a>
+                </li>
+                <li>
+                  <a href="#">Notify as absent</a>
+                </li>
+              </ul>
             </div>
           </div>
           <footer className="footer footer--centered">

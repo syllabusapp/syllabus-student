@@ -16,17 +16,5 @@
 // -------------------------------------
 
 .cell--content
-  animation: slideInUp 500ms 1 ease
+  animation: slideInUp $b-transition-time 1 ease
   padding-top: $header-height
-
-// -------------------------------------
-//   Animations
-// -------------------------------------
-
-@keyframes slideInUp
-  from
-    opacity: 0
-    transform: translateY(#{$b-space * 2})
-  to
-    opacity: 1
-    transform: translateY(0)

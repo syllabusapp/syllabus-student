@@ -67,6 +67,8 @@
       top: 0
       transform: rotate(45deg) translate(#{$b-space * -0.25}, #{$b-space * -0.25})
       width: $b-space
+  .item-title
+    font-weight: 500
 
 .item.is-urgent
   .item-status
@@ -95,6 +97,13 @@
   color: $c-gray
   font-size: $t-fontSize-s
   margin: 0
+  strong
+    color: $c-gray-dark
+    font-weight: 500
+    margin-left: ($b-space * 2)
+    margin-right: ($b-space * 0.25)
+    &:first-of-type
+      margin-left: 0
 
 .item-status
   align-items: center

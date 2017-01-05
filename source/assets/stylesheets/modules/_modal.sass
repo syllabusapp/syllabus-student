@@ -20,7 +20,7 @@
 
 .modal--chat
   .modal-content
-    animation: slideLeft 275ms 1 ease-out
+    animation: slideLeft ($b-transition-time * 0.5) 1 ease-out
     border-radius: 0
     bottom: 0
     height: 100vh
@@ -34,9 +34,9 @@
 
 .modal.is-exiting
   .modal-content
-    animation: slideRight 275ms 1 ease-out
+    animation: slideRight ($b-transition-time * 0.5) 1 ease-out
   .modal-overlay
-    animation: fadeOut 275ms 1 ease-out
+    animation: fadeOut ($b-transition-time * 0.5) 1 ease-out
 
 // -------------------------------------
 //   Context
@@ -60,38 +60,10 @@
   z-index: $z-modal-content
 
 .modal-overlay
-  animation: fadeIn 275ms 1 ease-out
+  animation: fadeIn ($b-transition-time * 0.5) 1 ease-out
   background: rgba($c-gray-dark, 0.25)
   height: 100%
   left: 0
   position: fixed
   top: 0
   width: 100%
-
-// -------------------------------------
-//   Animations
-// -------------------------------------
-
-@keyframes fadeIn
-  from
-    opacity: 0
-  to
-    opacity: 1
-
-@keyframes fadeOut
-  from
-    opacity: 1
-  to
-    opacity: 0
-
-@keyframes slideLeft
-  from
-    transform: translateX(100%)
-  to
-    transform: translateX(0%)
-
-@keyframes slideRight
-  from
-    transform: translateX(0%)
-  to
-    transform: translateX(100%)
