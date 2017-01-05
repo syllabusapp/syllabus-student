@@ -26714,12 +26714,23 @@
 	                    _react2.default.createElement(
 	                      "h3",
 	                      { className: "item-title" },
-	                      "Microeconomics 101"
+	                      "Critical Thought"
 	                    ),
 	                    _react2.default.createElement(
 	                      "p",
 	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Length:"
+	                      ),
+	                      " 5 paragraphs",
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Subject:"
+	                      ),
+	                      " Macroeconomics and Large Corporations"
 	                    )
 	                  )
 	                )
@@ -26731,7 +26742,12 @@
 	              ),
 	              _react2.default.createElement(
 	                "div",
-	                { className: "card" },
+	                { className: "card card--row" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--circle is-disabled" },
+	                  _react2.default.createElement("img", { src: "/assets/images/icon-arrow-left.svg" })
+	                ),
 	                _react2.default.createElement(
 	                  "span",
 	                  { className: "heading" },
@@ -26745,6 +26761,11 @@
 	                    null,
 	                    "March 8\u201312"
 	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--circle" },
+	                  _react2.default.createElement("img", { src: "/assets/images/icon-arrow-right.svg" })
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -26760,12 +26781,23 @@
 	                    _react2.default.createElement(
 	                      "h3",
 	                      { className: "item-title" },
-	                      "Microeconomics 101"
+	                      "Reading"
 	                    ),
 	                    _react2.default.createElement(
 	                      "p",
 	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Length:"
+	                      ),
+	                      " Chapters 1\u20135",
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Book:"
+	                      ),
+	                      " Barron\u2019s AP Microeconomics/Macroeconomics AP, 5th Edition"
 	                    )
 	                  )
 	                ),
@@ -26779,12 +26811,23 @@
 	                    _react2.default.createElement(
 	                      "h3",
 	                      { className: "item-title" },
-	                      "Microeconomics 101"
+	                      "Video"
 	                    ),
 	                    _react2.default.createElement(
 	                      "p",
 	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Length:"
+	                      ),
+	                      " 23m 5s",
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Subject:"
+	                      ),
+	                      " Microeconomics vs. Macroeconomics"
 	                    )
 	                  )
 	                ),
@@ -26798,12 +26841,23 @@
 	                    _react2.default.createElement(
 	                      "h3",
 	                      { className: "item-title" },
-	                      "Microeconomics 101"
+	                      "Critical Thought"
 	                    ),
 	                    _react2.default.createElement(
 	                      "p",
 	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Length:"
+	                      ),
+	                      " 5 paragraphs",
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Subject:"
+	                      ),
+	                      " Macroeconomics and Large Corporations"
 	                    )
 	                  )
 	                ),
@@ -26817,12 +26871,23 @@
 	                    _react2.default.createElement(
 	                      "h3",
 	                      { className: "item-title" },
-	                      "Microeconomics 101"
+	                      "Upload"
 	                    ),
 	                    _react2.default.createElement(
 	                      "p",
 	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Type:"
+	                      ),
+	                      " PDF or PSD",
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Subject:"
+	                      ),
+	                      " Logo & branding for local government"
 	                    )
 	                  )
 	                ),
@@ -26836,31 +26901,17 @@
 	                    _react2.default.createElement(
 	                      "h3",
 	                      { className: "item-title" },
-	                      "Microeconomics 101"
+	                      "Questionaire"
 	                    ),
 	                    _react2.default.createElement(
 	                      "p",
 	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
-	                    )
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "/", className: "item" },
-	                    _react2.default.createElement("span", { className: "item-status" }),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      { className: "item-title" },
-	                      "Microeconomics 101"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      { className: "item-description" },
-	                      "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                      _react2.default.createElement(
+	                        "strong",
+	                        null,
+	                        "Length:"
+	                      ),
+	                      " 25 questions"
 	                    )
 	                  )
 	                )
@@ -26893,6 +26944,110 @@
 	                  "2"
 	                ),
 	                "Discussions"
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card is-expanded" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-header" },
+	                  _react2.default.createElement(
+	                    "div",
+	                    { className: "g" },
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "g-b g-b--6of12" },
+	                      _react2.default.createElement(
+	                        "h4",
+	                        { className: "heading heading--borderless tcw" },
+	                        "Current Grade"
+	                      ),
+	                      _react2.default.createElement(
+	                        "a",
+	                        { href: "#" },
+	                        "Hide Details"
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      "div",
+	                      { className: "g-b g-b--6of12 tar" },
+	                      _react2.default.createElement(
+	                        "h3",
+	                        { className: "heading heading--l mb0 tcw twb" },
+	                        "98%"
+	                      )
+	                    )
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-content" },
+	                  _react2.default.createElement(
+	                    "ul",
+	                    null,
+	                    _react2.default.createElement(
+	                      "li",
+	                      null,
+	                      "Video & Audio"
+	                    ),
+	                    _react2.default.createElement(
+	                      "li",
+	                      null,
+	                      "Reading"
+	                    ),
+	                    _react2.default.createElement(
+	                      "li",
+	                      null,
+	                      "Writing"
+	                    ),
+	                    _react2.default.createElement(
+	                      "li",
+	                      null,
+	                      "Upload"
+	                    ),
+	                    _react2.default.createElement(
+	                      "li",
+	                      null,
+	                      "Questionaires"
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--s mb2" },
+	                "Quick Actions"
+	              ),
+	              _react2.default.createElement(
+	                "ul",
+	                null,
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    "Contact teacher"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    "Request extension"
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  _react2.default.createElement(
+	                    "a",
+	                    { href: "#" },
+	                    "Notify as absent"
+	                  )
+	                )
 	              )
 	            )
 	          ),
@@ -27397,7 +27552,7 @@
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "\xA9 2016 The Syllabus Company, Inc.",
+	            "\xA9 2016 The Syllabus Company, Inc. All logos and branding have been \xA9 2016 by Syllabus University.",
 	            _react2.default.createElement("br", null),
 	            "All rights reserved."
 	          )

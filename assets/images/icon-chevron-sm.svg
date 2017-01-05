@@ -5,8 +5,8 @@
             <use xlink:href="#a"/>
         </mask>
     </defs>
-    <g fill="none" fill-rule="evenodd">
-        <use stroke="#3B4F5B" mask="url(#b)" stroke-width="4" xlink:href="#a"/>
-        <path d="M8.333 12.5h8.96M11.667 8.333L7.5 12.5l4.167 4.167" stroke="#3B4F5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="none" fill-rule="evenodd" stroke="#3B4F5B">
+        <use mask="url(#b)" stroke-width="4" xlink:href="#a"/>
+        <path d="M8.333 12.5h8.96m-5.626-4.167L7.5 12.5l4.167 4.167" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
 </svg>
