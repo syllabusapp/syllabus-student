@@ -11,8 +11,9 @@
   clear: both
   color: $c-gray
   display: inline-flex
+  margin-bottom: 1px
   margin-left: ($b-space * -0.75)
-  padding: ($b-space * 0.5) ($b-space * 0.75)
+  padding: ($b-space * 0.75)
   width: 100%
   &:hover, &:focus
     background: lighten($c-blue, 35%)
@@ -96,6 +97,19 @@
     background: $c-red
     color: white
 
+.anchor.is-current
+  background: lighten($c-blue, 35%)
+  color: $c-gray-dark
+  pointer-events: none
+  .anchor-count
+    background: $c-blue
+    color: white
+  &.is-alert
+    background: lighten($c-red, 30%)
+    .anchor-count
+      background: $c-red
+      color: white
+
 // -------------------------------------
 //   Context
 // -------------------------------------
@@ -112,10 +126,11 @@
   border-radius: 50%
   color: $c-gray
   display: inline-flex
-  font-size: $t-fontSize-xs
+  font-size: $t-fontSize-s
   font-weight: 500
-  height: ($b-space * 2)
+  height: ($b-space * 2.5)
   justify-content: center
-  margin-right: ($b-space * 0.5)
+  margin-right: ($b-space * 0.65)
   text-align: center
-  width: ($b-space * 2)
+  transform: translateY(-1px)
+  width: ($b-space * 2.5)
