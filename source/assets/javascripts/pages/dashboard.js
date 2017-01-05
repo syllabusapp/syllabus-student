@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "react-router"
 
-import CourseChat from "../components/CourseChat"
 import CourseNavigation from "../components/CourseNavigation"
 import DashboardSidebar from "../components/DashboardSidebar"
 

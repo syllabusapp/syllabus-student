@@ -10,6 +10,7 @@
   height: 100%
   left: 0
   position: fixed
+  text-align: center
   top: 0
   width: 100%
   z-index: $z-modal
@@ -19,6 +20,7 @@
 // -------------------------------------
 
 .modal--chat
+  text-align: left
   .modal-content
     animation: slideLeft ($b-transition-time * 0.5) 1 ease-out
     border-radius: 0
@@ -48,15 +50,21 @@
 //   Submodules
 // -------------------------------------
 
+.modal-close
+  font-size: $t-heading-fontSize-l
+  line-height: 0.75
+  position: absolute
+  right: ($b-space * 2)
+  top: ($b-space * 2)
+
 .modal-content
   background: white
   border-radius: $b-borderRadius
   box-shadow: $b-boxShadow
-  height: ($b-space * 30)
   margin: auto
   padding: ($b-space * 5)
   position: relative
-  width: ($b-space * 50)
+  width: ($b-space * 53)
   z-index: $z-modal-content
 
 .modal-overlay
