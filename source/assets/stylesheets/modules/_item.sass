@@ -9,7 +9,7 @@
   border-bottom: $b-border
   cursor: pointer
   display: block
-  padding: ($b-space * 3) 0
+  padding: ($b-space * 3) ($b-space * 7.5) ($b-space * 3) 0
   position: relative
   &:hover, &:focus
     &::after
@@ -95,6 +95,9 @@
   color: $c-gray
   font-size: $t-fontSize-s
   margin: 0
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
   strong
     color: $c-gray-dark
     font-weight: 500
