@@ -68,6 +68,10 @@
 
 	var _Dashboard2 = _interopRequireDefault(_Dashboard);
 
+	var _AssignmentCriticalThought = __webpack_require__(246);
+
+	var _AssignmentCriticalThought2 = _interopRequireDefault(_AssignmentCriticalThought);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -77,7 +81,8 @@
 	    _reactRouter.Route,
 	    { path: "/", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Dashboard2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _Course2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _Course2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-critical-thought", component: _AssignmentCriticalThought2.default })
 	  )
 	), document.getElementById("app"));
 
@@ -26711,33 +26716,26 @@
 	            "Welcome to the prototype of the Syllabus platform! Here are a few things you might like to know before diving in:"
 	          ),
 	          _react2.default.createElement(
-	            "ul",
-	            { className: "mb2" },
+	            "div",
+	            { className: "cell cell--s" },
 	            _react2.default.createElement(
-	              "li",
-	              { className: "card card--outline" },
-	              "This demo covers the main features of the ",
+	              "ul",
+	              { className: "list" },
 	              _react2.default.createElement(
-	                "strong",
+	                "li",
 	                null,
-	                "student"
+	                "This demo covers the main features of the student platform."
 	              ),
-	              " platform."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "card card--outline" },
-	              "All content is static. To start over, simply refresh your browser."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "card card--outline" },
-	              "Branding can be replaced with your school's logo."
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "card card--outline" },
-	              "Desktop only, but don't worry! Mobile is coming soon."
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "All demo content and interactions are static. To start over, simply refresh your browser."
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "The Syllabus University is fictional, and the logo can be replaced with your school's logo."
+	              )
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -26838,7 +26836,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/", className: "item is-urgent" },
+	                    { to: "/assignment-critical-thought", className: "item is-urgent" },
 	                    _react2.default.createElement(
 	                      "span",
 	                      { className: "item-status" },
@@ -26909,7 +26907,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/", className: "item is-complete" },
+	                    { to: "/assignment-critical-thought", className: "item is-complete" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -26939,7 +26937,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/", className: "item is-complete" },
+	                    { to: "/assignment-critical-thought", className: "item is-complete" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -26969,7 +26967,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/", className: "item" },
+	                    { to: "/assignment-critical-thought", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -26999,7 +26997,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/", className: "item" },
+	                    { to: "/assignment-critical-thought", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -27029,7 +27027,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/", className: "item" },
+	                    { to: "/assignment-critical-thought", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -27835,7 +27833,7 @@
 	          _react2.default.createElement(
 	            "p",
 	            null,
-	            "\xA9 2016 The Syllabus Company, Inc. All logos and branding have been \xA9 2016 by Syllabus University.",
+	            "All layout and functionality are copyright 2016 by The Syllabus Company, Inc. All logos and branding are copyright 2016 by The Syllabus Company, Inc. but are replaceable for each school's instance..",
 	            _react2.default.createElement("br", null),
 	            "All rights reserved."
 	          )
@@ -27900,6 +27898,161 @@
 	          { className: "heading heading--s" },
 	          "School"
 	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _AssignmentNavigation = __webpack_require__(247);
+
+	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+	  }
+
+	  _createClass(_class, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_AssignmentNavigation2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	var _CourseLogo = __webpack_require__(241);
+
+	var _CourseLogo2 = _interopRequireDefault(_CourseLogo);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this.toggleChat = _this.toggleChat.bind(_this);
+	    _this.state = {
+	      chat: false
+	    };
+	    return _this;
+	  }
+
+	  _createClass(_class, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      this.setState(function (prevState) {
+	        return {
+	          chat: !prevState.chat
+	        };
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "header" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "cell cell--animate" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g g--center header-grid" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/course", className: "link" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-chevron-sm.svg" }),
+	                "Back to course"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12 tac" },
+	              _react2.default.createElement(_CourseLogo2.default, null)
+	            ),
+	            _react2.default.createElement(
+	              "nav",
+	              { className: "header-items g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                "a",
+	                { href: "#", className: "button button--green" },
+	                "Complete & Continue"
+	              )
+	            )
+	          )
+	        ),
+	        this.state.chat ? _react2.default.createElement(CourseChat, { toggleChat: this.toggleChat }) : null
 	      );
 	    }
 	  }]);
