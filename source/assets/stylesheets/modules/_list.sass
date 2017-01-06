@@ -1,21 +1,16 @@
 // *************************************
 //
-//   Header
-//   -> Course navigation items
+//   List
+//   -> Since lists styles are blank by
+//      default, this class will re-add
+//      the styling back to lists
 //
 // *************************************
 
-.header
-  background-image: linear-gradient(to bottom, white 60%, rgba(white, 0.85))
-  height: $header-height
-  left: 0
-  margin: auto
-  padding: 0 ($b-space * 5)
-  position: fixed
-  right: 0
-  top: 0
-  width: 100%
-  z-index: $z-header
+.list
+  list-style: disc
+  margin: ($b-space * 2) 0
+  text-align: left
 
 // -------------------------------------
 //   Modifiers
@@ -39,10 +34,4 @@
 //   Submodules
 // -------------------------------------
 
-.header-grid
-  height: $header-height
-
-.header-items
-  display: flex
-  flex-flow: row nowrap
-  justify-content: flex-end
+// .mv-module-submodules

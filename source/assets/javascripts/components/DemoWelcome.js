@@ -16,12 +16,13 @@ export default class extends Component {
           <p className="heading heading--l mb0">🎉</p>
           <h1 className="heading heading--l mb1">Clickable things!</h1>
           <p>Welcome to the prototype of the Syllabus platform! Here are a few things you might like to know before diving in:</p>
-          <ul className="mb2">
-            <li className="card card--outline">This demo covers the main features of the <strong>student</strong> platform.</li>
-            <li className="card card--outline">All content is static. To start over, simply refresh your browser.</li>
-            <li className="card card--outline">Branding can be replaced with your school's logo.</li>
-            <li className="card card--outline">Desktop only, but don't worry! Mobile is coming soon.</li>
-          </ul>
+          <div className="cell cell--s">
+            <ul className="list">
+              <li>This demo covers the main features of the student platform.</li>
+              <li>All demo content and interactions are static. To start over, simply refresh your browser.</li>
+              <li>The Syllabus University is fictional, and the logo can be replaced with your school's logo.</li>
+            </ul>
+          </div>
           <a onClick={this.hideWelcome} className="button button--l">Let's go!</a>
         </div>
       </div>

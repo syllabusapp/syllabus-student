@@ -25,7 +25,7 @@ export default class extends Component {
           <a href="http://syllabusapp.com">Sign Out</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Support</a>
-          <p>&copy; 2016 The Syllabus Company, Inc. All logos and branding have been &copy; 2016 by Syllabus University.<br/>All rights reserved.</p>
+          <p>All layout and functionality are copyright 2016 by The Syllabus Company, Inc. All logos and branding are copyright 2016 by The Syllabus Company, Inc. but are replaceable for each school's instance..<br/>All rights reserved.</p>
         </footer>
       </aside>
     )
