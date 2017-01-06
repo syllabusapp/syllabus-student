@@ -72,6 +72,10 @@
 
 	var _AssignmentCriticalThought2 = _interopRequireDefault(_AssignmentCriticalThought);
 
+	var _AssignmentReadingInline = __webpack_require__(248);
+
+	var _AssignmentReadingInline2 = _interopRequireDefault(_AssignmentReadingInline);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -82,7 +86,8 @@
 	    { path: "/", component: _App2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Dashboard2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _Course2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-critical-thought", component: _AssignmentCriticalThought2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-critical-thought", component: _AssignmentCriticalThought2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-reading-inline", component: _AssignmentReadingInline2.default })
 	  )
 	), document.getElementById("app"));
 
@@ -26717,24 +26722,28 @@
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "cell cell--s" },
+	            { className: "card card--outline mb3" },
 	            _react2.default.createElement(
-	              "ul",
-	              { className: "list" },
+	              "div",
+	              { className: "cell cell--s" },
 	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "This demo covers the main features of the student platform."
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "All demo content and interactions are static. To start over, simply refresh your browser."
-	              ),
-	              _react2.default.createElement(
-	                "li",
-	                null,
-	                "The Syllabus University is fictional, and the logo can be replaced with your school's logo."
+	                "ul",
+	                { className: "list" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "This demo covers the main features of the student platform."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "All demo content and interactions are static. To start over, simply refresh your browser."
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "The Syllabus University is fictional, and the logo can be replaced with your school's logo."
+	                )
 	              )
 	            )
 	          ),
@@ -26907,7 +26916,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-critical-thought", className: "item is-complete" },
+	                    { to: "/assignment-reading-inline", className: "item is-complete" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -26937,7 +26946,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-critical-thought", className: "item is-complete" },
+	                    { to: "/assignment-reading-inline", className: "item is-complete" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -26967,7 +26976,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-critical-thought", className: "item" },
+	                    { to: "/assignment-reading-inline", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -26997,7 +27006,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-critical-thought", className: "item" },
+	                    { to: "/assignment-reading-inline", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -27027,7 +27036,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-critical-thought", className: "item" },
+	                    { to: "/assignment-reading-inline", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -27495,7 +27504,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactRouter.Link,
-	        { to: "/" },
+	        { to: "/", className: this.props.centered ? "logo logo--centered" : "logo" },
 	        _react2.default.createElement("img", { src: "/assets/images/logo.svg" })
 	      );
 	    }
@@ -27923,6 +27932,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(179);
+
 	var _AssignmentNavigation = __webpack_require__(247);
 
 	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
@@ -27950,7 +27961,85 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement(_AssignmentNavigation2.default, null)
+	        _react2.default.createElement(_AssignmentNavigation2.default, null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "cell cell--animate cell--content" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g g--spaceBetween" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                "p",
+	                { className: "mb025 mt5" },
+	                "Week 1 \u2022 Critical Thought Assignment"
+	              ),
+	              _react2.default.createElement(
+	                "h1",
+	                { className: "heading heading--l" },
+	                "Directions"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "Please discuss the importance of respecting morals in modern entertainment. Your response must address the following points in ",
+	                _react2.default.createElement(
+	                  "em",
+	                  null,
+	                  "at least"
+	                ),
+	                " ",
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "5\xA0paragraphs"
+	                ),
+	                ":"
+	              ),
+	              _react2.default.createElement(
+	                "ol",
+	                { className: "list list--ordered" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "What are traditional morals?"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "What is modern entertainment?"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Traditional morals vs. modern entertainment"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Traditional morals within modern entertainment"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "How modern entertainment affects traditional morals"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--7of12 mt5" },
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--l" },
+	                "My Response"
+	              ),
+	              _react2.default.createElement("textarea", { className: "editable", placeholder: "Begin typing your response here..." })
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -28039,20 +28128,166 @@
 	            _react2.default.createElement(
 	              "div",
 	              { className: "g-b g-b--4of12 tac" },
-	              _react2.default.createElement(_CourseLogo2.default, null)
+	              _react2.default.createElement(_CourseLogo2.default, { centered: true })
 	            ),
 	            _react2.default.createElement(
 	              "nav",
 	              { className: "header-items g-b g-b--4of12" },
 	              _react2.default.createElement(
-	                "a",
-	                { href: "#", className: "button button--green" },
+	                _reactRouter.Link,
+	                { to: "/course", className: "button button--green" },
 	                "Complete & Continue"
 	              )
 	            )
 	          )
 	        ),
 	        this.state.chat ? _react2.default.createElement(CourseChat, { toggleChat: this.toggleChat }) : null
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	var _AssignmentNavigation = __webpack_require__(247);
+
+	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+	  }
+
+	  _createClass(_class, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_AssignmentNavigation2.default, null),
+	        _react2.default.createElement(
+	          "main",
+	          null,
+	          _react2.default.createElement(
+	            "header",
+	            { className: "cell cell--animate cell--content tac" },
+	            _react2.default.createElement(
+	              "p",
+	              { className: "mb025 mt5" },
+	              "Week 1 \u2022 Reading Assignment"
+	            ),
+	            _react2.default.createElement(
+	              "h1",
+	              { className: "heading heading--l" },
+	              "Macroeconomics vs. Microeconomics"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "article",
+	            { className: "cell cell--animate cell--m" },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "So as we\u2019re building this model, wei\u0301re going to want to include things, like consumer income, taxes, the stock market, and other factors that influence how much money people choose to spend. We can probably ignore other things that bear less on the consumer spending decision, such as the gender of the children or the color of the breadwinneri\u0301s hair. I mean, these are real facts from the real world, but they probably areni\u0301t very important."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Margaret Mead once said that a model that is completely realistic is no more useful than a map with a scale of one-to- one. The only reason the map helps you is that iti\u0301s simple enough and simplified enough to help you see the big picture and the details that are necessary in helping you guide your way through the city. On a typical map you woni\u0301t see trees and dogs and cars, because theyi\u0301re not necessary. And by eliminating them, and showing you the grid of the streets, you are helped in navigating your way around New York."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "So we build a model, and perhaps that model is a story whereby people make spending decisions based on their income, their taxes, and their age. People who are younger tend to spend more and save more in their middle years and spend it in retirement. We build a relationship among these variables and that becomes our model of how consumers make their spending decisions."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Now, once wei\u0301ve got a model the relationships that we imagine hold among the variables allow us to derive certain hypotheses. Hypotheses are predictions about how the world works. One hypothesis might be than increase in consumer income leads to an increase in consumer spending. Now, that hypothesis is something we can test. We can go out and get data from the real world and compare the relationship between observed consumer income changes and changes in consumer spending. And if our data matches the predictions of our model, then we believe that wei\u0301ve explained something about the real world. We believe that since our story matches the facts, wei\u0301ve come to understand more thoroughly the way the world works."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "So as we\u2019re building this model, wei\u0301re going to want to include things, like consumer income, taxes, the stock market, and other factors that influence how much money people choose to spend. We can probably ignore other things that bear less on the consumer spending decision, such as the gender of the children or the color of the breadwinneri\u0301s hair. I mean, these are real facts from the real world, but they probably areni\u0301t very important."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Margaret Mead once said that a model that is completely realistic is no more useful than a map with a scale of one-to- one. The only reason the map helps you is that iti\u0301s simple enough and simplified enough to help you see the big picture and the details that are necessary in helping you guide your way through the city. On a typical map you woni\u0301t see trees and dogs and cars, because theyi\u0301re not necessary. And by eliminating them, and showing you the grid of the streets, you are helped in navigating your way around New York."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "So we build a model, and perhaps that model is a story whereby people make spending decisions based on their income, their taxes, and their age. People who are younger tend to spend more and save more in their middle years and spend it in retirement. We build a relationship among these variables and that becomes our model of how consumers make their spending decisions."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Now, once wei\u0301ve got a model the relationships that we imagine hold among the variables allow us to derive certain hypotheses. Hypotheses are predictions about how the world works. One hypothesis might be than increase in consumer income leads to an increase in consumer spending. Now, that hypothesis is something we can test. We can go out and get data from the real world and compare the relationship between observed consumer income changes and changes in consumer spending. And if our data matches the predictions of our model, then we believe that wei\u0301ve explained something about the real world. We believe that since our story matches the facts, wei\u0301ve come to understand more thoroughly the way the world works."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "So as we\u2019re building this model, wei\u0301re going to want to include things, like consumer income, taxes, the stock market, and other factors that influence how much money people choose to spend. We can probably ignore other things that bear less on the consumer spending decision, such as the gender of the children or the color of the breadwinneri\u0301s hair. I mean, these are real facts from the real world, but they probably areni\u0301t very important."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Margaret Mead once said that a model that is completely realistic is no more useful than a map with a scale of one-to- one. The only reason the map helps you is that iti\u0301s simple enough and simplified enough to help you see the big picture and the details that are necessary in helping you guide your way through the city. On a typical map you woni\u0301t see trees and dogs and cars, because theyi\u0301re not necessary. And by eliminating them, and showing you the grid of the streets, you are helped in navigating your way around New York."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "So we build a model, and perhaps that model is a story whereby people make spending decisions based on their income, their taxes, and their age. People who are younger tend to spend more and save more in their middle years and spend it in retirement. We build a relationship among these variables and that becomes our model of how consumers make their spending decisions."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Now, once wei\u0301ve got a model the relationships that we imagine hold among the variables allow us to derive certain hypotheses. Hypotheses are predictions about how the world works. One hypothesis might be than increase in consumer income leads to an increase in consumer spending. Now, that hypothesis is something we can test. We can go out and get data from the real world and compare the relationship between observed consumer income changes and changes in consumer spending. And if our data matches the predictions of our model, then we believe that wei\u0301ve explained something about the real world. We believe that since our story matches the facts, wei\u0301ve come to understand more thoroughly the way the world works."
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "footer",
+	            { className: "cell cell--s well well--l tac" },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/course", className: "button button--green button--l" },
+	              "Complete & Continue"
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
