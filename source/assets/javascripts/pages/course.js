@@ -23,7 +23,7 @@ export default class extends Component {
               <h2 className="heading heading--s">Late Assignments</h2>
               <ul className="has-items">
                 <li>
-                  <Link to="/" className="item is-urgent">
+                  <Link to="/assignment-critical-thought" className="item is-urgent">
                     <span className="item-status">
                       <img src="/assets/images/icon-warning.svg" />
                     </span>
@@ -43,7 +43,7 @@ export default class extends Component {
               </div>
               <ul className="has-items">
                 <li>
-                  <Link to="/" className="item is-complete">
+                  <Link to="/assignment-critical-thought" className="item is-complete">
                     <span className="item-status"></span>
                     <h3 className="item-title">Reading</h3>
                     <p className="item-description">
@@ -53,7 +53,7 @@ export default class extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="item is-complete">
+                  <Link to="/assignment-critical-thought" className="item is-complete">
                     <span className="item-status"></span>
                     <h3 className="item-title">Video</h3>
                     <p className="item-description">
@@ -63,7 +63,7 @@ export default class extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="item">
+                  <Link to="/assignment-critical-thought" className="item">
                     <span className="item-status"></span>
                     <h3 className="item-title">Critical Thought</h3>
                     <p className="item-description">
@@ -73,7 +73,7 @@ export default class extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="item">
+                  <Link to="/assignment-critical-thought" className="item">
                     <span className="item-status"></span>
                     <h3 className="item-title">Upload</h3>
                     <p className="item-description">
@@ -83,7 +83,7 @@ export default class extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="item">
+                  <Link to="/assignment-critical-thought" className="item">
                     <span className="item-status"></span>
                     <h3 className="item-title">Questionaire</h3>
                     <p className="item-description">
