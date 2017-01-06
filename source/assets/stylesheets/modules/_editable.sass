@@ -1,39 +1,26 @@
 // *************************************
 //
-//   Heading
-//   -> Replacements for h1, h2, etc.
+//   Editable
+//   -> Awesome text editor
 //
 // *************************************
 
-.heading
-  color: darken($c-gray-dark, 10%)
-  font-size: $t-heading-fontSize
-  font-weight: 400
-  line-height: 1.2
-  margin: 0
-  span
-    color: $c-gray
-  strong
-    font-weight: 500
-    margin-right: ($b-space * 1.5)
+.editable
+  border: none
+  color: $c-gray-dark
+  display: block
+  font-size: $t-fontSize-l
+  height: calc(100vh - #{($b-space * 15) + $header-height}
+  outline: none
+  padding: 0
+  resize: none
+  width: 100%
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-.heading--borderless
-  border: none !important
-
-.heading--s
-  border-bottom: $b-border
-  color: $c-gray
-  font-size: $t-heading-fontSize-s
-  padding-bottom: ($b-space * 0.75)
-
-.heading--l
-  font-size: $t-heading-fontSize-l
-  font-weight: 300
-  margin-bottom: ($b-space * 3)
+// .mv-module--modifier
 
 // -------------------------------------
 //   States
