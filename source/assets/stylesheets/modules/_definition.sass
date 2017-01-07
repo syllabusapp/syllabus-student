@@ -1,0 +1,61 @@
+// *************************************
+//
+//   Definition
+//   -> Inline definitions
+//
+// *************************************
+
+.definition
+  margin: 0 0 $b-space
+  overflow: hidden
+  position: relative
+  &::before
+    border-bottom: $b-border
+    content: ''
+    height: 0
+    left: 0
+    position: absolute
+    right: 0
+    top: 50%
+    z-index: 0
+  dd, dt
+    background: lighten($c-gray-light, 5%)
+    display: inline-block
+    font-size: $t-fontSize-s
+    position: relative
+    z-index: 10
+  dd
+    float: right
+    padding-left: $b-space
+  dt
+    color: $c-gray-dark
+    float: left
+    padding-right: $b-space
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-definition
+  margin-bottom: 0
+  &:last-of-type
+    .definition
+      margin-bottom: 0
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// .mv-module-submodules

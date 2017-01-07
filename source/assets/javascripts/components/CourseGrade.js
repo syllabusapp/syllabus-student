@@ -29,11 +29,36 @@ export default class extends Component {
         </div>
         <div className="card-content">
           <ul>
-            <li>Video &amp; Audio</li>
-            <li>Reading</li>
-            <li>Writing</li>
-            <li>Upload</li>
-            <li>Questionaires</li>
+            <li className="has-definition">
+              <dl className="definition">
+                <dt>Video &amp; Audio</dt>
+                <dd>12 of 13</dd>
+              </dl>
+            </li>
+            <li className="has-definition">
+              <dl className="definition">
+                <dt>Reading</dt>
+                <dd>20 of 20</dd>
+              </dl>
+            </li>
+            <li className="has-definition">
+              <dl className="definition">
+                <dt>Writing</dt>
+                <dd>Average: 97%</dd>
+              </dl>
+            </li>
+            <li className="has-definition">
+              <dl className="definition">
+                <dt>Uploads</dt>
+                <dd>Average: 95%</dd>
+              </dl>
+            </li>
+            <li className="has-definition">
+              <dl className="definition">
+                <dt>Questionaire</dt>
+                <dd>Average: 87%</dd>
+              </dl>
+            </li>
           </ul>
         </div>
       </div>
