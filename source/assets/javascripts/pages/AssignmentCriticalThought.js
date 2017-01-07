@@ -1,11 +1,15 @@
 import React, { Component } from "react"
 import { Link } from "react-router"
+import Editor from "react-medium-editor"
 
 import AssignmentNavigation from "../components/AssignmentNavigation"
 
 export default class extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      text: "<p>Begin typing your response here...</p>"
+    }
   }
   render() {
     return (
@@ -27,7 +31,11 @@ export default class extends Component {
             </div>
             <div className="g-b g-b--7of12 mt5">
               <h2 className="heading heading--l">My Response</h2>
-              <textarea className="editable" placeholder="Begin typing your response here..."></textarea>
+              <Editor
+                className="editable"
+                options={{toolbar: {buttons: ['bold', 'italic', 'underline']}}}
+                tag="article"
+                text={this.state.text} />
             </div>
           </div>
         </div>
