@@ -10,7 +10,7 @@ import AssignmentCriticalThought from "./pages/AssignmentCriticalThought"
 import AssignmentReadingInline from "./pages/AssignmentReadingInline"
 
 ReactDOM.render((
-  <Router history={hashHistory}>
+  <Router history={hashHistory} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
       <IndexRoute component={Dashboard} />
       <Route path="course" component={Course} />
