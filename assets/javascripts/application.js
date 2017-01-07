@@ -27258,28 +27258,93 @@
 	            null,
 	            _react2.default.createElement(
 	              "li",
-	              null,
-	              "Video & Audio"
+	              { className: "has-definition" },
+	              _react2.default.createElement(
+	                "dl",
+	                { className: "definition" },
+	                _react2.default.createElement(
+	                  "dt",
+	                  null,
+	                  "Video & Audio"
+	                ),
+	                _react2.default.createElement(
+	                  "dd",
+	                  null,
+	                  "12 of 13"
+	                )
+	              )
 	            ),
 	            _react2.default.createElement(
 	              "li",
-	              null,
-	              "Reading"
+	              { className: "has-definition" },
+	              _react2.default.createElement(
+	                "dl",
+	                { className: "definition" },
+	                _react2.default.createElement(
+	                  "dt",
+	                  null,
+	                  "Reading"
+	                ),
+	                _react2.default.createElement(
+	                  "dd",
+	                  null,
+	                  "20 of 20"
+	                )
+	              )
 	            ),
 	            _react2.default.createElement(
 	              "li",
-	              null,
-	              "Writing"
+	              { className: "has-definition" },
+	              _react2.default.createElement(
+	                "dl",
+	                { className: "definition" },
+	                _react2.default.createElement(
+	                  "dt",
+	                  null,
+	                  "Writing"
+	                ),
+	                _react2.default.createElement(
+	                  "dd",
+	                  null,
+	                  "Average: 97%"
+	                )
+	              )
 	            ),
 	            _react2.default.createElement(
 	              "li",
-	              null,
-	              "Upload"
+	              { className: "has-definition" },
+	              _react2.default.createElement(
+	                "dl",
+	                { className: "definition" },
+	                _react2.default.createElement(
+	                  "dt",
+	                  null,
+	                  "Uploads"
+	                ),
+	                _react2.default.createElement(
+	                  "dd",
+	                  null,
+	                  "Average: 95%"
+	                )
+	              )
 	            ),
 	            _react2.default.createElement(
 	              "li",
-	              null,
-	              "Questionaires"
+	              { className: "has-definition" },
+	              _react2.default.createElement(
+	                "dl",
+	                { className: "definition" },
+	                _react2.default.createElement(
+	                  "dt",
+	                  null,
+	                  "Questionaire"
+	                ),
+	                _react2.default.createElement(
+	                  "dd",
+	                  null,
+	                  "Average: 87%"
+	                )
+	              )
 	            )
 	          )
 	        )
@@ -36467,7 +36532,7 @@
 	          _react2.default.createElement(
 	            "p",
 	            { className: "mb025 mt5" },
-	            "Week 1 \u2022 Reading Assignment"
+	            "Week 1 \u2022 Video Assignment"
 	          ),
 	          _react2.default.createElement(
 	            "h1",
