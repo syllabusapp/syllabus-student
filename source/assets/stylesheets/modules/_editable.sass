@@ -6,16 +6,15 @@
 // *************************************
 
 .editable
-  border: none
-  color: $c-gray-dark
-  display: block
-  height: calc(100vh - #{($b-space * 15) + $header-height}
-  outline: none
-  padding: 0
-  resize: none
-  width: 100%
-  p
-    font-size: $t-fontSize-l
+  position: relative
+  &::before
+    border-left: $b-border
+    content: ''
+    height: 100%
+    left: ($b-space * -5)
+    position: absolute
+    top: 0
+    width: 0px
 
 // -------------------------------------
 //   Modifiers
@@ -30,13 +29,27 @@
 // .mv-module.is-state
 
 // -------------------------------------
-//   Context
-// -------------------------------------
-
-// .has-mv-module
-
-// -------------------------------------
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.editable-article
+  border: none
+  color: $c-gray-dark
+  display: block
+  margin-bottom: ($b-space * 5)
+  outline: none
+  padding: 0
+  width: 100%
+  p
+    font-size: $t-fontSize-l
+
+.editable-header
+  align-items: center
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+  margin-bottom: ($b-space * 2.5)
+  .button
+    margin-left: $b-space
+  .heading
+    margin: 0

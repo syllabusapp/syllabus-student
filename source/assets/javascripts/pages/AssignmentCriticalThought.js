@@ -7,9 +7,6 @@ import AssignmentNavigation from "../components/AssignmentNavigation"
 export default class extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      text: "<p>Begin typing your response here...</p>"
-    }
   }
   render() {
     return (
@@ -29,13 +26,27 @@ export default class extends Component {
                 <li>How modern entertainment affects traditional morals</li>
               </ol>
             </div>
-            <div className="g-b g-b--7of12 mt5">
-              <h2 className="heading heading--l">My Response</h2>
+            <div className="g-b g-b--7of12 editable mt5">
+              <header className="editable-header">
+                <h2 className="heading heading--l">My Response</h2>
+                <div>
+                  <button className="button button--gray">Undo</button>
+                  <button className="button">Save</button>
+                </div>
+              </header>
               <Editor
-                className="editable"
-                options={{toolbar: {buttons: ['bold', 'italic', 'underline']}}}
-                tag="article"
-                text={this.state.text} />
+                className="editable-article"
+                options={
+                  {
+                    placeholder: {
+                      text: 'Begin typing your response here...'
+                    },
+                    toolbar: {
+                      buttons: ['bold', 'italic', 'underline']
+                    }
+                  }
+                }
+                tag="article" />
             </div>
           </div>
         </div>

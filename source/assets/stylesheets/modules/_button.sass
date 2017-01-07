@@ -6,7 +6,9 @@
 // *************************************
 
 .button
+  -webkit-appearance: none
   background: $c-blue
+  border: none
   border-radius: 1000px
   color: white
   cursor: pointer
@@ -41,6 +43,13 @@
 // -------------------------------------
 
 // ----- Colors ----- //
+
+.button--gray
+  background: $c-gray-light
+  color: $c-gray
+  &:hover, &:focus
+    background: lighten($c-blue, 35%)
+    color: $c-blue
 
 .button--green
   background: $c-green
