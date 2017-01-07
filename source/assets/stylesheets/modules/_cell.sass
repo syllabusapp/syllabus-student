@@ -20,6 +20,13 @@
 .cell--animate
   animation: slideInUp $b-transition-time 1 ease
 
+.cell--centered
+  align-items: centered
+  display: flex
+  flex-flow: column nowrap
+  height: calc(100vh - #{$header-height})
+  justify-content: centered
+
 .cell--content
   padding-top: $header-height
 
@@ -30,3 +37,6 @@
 
 .cell--m
   max-width: ($b-maxWidth * 0.65)
+
+.cell--l
+  max-width: ($b-maxWidth * 0.8)

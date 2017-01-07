@@ -53,7 +53,7 @@ export default class extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/assignment-reading-inline" className="item is-complete">
+                  <Link to="/assignment-video" className="item is-complete">
                     <span className="item-status"></span>
                     <h3 className="item-title">Video</h3>
                     <p className="item-description">
