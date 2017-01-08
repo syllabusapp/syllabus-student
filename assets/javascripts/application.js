@@ -76,7 +76,11 @@
 
 	var _AssignmentReadingInline2 = _interopRequireDefault(_AssignmentReadingInline);
 
-	var _AssignmentVideo = __webpack_require__(254);
+	var _AssignmentUpload = __webpack_require__(254);
+
+	var _AssignmentUpload2 = _interopRequireDefault(_AssignmentUpload);
+
+	var _AssignmentVideo = __webpack_require__(255);
 
 	var _AssignmentVideo2 = _interopRequireDefault(_AssignmentVideo);
 
@@ -94,6 +98,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _Course2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-critical-thought", component: _AssignmentCriticalThought2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-reading-inline", component: _AssignmentReadingInline2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-upload", component: _AssignmentUpload2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-video", component: _AssignmentVideo2.default })
 	  )
 	), document.getElementById("app"));
@@ -26821,7 +26826,7 @@
 	        _react2.default.createElement(_CourseNavigation2.default, null),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell cell--animate cell--content" },
+	          { className: "cell cell--animate well well--content" },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: "/", className: "link" },
@@ -27013,7 +27018,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-reading-inline", className: "item" },
+	                    { to: "/assignment-upload", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -27661,7 +27666,7 @@
 	        _react2.default.createElement(_CourseNavigation2.default, null),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell cell--animate cell--content" },
+	          { className: "cell cell--animate well well--content" },
 	          _react2.default.createElement(_DashboardSidebar2.default, { currentPage: this.state.page, togglePage: this.togglePage }),
 	          this.state.page == "courses" ? _react2.default.createElement(_CourseList2.default, null) : this.state.page == "documents" ? _react2.default.createElement(_DocumentList2.default, null) : null
 	        )
@@ -28040,7 +28045,7 @@
 	        _react2.default.createElement(_AssignmentNavigation2.default, null),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "cell cell--animate cell--content" },
+	          { className: "cell cell--animate well well--content" },
 	          _react2.default.createElement(
 	            "div",
 	            { className: "g g--spaceBetween" },
@@ -28104,6 +28109,7 @@
 	                )
 	              )
 	            ),
+	            _react2.default.createElement("div", { className: "g-b g-b--1of12 g-b--divider" }),
 	            _react2.default.createElement(
 	              "div",
 	              { className: "g-b g-b--7of12 editable mt5" },
@@ -36385,7 +36391,7 @@
 	          null,
 	          _react2.default.createElement(
 	            "header",
-	            { className: "cell cell--animate cell--content tac" },
+	            { className: "cell cell--animate well well--content tac" },
 	            _react2.default.createElement(
 	              "p",
 	              { className: "mb025 mt5" },
@@ -36527,8 +36533,148 @@
 	        null,
 	        _react2.default.createElement(_AssignmentNavigation2.default, null),
 	        _react2.default.createElement(
+	          "div",
+	          { className: "cell cell--animate cell--l well well--centered well--content" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g g--center g--spaceBetween well-content" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--6of12" },
+	              _react2.default.createElement(
+	                "p",
+	                { className: "mb025 mt5" },
+	                "Week 1 \u2022 Upload Assignment"
+	              ),
+	              _react2.default.createElement(
+	                "h1",
+	                { className: "heading heading--l" },
+	                "Directions"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                "Using Photoshop, take the lessons you learned this week to create a branding system for your local state government. The following elements must be created, combined into a single PDF and\xA0uploaded\xA0here."
+	              ),
+	              _react2.default.createElement(
+	                "ol",
+	                { className: "list list--ordered" },
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "One (1) primary logo and wordmark"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "One (2) secondary logo or wordmark"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "One (1) business card"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "Three (3) branding colors"
+	                ),
+	                _react2.default.createElement(
+	                  "li",
+	                  null,
+	                  "One (1) letterhead"
+	                )
+	              )
+	            ),
+	            _react2.default.createElement("div", { className: "g-b g-b--1of12 g-b--divider" }),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--5of12 mt5" },
+	              _react2.default.createElement(
+	                "h2",
+	                { className: "heading heading--l" },
+	                "Upload File"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                null,
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "label" },
+	                  "Reminder"
+	                ),
+	                " Please upload a PDF document that does not exceed 8mb in\xA0size."
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card card--dashed card--outline" },
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#" },
+	                  "Click or drag-n-drop to upload"
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	var _AssignmentNavigation = __webpack_require__(252);
+
+	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+	  }
+
+	  _createClass(_class, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_AssignmentNavigation2.default, null),
+	        _react2.default.createElement(
 	          "main",
-	          { className: "cell cell--animate cell--content cell--l tac" },
+	          { className: "cell cell--animate cell--l well well--content tac" },
 	          _react2.default.createElement(
 	            "p",
 	            { className: "mb025 mt5" },
