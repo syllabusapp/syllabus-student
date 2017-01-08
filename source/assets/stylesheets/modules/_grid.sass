@@ -37,6 +37,17 @@
 
 // ----- Modifiers ----- //
 
+.g-b--divider
+  position: relative
+  &::before
+    border-left: $b-border
+    content: ''
+    height: 100%
+    left: calc(50% + #{$g-gutter * 0.5})
+    position: absolute
+    top: 0
+    width: 0px
+
 .g-b--spaceBetween
   display: flex
   flex-flow: column nowrap

@@ -26,6 +26,7 @@ export default class extends Component {
                 <li>How modern entertainment affects traditional morals</li>
               </ol>
             </div>
+            <div className="g-b g-b--1of12 g-b--divider"></div>
             <div className="g-b g-b--7of12 editable mt5">
               <header className="editable-header">
                 <h2 className="heading heading--l">My Response</h2>
