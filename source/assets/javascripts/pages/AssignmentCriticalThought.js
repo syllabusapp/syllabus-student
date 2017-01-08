@@ -12,7 +12,7 @@ export default class extends Component {
     return (
       <div>
         <AssignmentNavigation />
-        <div className="cell cell--animate cell--content">
+        <div className="cell cell--animate well well--content">
           <div className="g g--spaceBetween">
             <div className="g-b g-b--4of12">
               <p className="mb025 mt5">Week 1 &bull; Critical Thought Assignment</p>

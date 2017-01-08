@@ -24,7 +24,7 @@ export default class extends Component {
     return (
       <div>
         <CourseNavigation />
-        <div className="cell cell--animate cell--content">
+        <div className="cell cell--animate well well--content">
           <DashboardSidebar currentPage={this.state.page} togglePage={this.togglePage} />
           {this.state.page == "courses" ? <CourseList /> : this.state.page == "documents" ? <DocumentList /> : null}
         </div>

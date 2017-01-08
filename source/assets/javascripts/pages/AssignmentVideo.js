@@ -11,7 +11,7 @@ export default class extends Component {
     return (
       <div>
         <AssignmentNavigation />
-        <main className="cell cell--animate cell--content cell--l tac">
+        <main className="cell cell--animate cell--l well well--content tac">
           <p className="mb025 mt5">Week 1 &bull; Video Assignment</p>
           <h1 className="heading heading--l">Macroeconomics vs. Microeconomics</h1>
           <div className="video">

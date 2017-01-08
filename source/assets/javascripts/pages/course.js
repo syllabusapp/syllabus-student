@@ -12,7 +12,7 @@ export default class extends Component {
     return (
       <div>
         <CourseNavigation />
-        <div className="cell cell--animate cell--content">
+        <div className="cell cell--animate well well--content">
           <Link to="/" className="link">
             <img src="/assets/images/icon-chevron-sm.svg" />
             Back to Dashboard

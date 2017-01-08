@@ -12,7 +12,7 @@ export default class extends Component {
       <div>
         <AssignmentNavigation />
         <main>
-          <header className="cell cell--animate cell--content tac">
+          <header className="cell cell--animate well well--content tac">
             <p className="mb025 mt5">Week 1 &bull; Reading Assignment</p>
             <h1 className="heading heading--l">Macroeconomics vs. Microeconomics</h1>
           </header>
