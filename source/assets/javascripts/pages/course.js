@@ -73,7 +73,7 @@ export default class extends Component {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/assignment-reading-inline" className="item">
+                  <Link to="/assignment-upload" className="item">
                     <span className="item-status"></span>
                     <h3 className="item-title">Upload</h3>
                     <p className="item-description">

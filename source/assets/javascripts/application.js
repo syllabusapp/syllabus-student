@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard.js"
 
 import AssignmentCriticalThought from "./pages/AssignmentCriticalThought"
 import AssignmentReadingInline from "./pages/AssignmentReadingInline"
+import AssignmentUpload from "./pages/AssignmentUpload"
 import AssignmentVideo from "./pages/AssignmentVideo"
 
 ReactDOM.render((
@@ -17,6 +18,7 @@ ReactDOM.render((
       <Route path="course" component={Course} />
       <Route path="assignment-critical-thought" component={AssignmentCriticalThought} />
       <Route path="assignment-reading-inline" component={AssignmentReadingInline} />
+      <Route path="assignment-upload" component={AssignmentUpload} />
       <Route path="assignment-video" component={AssignmentVideo} />
     </Route>
   </Router>
