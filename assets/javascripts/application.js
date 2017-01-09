@@ -36417,7 +36417,7 @@
 	              ),
 	              _react2.default.createElement(
 	                "li",
-	                null,
+	                { className: "list-current" },
 	                "3"
 	              ),
 	              _react2.default.createElement(
@@ -36775,8 +36775,8 @@
 	                "div",
 	                { className: "card card--outline card--upload" },
 	                _react2.default.createElement(
-	                  "a",
-	                  { href: "#" },
+	                  _reactRouter.Link,
+	                  { to: "/assignment-upload" },
 	                  "Click or drag-n-drop here to upload"
 	                )
 	              )
