@@ -26730,7 +26730,7 @@
 	          _react2.default.createElement(
 	            "h1",
 	            { className: "heading heading--l mb1" },
-	            "Syllabus Demo"
+	            "Student Demo"
 	          ),
 	          _react2.default.createElement(
 	            "p",
