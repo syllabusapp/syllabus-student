@@ -19,10 +19,12 @@
 // ----- Misc ----- //
 
 .well--centered
+  align-items: center
   display: flex
-  flex-flow: row nowrap
+  flex-flow: column nowrap
   height: calc(100vh - #{$header-height})
-  overflow-y: scroll
+  justify-content: center
+  padding-bottom: ($b-space * 10)
 
 .well--content
   margin-bottom: 0
@@ -36,11 +38,3 @@
   +respond-to($g-m)
     margin-bottom: ($b-space * 5)
     margin-top: ($b-space * 5)
-
-// -------------------------------------
-//   Scaffolding
-// -------------------------------------
-
-.well-content
-  margin: auto
-  transform: translateX($g-gutter * -1) translateY($g-gutter * -1)

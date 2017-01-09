@@ -22,6 +22,36 @@
   color: $c-gray-dark
   list-style: decimal
 
+.list--stepper
+  display: inline-block
+  list-style: none
+  padding: 0
+  position: relative
+  text-align: center
+  width: auto
+  &::after
+    background: $c-gray-light
+    content: ''
+    height: $b-borderWidth
+    left: $b-space
+    position: absolute
+    right: $b-space
+    top: 50%
+    z-index: 0
+  li
+    align-items: center
+    background: lighten($c-gray-light, 5%)
+    border-radius: 50%
+    border: $b-border
+    display: inline-flex
+    font-weight: 500
+    height: ($b-space * 3)
+    justify-content: center
+    margin: 0 ($b-space * 0.5)
+    position: relative
+    width: ($b-space * 3)
+    z-index: $z-list-stepper
+
 // -------------------------------------
 //   States
 // -------------------------------------
@@ -38,4 +68,10 @@
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.list-complete
+  border-bottom: 2px solid $c-gray
+  border-right: 2px solid $c-gray
+  display: block
+  height: ($b-space * 1)
+  transform: rotate(45deg) translate(-1px, -1px)
+  width: ($b-space * 0.6)

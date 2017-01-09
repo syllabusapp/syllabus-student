@@ -1,0 +1,80 @@
+// *************************************
+//
+//   Radio
+//   -> Radio inputs
+//
+// *************************************
+
+.radio
+  align-items: center
+  cursor: pointer
+  display: flex
+  margin-bottom: ($b-space * 1.5)
+  input
+    cursor: pointer
+    height: ($b-space * 3)
+    margin-right: ($b-space * 1.5)
+    opacity: 1
+    position: relative
+    width: ($b-space * 3)
+    z-index: $z-radio
+    &::after
+      background: white
+      border: $b-border
+      border-radius: 50%
+      bottom: 0
+      content: ''
+      left: 0
+      opacity: 1
+      position: absolute
+      right: 0
+      top: 0
+      z-index: $z-radio + 1
+    &:checked
+      &::after
+        background: $c-green
+        border-color: $c-green
+      &::before
+        border-bottom: 2px solid white
+        border-right: 2px solid white
+        bottom: 0
+        content: ''
+        height: ($b-space * 1.25)
+        left: 0
+        margin: auto
+        position: absolute
+        right: 0
+        top: 0
+        transform: rotate(45deg) translate(-1px, -1px)
+        width: ($b-space * 0.7)
+        z-index: $z-radio + 2
+      + label
+        color: $c-gray-dark
+  label
+    cursor: pointer
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-radios
+  margin-top: ($b-space * 2.5)
+  text-align: left
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// .mv-module-submodules
