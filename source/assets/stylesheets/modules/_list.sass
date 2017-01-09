@@ -52,6 +52,19 @@
     width: ($b-space * 3)
     z-index: $z-list-stepper
 
+.list--underlined
+  list-style: none
+  padding: 0
+  text-align: center
+  li
+    border-bottom: $b-border
+    margin-bottom: ($b-space * 1.5)
+    padding-bottom: ($b-space * 1.5)
+    &:last-child
+      border-bottom: none
+      margin-bottom: 0
+      padding-bottom: 0
+
 // -------------------------------------
 //   States
 // -------------------------------------
