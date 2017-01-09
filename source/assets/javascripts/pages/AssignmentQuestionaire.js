@@ -17,7 +17,7 @@ export default class extends Component {
             <ol className="list list--stepper">
               <li><span className="list-complete"></span></li>
               <li><span className="list-complete"></span></li>
-              <li>3</li>
+              <li className="list-current">3</li>
               <li>4</li>
               <li>5</li>
               <li>6</li>

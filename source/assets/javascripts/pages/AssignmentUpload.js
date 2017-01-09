@@ -30,7 +30,7 @@ export default class extends Component {
               <h2 className="heading heading--l">Upload File</h2>
               <p><span className="label">Reminder</span> Please upload a PDF document that does not exceed 8mb in&nbsp;size.</p>
               <div className="card card--outline card--upload">
-                <a href="#">Click or drag-n-drop here to upload</a>
+                <Link to="/assignment-upload">Click or drag-n-drop here to upload</Link>
               </div>
             </div>
           </div>
