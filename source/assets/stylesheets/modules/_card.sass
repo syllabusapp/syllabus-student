@@ -15,17 +15,14 @@
 //   Modifiers
 // -------------------------------------
 
-.card--dashed
 .card--outline,
+.card--upload
   background: white
   border-radius: $b-borderRadius
   color: $c-gray-dark
   font-size: ($t-fontSize * 0.875)
   margin: ($b-space * 1.5) 0
   padding: ($b-space * 1.5) ($b-space * 2)
-
-.card--dashed
-  border: 2px dashed $c-gray-light
 
 .card--row
   align-items: center
@@ -34,6 +31,11 @@
   justify-content: space-between
   margin-bottom: 0
   padding: ($b-space * 2)
+
+.card--upload
+  border: 2px dashed $c-gray-light
+  padding: ($b-space * 2) $b-space
+  text-align: center
 
 // -------------------------------------
 //   States
