@@ -36557,7 +36557,7 @@
 	          null,
 	          _react2.default.createElement(
 	            "header",
-	            { className: "cell cell--animate well well--content tac" },
+	            { className: "cell cell--animate well well--content pb1 pt1 tac" },
 	            _react2.default.createElement(
 	              "p",
 	              { className: "mb025 mt5" },
