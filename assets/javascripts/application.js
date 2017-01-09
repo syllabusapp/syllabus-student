@@ -72,15 +72,19 @@
 
 	var _AssignmentCriticalThought2 = _interopRequireDefault(_AssignmentCriticalThought);
 
-	var _AssignmentReadingInline = __webpack_require__(253);
+	var _AssignmentQuestionaire = __webpack_require__(253);
+
+	var _AssignmentQuestionaire2 = _interopRequireDefault(_AssignmentQuestionaire);
+
+	var _AssignmentReadingInline = __webpack_require__(254);
 
 	var _AssignmentReadingInline2 = _interopRequireDefault(_AssignmentReadingInline);
 
-	var _AssignmentUpload = __webpack_require__(254);
+	var _AssignmentUpload = __webpack_require__(255);
 
 	var _AssignmentUpload2 = _interopRequireDefault(_AssignmentUpload);
 
-	var _AssignmentVideo = __webpack_require__(255);
+	var _AssignmentVideo = __webpack_require__(256);
 
 	var _AssignmentVideo2 = _interopRequireDefault(_AssignmentVideo);
 
@@ -97,6 +101,7 @@
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Dashboard2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "course", component: _Course2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-critical-thought", component: _AssignmentCriticalThought2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-questionaire", component: _AssignmentQuestionaire2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-reading-inline", component: _AssignmentReadingInline2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-upload", component: _AssignmentUpload2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "assignment-video", component: _AssignmentVideo2.default })
@@ -26637,7 +26642,7 @@
 
 	    _this.hideWelcome = _this.hideWelcome.bind(_this);
 	    _this.state = {
-	      welcome: false
+	      welcome: true
 	    };
 	    return _this;
 	  }
@@ -26725,7 +26730,7 @@
 	          _react2.default.createElement(
 	            "h1",
 	            { className: "heading heading--l mb1" },
-	            "Clickable things!"
+	            "Syllabus Demo"
 	          ),
 	          _react2.default.createElement(
 	            "p",
@@ -26740,11 +26745,11 @@
 	              { className: "cell cell--s" },
 	              _react2.default.createElement(
 	                "ul",
-	                { className: "list" },
+	                { className: "list list--underlined" },
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "This demo covers the main features of the student platform."
+	                  "This demo covers the main features of the student platform. Teacher and administrator demos coming soon!"
 	                ),
 	                _react2.default.createElement(
 	                  "li",
@@ -27048,7 +27053,7 @@
 	                  null,
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/assignment-reading-inline", className: "item" },
+	                    { to: "/assignment-questionaire", className: "item" },
 	                    _react2.default.createElement("span", { className: "item-status" }),
 	                    _react2.default.createElement(
 	                      "h3",
@@ -36387,6 +36392,167 @@
 	        null,
 	        _react2.default.createElement(_AssignmentNavigation2.default, null),
 	        _react2.default.createElement(
+	          "div",
+	          { className: "cell cell--animate cell--l well well--centered well--content" },
+	          _react2.default.createElement(
+	            "header",
+	            { className: "cell cell--m tac" },
+	            _react2.default.createElement(
+	              "p",
+	              { className: "mb0 mt5" },
+	              "Week 1 \u2022 Questionaire Assignment"
+	            ),
+	            _react2.default.createElement(
+	              "ol",
+	              { className: "list list--stepper" },
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement("span", { className: "list-complete" })
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement("span", { className: "list-complete" })
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "3"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "4"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "5"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "6"
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                "7"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "h1",
+	              { className: "heading heading--l mb1" },
+	              "Which of the following is a central issue in macroeconomics?"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Only one (1) answer is needed for a correct response."
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "has-radios" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "radio" },
+	              _react2.default.createElement("input", { type: "radio", id: "answer-a", name: "question-1" }),
+	              _react2.default.createElement(
+	                "label",
+	                { htmlFor: "answer-a" },
+	                "The deregulation of the banking industry"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "radio" },
+	              _react2.default.createElement("input", { type: "radio", id: "answer-b", name: "question-1" }),
+	              _react2.default.createElement(
+	                "label",
+	                { htmlFor: "answer-b" },
+	                "Inflation of prescription drug prices"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "radio" },
+	              _react2.default.createElement("input", { type: "radio", id: "answer-c", name: "question-1" }),
+	              _react2.default.createElement(
+	                "label",
+	                { htmlFor: "answer-c" },
+	                "The effect of excise taxes on consumers' buying patterns"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "radio" },
+	              _react2.default.createElement("input", { type: "radio", id: "answer-d", name: "question-1" }),
+	              _react2.default.createElement(
+	                "label",
+	                { htmlFor: "answer-d" },
+	                "None of the above"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	var _AssignmentNavigation = __webpack_require__(252);
+
+	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+	  }
+
+	  _createClass(_class, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(_AssignmentNavigation2.default, null),
+	        _react2.default.createElement(
 	          "main",
 	          null,
 	          _react2.default.createElement(
@@ -36487,7 +36653,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36607,11 +36773,11 @@
 	              ),
 	              _react2.default.createElement(
 	                "div",
-	                { className: "card card--dashed card--outline" },
+	                { className: "card card--outline card--upload" },
 	                _react2.default.createElement(
 	                  "a",
 	                  { href: "#" },
-	                  "Click or drag-n-drop to upload"
+	                  "Click or drag-n-drop here to upload"
 	                )
 	              )
 	            )
@@ -36627,7 +36793,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
