@@ -27985,9 +27985,237 @@
 	          "Courses"
 	        ),
 	        _react2.default.createElement(
-	          "h2",
-	          { className: "heading heading--s" },
-	          "School"
+	          "div",
+	          { className: "g" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g-b g-b--4of12" },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/document", className: "card card--document" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-content" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-folder.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-footer" },
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  "Macroeconomics & Microeconomics"
+	                ),
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "12 Files"
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g-b g-b--4of12" },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/document", className: "card card--document" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-content" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-folder.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-footer" },
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  "Macroeconomics & Microeconomics"
+	                ),
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "12 Files"
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g-b g-b--4of12" },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/document", className: "card card--document" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-content" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-folder.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-footer" },
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  "Macroeconomics & Microeconomics"
+	                ),
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "12 Files"
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g-b g-b--4of12" },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/document", className: "card card--document" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-content" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-folder-warning.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-footer" },
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  "Macroeconomics & Microeconomics"
+	                ),
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "12 Files"
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g-b g-b--4of12" },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/document", className: "card card--document" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-content" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-folder.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "card-footer" },
+	                _react2.default.createElement(
+	                  "p",
+	                  null,
+	                  "Macroeconomics & Microeconomics"
+	                ),
+	                _react2.default.createElement(
+	                  "small",
+	                  null,
+	                  "12 Files"
+	                )
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "well well--l" },
+	          _react2.default.createElement(
+	            "h2",
+	            { className: "heading heading--s" },
+	            "School"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "g" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/document", className: "card card--document" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-content" },
+	                  _react2.default.createElement("img", { src: "/assets/images/icon-folder.svg" })
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-footer" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    null,
+	                    "Macroeconomics & Microeconomics"
+	                  ),
+	                  _react2.default.createElement(
+	                    "small",
+	                    null,
+	                    "12 Files"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/document", className: "card card--document" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-content" },
+	                  _react2.default.createElement("img", { src: "/assets/images/icon-folder-warning.svg" })
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-footer" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    null,
+	                    "Macroeconomics & Microeconomics"
+	                  ),
+	                  _react2.default.createElement(
+	                    "small",
+	                    null,
+	                    "12 Files"
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "g-b g-b--4of12" },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/document", className: "card card--document" },
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-content" },
+	                  _react2.default.createElement("img", { src: "/assets/images/icon-folder.svg" })
+	                ),
+	                _react2.default.createElement(
+	                  "div",
+	                  { className: "card-footer" },
+	                  _react2.default.createElement(
+	                    "p",
+	                    null,
+	                    "Macroeconomics & Microeconomics"
+	                  ),
+	                  _react2.default.createElement(
+	                    "small",
+	                    null,
+	                    "12 Files"
+	                  )
+	                )
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }
