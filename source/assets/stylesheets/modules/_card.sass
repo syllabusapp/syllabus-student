@@ -11,9 +11,26 @@
   margin-bottom: ($b-space * 5)
   overflow: hidden
 
+a.card:hover
+  .card-footer
+    p
+      color: $c-blue !important
+
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
+
+.card--document
+  background: white
+  border: $b-border
+  display: block
+  margin-bottom: 0
+  margin-top: ($b-space * 3)
+  .card-content
+    align-items: center
+    display: flex
+    height: ($b-space * 16)
+    justify-content: center
 
 .card--outline,
 .card--upload
@@ -64,6 +81,20 @@
   height: 0px
   padding: 0 ($b-space * 2)
   transition: all ($b-transition-time * 0.5) ease-out
+
+.card-footer
+  background: lighten($c-gray-light, 5%)
+  border-top: $b-border
+  line-height: 1.125
+  padding: ($b-space * 2)
+  p
+    color: $c-gray-dark
+    margin: 0
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+  small
+    margin: 0
 
 .card-header
   background: $c-gray-dark

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="82px" viewBox="0 0 100 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Student-–-Course/Documents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="student-documents" transform="translate(-494.000000, -235.000000)" fill="#93D0AA">
+            <g id="Course-Files" transform="translate(412.000000, 139.000000)">
+                <g id="1" transform="translate(0.000000, 56.000000)">
+                    <path d="M82,55.0078125 C82,53.3466435 83.3380125,52 84.9928014,52 L179.007199,52 C180.660077,52 182,53.3358366 182,55.0078125 L182,116.993865 C182,119.758677 179.77115,122 177.006771,122 L86.9932291,122 C84.2355448,122 82,119.76988 82,116.993865 L82,55.0078125 Z M87,47.5 C87,46.1192881 88.1216417,45 89.5010486,45 L174.498951,45 C175.880242,45 177,46.1096621 177,47.5 L177,50 L87,50 L87,47.5 Z M97,45 L99.4842816,40.8595306 C99.769105,40.384825 100.447469,40 101.000695,40 L122.999305,40 C123.551974,40 124.235405,40.3923416 124.515718,40.8595306 L127,45 L97,45 Z" id="Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
