@@ -64,27 +64,27 @@
 
 	var _Course2 = _interopRequireDefault(_Course);
 
-	var _Dashboard = __webpack_require__(242);
+	var _Dashboard = __webpack_require__(243);
 
 	var _Dashboard2 = _interopRequireDefault(_Dashboard);
 
-	var _AssignmentCriticalThought = __webpack_require__(246);
+	var _AssignmentCriticalThought = __webpack_require__(248);
 
 	var _AssignmentCriticalThought2 = _interopRequireDefault(_AssignmentCriticalThought);
 
-	var _AssignmentQuestionaire = __webpack_require__(253);
+	var _AssignmentQuestionaire = __webpack_require__(255);
 
 	var _AssignmentQuestionaire2 = _interopRequireDefault(_AssignmentQuestionaire);
 
-	var _AssignmentReadingInline = __webpack_require__(254);
+	var _AssignmentReadingInline = __webpack_require__(256);
 
 	var _AssignmentReadingInline2 = _interopRequireDefault(_AssignmentReadingInline);
 
-	var _AssignmentUpload = __webpack_require__(255);
+	var _AssignmentUpload = __webpack_require__(257);
 
 	var _AssignmentUpload2 = _interopRequireDefault(_AssignmentUpload);
 
-	var _AssignmentVideo = __webpack_require__(256);
+	var _AssignmentVideo = __webpack_require__(258);
 
 	var _AssignmentVideo2 = _interopRequireDefault(_AssignmentVideo);
 
@@ -26642,7 +26642,7 @@
 
 	    _this.hideWelcome = _this.hideWelcome.bind(_this);
 	    _this.state = {
-	      welcome: true
+	      welcome: false
 	    };
 	    return _this;
 	  }
@@ -27383,11 +27383,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _CourseChat = __webpack_require__(240);
+	var _Breadcrumbs = __webpack_require__(240);
+
+	var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
+
+	var _CourseChat = __webpack_require__(241);
 
 	var _CourseChat2 = _interopRequireDefault(_CourseChat);
 
-	var _CourseLogo = __webpack_require__(241);
+	var _CourseLogo = __webpack_require__(242);
 
 	var _CourseLogo2 = _interopRequireDefault(_CourseLogo);
 
@@ -27408,6 +27412,7 @@
 	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 
 	    _this.toggleChat = _this.toggleChat.bind(_this);
+	    _this.togglePage = _this.togglePage.bind(_this);
 	    _this.state = {
 	      chat: false
 	    };
@@ -27422,6 +27427,11 @@
 	          chat: !prevState.chat
 	        };
 	      });
+	    }
+	  }, {
+	    key: "togglePage",
+	    value: function togglePage(value) {
+	      this.props.togglePage(value);
 	    }
 	  }, {
 	    key: "render",
@@ -27441,23 +27451,28 @@
 	              _react2.default.createElement(_CourseLogo2.default, null)
 	            ),
 	            _react2.default.createElement(
-	              "nav",
+	              "div",
 	              { className: "header-items g-b g-b--9of12" },
+	              _react2.default.createElement(_Breadcrumbs2.default, { page: this.props.page, togglePage: this.togglePage }),
 	              _react2.default.createElement(
-	                "a",
-	                { onClick: this.toggleChat, className: "button button--heading" },
+	                "nav",
+	                null,
 	                _react2.default.createElement(
-	                  "span",
-	                  null,
-	                  "3"
+	                  "a",
+	                  { onClick: this.toggleChat, className: "button button--heading" },
+	                  _react2.default.createElement(
+	                    "span",
+	                    null,
+	                    "3"
+	                  ),
+	                  " Messages"
 	                ),
-	                " Messages"
-	              ),
-	              _react2.default.createElement(
-	                "a",
-	                { href: "#", className: "button button--heading button--outline" },
-	                _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
-	                "My Account"
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "button button--heading button--outline" },
+	                  _react2.default.createElement("img", { src: "https://unsplash.it/50/50" }),
+	                  "My Account"
+	                )
 	              )
 	            )
 	          )
@@ -27474,6 +27489,102 @@
 
 /***/ },
 /* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this.togglePage = _this.togglePage.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(_class, [{
+	    key: "togglePage",
+	    value: function togglePage(value) {
+	      this.props.togglePage(value);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      console.log(this.props.page);
+	      if (this.props.page == "courses" || this.props.page == "documents") {
+	        return _react2.default.createElement(
+	          "ol",
+	          { className: "breadcrumbs" },
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "heading" },
+	              this.props.page == "courses" ? "Courses" : this.props.page == "documents" ? "Documents" : null
+	            )
+	          )
+	        );
+	      } else if (this.props.page == "document-list") {
+	        return _react2.default.createElement(
+	          "ol",
+	          { className: "breadcrumbs" },
+	          _react2.default.createElement(
+	            "li",
+	            { className: "breadcrumbs-link" },
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.togglePage.bind(this, "documents"), className: "heading heading--link" },
+	              _react2.default.createElement("span", { className: "breadcrumbs-return" }),
+	              "Documents"
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "h3",
+	              { className: "heading" },
+	              "Sample Folder"
+	            )
+	          )
+	        );
+	      } else {
+	        return _react2.default.createElement("p", null);
+	      }
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27547,7 +27658,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27598,7 +27709,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27615,7 +27726,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _CourseList = __webpack_require__(243);
+	var _CourseList = __webpack_require__(244);
 
 	var _CourseList2 = _interopRequireDefault(_CourseList);
 
@@ -27623,11 +27734,15 @@
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
 
-	var _DashboardSidebar = __webpack_require__(244);
+	var _DashboardSidebar = __webpack_require__(245);
 
 	var _DashboardSidebar2 = _interopRequireDefault(_DashboardSidebar);
 
-	var _DocumentList = __webpack_require__(245);
+	var _DocumentFolders = __webpack_require__(246);
+
+	var _DocumentFolders2 = _interopRequireDefault(_DocumentFolders);
+
+	var _DocumentList = __webpack_require__(247);
 
 	var _DocumentList2 = _interopRequireDefault(_DocumentList);
 
@@ -27657,7 +27772,6 @@
 	  _createClass(_class, [{
 	    key: "togglePage",
 	    value: function togglePage(value) {
-	      console.log(value);
 	      this.setState({
 	        page: value
 	      });
@@ -27668,12 +27782,12 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        _react2.default.createElement(_CourseNavigation2.default, null),
+	        _react2.default.createElement(_CourseNavigation2.default, { page: this.state.page, togglePage: this.togglePage }),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "cell cell--animate well well--content" },
 	          _react2.default.createElement(_DashboardSidebar2.default, { currentPage: this.state.page, togglePage: this.togglePage }),
-	          this.state.page == "courses" ? _react2.default.createElement(_CourseList2.default, null) : this.state.page == "documents" ? _react2.default.createElement(_DocumentList2.default, null) : null
+	          this.state.page == "courses" ? _react2.default.createElement(_CourseList2.default, null) : this.state.page == "documents" ? _react2.default.createElement(_DocumentFolders2.default, { togglePage: this.togglePage }) : this.state.page == "document-list" ? _react2.default.createElement(_DocumentList2.default, null) : null
 	        )
 	      );
 	    }
@@ -27685,7 +27799,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27832,7 +27946,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27939,7 +28053,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27953,8 +28067,6 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(179);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27974,6 +28086,11 @@
 	  }
 
 	  _createClass(_class, [{
+	    key: "togglePage",
+	    value: function togglePage(value) {
+	      this.props.togglePage(value);
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -27991,8 +28108,8 @@
 	            "div",
 	            { className: "g-b g-b--4of12" },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: "/document", className: "card card--document" },
+	              "a",
+	              { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "card-content" },
@@ -28018,8 +28135,8 @@
 	            "div",
 	            { className: "g-b g-b--4of12" },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: "/document", className: "card card--document" },
+	              "a",
+	              { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "card-content" },
@@ -28045,8 +28162,8 @@
 	            "div",
 	            { className: "g-b g-b--4of12" },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: "/document", className: "card card--document" },
+	              "a",
+	              { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "card-content" },
@@ -28072,8 +28189,8 @@
 	            "div",
 	            { className: "g-b g-b--4of12" },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: "/document", className: "card card--document" },
+	              "a",
+	              { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "card-content" },
@@ -28099,8 +28216,8 @@
 	            "div",
 	            { className: "g-b g-b--4of12" },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: "/document", className: "card card--document" },
+	              "a",
+	              { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	              _react2.default.createElement(
 	                "div",
 	                { className: "card-content" },
@@ -28138,8 +28255,8 @@
 	              "div",
 	              { className: "g-b g-b--4of12" },
 	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: "/document", className: "card card--document" },
+	                "a",
+	                { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "card-content" },
@@ -28165,8 +28282,8 @@
 	              "div",
 	              { className: "g-b g-b--4of12" },
 	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: "/document", className: "card card--document" },
+	                "a",
+	                { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "card-content" },
@@ -28192,8 +28309,8 @@
 	              "div",
 	              { className: "g-b g-b--4of12" },
 	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: "/document", className: "card card--document" },
+	                "a",
+	                { onClick: this.togglePage.bind(this, "document-list"), className: "card card--document" },
 	                _react2.default.createElement(
 	                  "div",
 	                  { className: "card-content" },
@@ -28227,7 +28344,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28244,11 +28361,139 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _reactMediumEditor = __webpack_require__(247);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class() {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	  }
+
+	  _createClass(_class, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "main",
+	        { className: "content" },
+	        _react2.default.createElement(
+	          "h3",
+	          { className: "heading heading--s" },
+	          "Files"
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "has-items" },
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/assignment-critical-thought", className: "item" },
+	              _react2.default.createElement(
+	                "span",
+	                { className: "item-status" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-warning.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Student Agreement"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "25 Pages\xA0\xA0\u2022\xA0\xA03MB"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/assignment-critical-thought", className: "item" },
+	              _react2.default.createElement(
+	                "span",
+	                { className: "item-status" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-warning.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Student Agreement"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "25 Pages\xA0\xA0\u2022\xA0\xA03MB"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/assignment-critical-thought", className: "item" },
+	              _react2.default.createElement(
+	                "span",
+	                { className: "item-status" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-warning.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Student Agreement"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "25 Pages\xA0\xA0\u2022\xA0\xA03MB"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(179);
+
+	var _reactMediumEditor = __webpack_require__(249);
 
 	var _reactMediumEditor2 = _interopRequireDefault(_reactMediumEditor);
 
-	var _AssignmentNavigation = __webpack_require__(252);
+	var _AssignmentNavigation = __webpack_require__(254);
 
 	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
 
@@ -28393,14 +28638,14 @@
 	exports.default = _class;
 
 /***/ },
-/* 247 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(248);
+	module.exports = __webpack_require__(250);
 
 
 /***/ },
-/* 248 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28411,11 +28656,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	var _objectAssign = __webpack_require__(249);
+	var _objectAssign = __webpack_require__(251);
 
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
-	var _blacklist = __webpack_require__(250);
+	var _blacklist = __webpack_require__(252);
 
 	var _blacklist2 = _interopRequireDefault(_blacklist);
 
@@ -28436,7 +28681,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	if (typeof document !== 'undefined') {
-	  var MediumEditor = __webpack_require__(251);
+	  var MediumEditor = __webpack_require__(253);
 	}
 
 	var ReactMediumEditor = function (_React$Component) {
@@ -28517,7 +28762,7 @@
 	exports.default = ReactMediumEditor;
 
 /***/ },
-/* 249 */
+/* 251 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28606,7 +28851,7 @@
 
 
 /***/ },
-/* 250 */
+/* 252 */
 /***/ function(module, exports) {
 
 	module.exports = function blacklist (src) {
@@ -28632,7 +28877,7 @@
 
 
 /***/ },
-/* 251 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process) {/*global self, document, DOMException */
@@ -36472,7 +36717,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 252 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36489,7 +36734,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _CourseLogo = __webpack_require__(241);
+	var _CourseLogo = __webpack_require__(242);
 
 	var _CourseLogo2 = _interopRequireDefault(_CourseLogo);
 
@@ -36554,7 +36799,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "nav",
-	              { className: "header-items g-b g-b--4of12" },
+	              { className: "header-continue g-b g-b--4of12" },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: "/course", className: "button button--green" },
@@ -36574,7 +36819,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 253 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36591,7 +36836,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _AssignmentNavigation = __webpack_require__(252);
+	var _AssignmentNavigation = __webpack_require__(254);
 
 	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
 
@@ -36735,7 +36980,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 254 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36752,7 +36997,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _AssignmentNavigation = __webpack_require__(252);
+	var _AssignmentNavigation = __webpack_require__(254);
 
 	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
 
@@ -36881,7 +37126,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 255 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -36898,7 +37143,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _AssignmentNavigation = __webpack_require__(252);
+	var _AssignmentNavigation = __webpack_require__(254);
 
 	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
 
@@ -37021,7 +37266,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 256 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37038,7 +37283,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _AssignmentNavigation = __webpack_require__(252);
+	var _AssignmentNavigation = __webpack_require__(254);
 
 	var _AssignmentNavigation2 = _interopRequireDefault(_AssignmentNavigation);
 
