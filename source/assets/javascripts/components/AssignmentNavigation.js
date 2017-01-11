@@ -30,7 +30,7 @@ export default class extends Component {
             <div className="g-b g-b--4of12 tac">
               <Logo centered />
             </div>
-            <nav className="header-items g-b g-b--4of12">
+            <nav className="header-continue g-b g-b--4of12">
               <Link to="/course" className="button button--green">Complete &amp; Continue</Link>
             </nav>
           </div>
