@@ -25,7 +25,17 @@ export default class extends Component {
       )
     } else if (this.props.page == "document-list") {
       return (
-        <a onClick={this.togglePage.bind(this, "documents")}>Back</a>
+        <ol className="breadcrumbs">
+          <li className="breadcrumbs-link">
+            <a onClick={this.togglePage.bind(this, "documents")} className="heading heading--link">
+              <span className="breadcrumbs-return"></span>
+              Documents
+            </a>
+          </li>
+          <li>
+            <h3 className="heading">Sample Folder</h3>
+          </li>
+        </ol>
       )
     } else {
       return <p></p>
