@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "react-router"
 
 export default class extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ export default class extends Component {
         <h2 className="heading heading--s">Courses</h2>
         <div className="g">
           <div className="g-b g-b--4of12">
-            <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+            <Link to="/document-list" className="card card--document">
               <div className="card-content">
                 <img src="/assets/images/icon-folder.svg" />
               </div>
@@ -21,10 +22,10 @@ export default class extends Component {
                 <p>Macroeconomics & Microeconomics</p>
                 <small>12 Files</small>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="g-b g-b--4of12">
-            <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+            <Link to="/document-list" className="card card--document">
               <div className="card-content">
                 <img src="/assets/images/icon-folder.svg" />
               </div>
@@ -32,10 +33,10 @@ export default class extends Component {
                 <p>Macroeconomics & Microeconomics</p>
                 <small>12 Files</small>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="g-b g-b--4of12">
-            <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+            <Link to="/document-list" className="card card--document">
               <div className="card-content">
                 <img src="/assets/images/icon-folder.svg" />
               </div>
@@ -43,10 +44,10 @@ export default class extends Component {
                 <p>Macroeconomics & Microeconomics</p>
                 <small>12 Files</small>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="g-b g-b--4of12">
-            <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+            <Link to="/document-list" className="card card--document">
               <div className="card-content">
                 <img src="/assets/images/icon-folder-warning.svg" />
               </div>
@@ -54,10 +55,10 @@ export default class extends Component {
                 <p>Macroeconomics & Microeconomics</p>
                 <small>12 Files</small>
               </div>
-            </a>
+            </Link>
           </div>
           <div className="g-b g-b--4of12">
-            <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+            <Link to="/document-list" className="card card--document">
               <div className="card-content">
                 <img src="/assets/images/icon-folder.svg" />
               </div>
@@ -65,14 +66,14 @@ export default class extends Component {
                 <p>Macroeconomics & Microeconomics</p>
                 <small>12 Files</small>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="well well--l">
           <h2 className="heading heading--s">School</h2>
           <div className="g">
             <div className="g-b g-b--4of12">
-              <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+              <Link to="/document-list" className="card card--document">
                 <div className="card-content">
                   <img src="/assets/images/icon-folder.svg" />
                 </div>
@@ -80,10 +81,10 @@ export default class extends Component {
                   <p>Macroeconomics & Microeconomics</p>
                   <small>12 Files</small>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="g-b g-b--4of12">
-              <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+              <Link to="/document-list" className="card card--document">
                 <div className="card-content">
                   <img src="/assets/images/icon-folder-warning.svg" />
                 </div>
@@ -91,10 +92,10 @@ export default class extends Component {
                   <p>Macroeconomics & Microeconomics</p>
                   <small>12 Files</small>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="g-b g-b--4of12">
-              <a onClick={this.togglePage.bind(this, "document-list")} className="card card--document">
+              <Link to="/document-list" className="card card--document">
                 <div className="card-content">
                   <img src="/assets/images/icon-folder.svg" />
                 </div>
@@ -102,7 +103,7 @@ export default class extends Component {
                   <p>Macroeconomics & Microeconomics</p>
                   <small>12 Files</small>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

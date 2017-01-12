@@ -14,7 +14,6 @@
 var gulp            = require("gulp");
 var autoprefixer    = require("gulp-autoprefixer");
 var connect         = require("gulp-connect");
-var data            = require("gulp-data");
 var file            = require("gulp-file");
 var ghPages         = require("gulp-gh-pages");
 var nunjucksRender  = require("gulp-nunjucks-render");
@@ -38,6 +37,13 @@ gulp.task("connect", function() {
 // -------------------------------------
 
 // ----- Assets ----- //
+
+gulp.task("files", function() {
+  gulp.src("./source/assets/files/**/*")
+    .pipe(plumber())
+    .pipe(gulp.dest("./build/assets/files/"))
+    .pipe(connect.reload());
+});
 
 gulp.task("images", function() {
   gulp.src("./source/assets/images/**/*")
@@ -66,9 +72,6 @@ gulp.task("scripts", function() {
 gulp.task("template", function() {
   gulp.src("./source/**/*.html")
     .pipe(plumber())
-    .pipe(data(function() {
-      return require('./data/data.json')
-    }))
     .pipe(nunjucksRender({
       path: ["./source/shared"]
     }))
@@ -76,8 +79,9 @@ gulp.task("template", function() {
     .pipe(connect.reload());
 });
 
-gulp.task("watch", ["images", "styles", "scripts", "template"], function() {
+gulp.task("watch", ["files", "images", "styles", "scripts", "template"], function() {
   gulp.watch(["./source/**/*.html"], ["template"]);
+  gulp.watch(["./source/assets/files/**/*"], ["files"]);
   gulp.watch(["./source/assets/images/**/*"], ["images"]);
   gulp.watch(["./source/assets/javascripts/**/*"], ["scripts"]);
   gulp.watch(["./source/assets/stylesheets/**/*"], ["styles"]);

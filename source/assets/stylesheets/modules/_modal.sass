@@ -37,8 +37,10 @@
 .modal.is-exiting
   .modal-content
     animation: slideRight ($b-transition-time * 0.5) 1 ease-out
+    animation-fill-mode: forwards
   .modal-overlay
     animation: fadeOut ($b-transition-time * 0.5) 1 ease-out
+    animation-fill-mode: forwards
 
 // -------------------------------------
 //   Context

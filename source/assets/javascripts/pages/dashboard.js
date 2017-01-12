@@ -29,7 +29,6 @@ export default class extends Component {
           {
             this.state.page == "courses" ? <CourseList /> :
             this.state.page == "documents" ? <DocumentFolders togglePage={this.togglePage} /> :
-            this.state.page == "document-list" ? <DocumentList /> :
             null
           }
         </div>

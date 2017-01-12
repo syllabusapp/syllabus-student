@@ -11,6 +11,8 @@ import AssignmentQuestionaire from "./pages/AssignmentQuestionaire"
 import AssignmentReadingInline from "./pages/AssignmentReadingInline"
 import AssignmentUpload from "./pages/AssignmentUpload"
 import AssignmentVideo from "./pages/AssignmentVideo"
+import Document from "./pages/Document"
+import Documents from "./pages/Documents"
 
 ReactDOM.render((
   <Router history={hashHistory} onUpdate={() => window.scrollTo(0, 0)}>
@@ -22,6 +24,8 @@ ReactDOM.render((
       <Route path="assignment-reading-inline" component={AssignmentReadingInline} />
       <Route path="assignment-upload" component={AssignmentUpload} />
       <Route path="assignment-video" component={AssignmentVideo} />
+      <Route path="document" component={Document} />
+      <Route path="document-list" component={Documents} />
     </Route>
   </Router>
   ), document.getElementById("app")

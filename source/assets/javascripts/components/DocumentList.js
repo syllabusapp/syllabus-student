@@ -8,7 +8,7 @@ export default class extends Component {
         <h3 className="heading heading--s">Files</h3>
         <ul className="has-items">
           <li>
-            <Link to="/assignment-critical-thought" className="item">
+            <Link to="/document" className="item">
               <span className="item-status">
                 <img src="/assets/images/icon-warning.svg" />
               </span>
@@ -17,7 +17,7 @@ export default class extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/assignment-critical-thought" className="item">
+            <Link to="/document" className="item">
               <span className="item-status">
                 <img src="/assets/images/icon-warning.svg" />
               </span>
@@ -26,7 +26,7 @@ export default class extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/assignment-critical-thought" className="item">
+            <Link to="/document" className="item">
               <span className="item-status">
                 <img src="/assets/images/icon-warning.svg" />
               </span>
