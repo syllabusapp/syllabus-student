@@ -27432,6 +27432,13 @@
 	  _createClass(_class, [{
 	    key: "toggleChat",
 	    value: function toggleChat() {
+	      if (document.body.classList.contains("oh")) {
+	        console.log("remove class");
+	        document.body.classList = "";
+	      } else {
+	        console.log("add class");
+	        document.body.classList = "oh";
+	      }
 	      this.setState(function (prevState) {
 	        return {
 	          chat: !prevState.chat
