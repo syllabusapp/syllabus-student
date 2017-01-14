@@ -26652,7 +26652,7 @@
 
 	    _this.hideWelcome = _this.hideWelcome.bind(_this);
 	    _this.state = {
-	      welcome: false
+	      welcome: true
 	    };
 	    return _this;
 	  }
@@ -27651,11 +27651,103 @@
 	        _react2.default.createElement("div", { onClick: this.toggleChat, className: "modal-overlay" }),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "modal-content" },
+	          { className: "chat modal-content" },
 	          _react2.default.createElement(
-	            "h1",
-	            { className: "heading" },
-	            "Messages"
+	            "div",
+	            { className: "chat-header" },
+	            _react2.default.createElement(
+	              "div",
+	              null,
+	              _react2.default.createElement(
+	                "h1",
+	                { className: "heading" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "label label--number" },
+	                  "3"
+	                ),
+	                "Messages"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              null,
+	              _react2.default.createElement(
+	                "button",
+	                { className: "chat-new" },
+	                "\xD7"
+	              ),
+	              _react2.default.createElement(
+	                "button",
+	                { onClick: this.toggleChat, className: "chat-close" },
+	                "\xD7"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "chat-content" },
+	            _react2.default.createElement(
+	              "ul",
+	              { className: "has-items" },
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "item item--chat is-new" },
+	                  _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	                  _react2.default.createElement(
+	                    "h3",
+	                    { className: "item-title" },
+	                    "John Wilson"
+	                  ),
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "item-description" },
+	                    "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "item item--chat is-new" },
+	                  _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	                  _react2.default.createElement(
+	                    "h3",
+	                    { className: "item-title" },
+	                    "John Wilson"
+	                  ),
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "item-description" },
+	                    "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "li",
+	                null,
+	                _react2.default.createElement(
+	                  "a",
+	                  { href: "#", className: "item item--chat" },
+	                  _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	                  _react2.default.createElement(
+	                    "h3",
+	                    { className: "item-title" },
+	                    "John Wilson"
+	                  ),
+	                  _react2.default.createElement(
+	                    "p",
+	                    { className: "item-description" },
+	                    "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	                  )
+	                )
+	              )
+	            )
 	          )
 	        )
 	      );
