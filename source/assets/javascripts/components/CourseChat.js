@@ -1,10 +1,17 @@
 import React, { Component } from "react"
 import ReactDOM from "react-dom"
 
+import CourseChatFeed from "../components/CourseChatFeed"
+import CourseChatList from "../components/CourseChatList"
+
 export default class extends Component {
   constructor(props) {
     super(props)
     this.toggleChat = this.toggleChat.bind(this)
+    this.toggleMessages = this.toggleMessages.bind(this)
+    this.state = {
+      messages: false
+    }
   }
   toggleChat() {
     var that = this
@@ -12,6 +19,11 @@ export default class extends Component {
     setTimeout(function() {
       that.props.toggleChat()
     }, 275)
+  }
+  toggleMessages() {
+    this.setState(prevState => ({
+      messages: !prevState.messages
+    }))
   }
   render() {
     return (
@@ -27,37 +39,7 @@ export default class extends Component {
               <button onClick={this.toggleChat} className="chat-close">&times;</button>
             </div>
           </div>
-          <div className="chat-content">
-            <ul className="has-items">
-              <li>
-                <a href="#" className="item item--chat is-new">
-                  <img src="https://unsplash.it/100/100" className="item-status" />
-                  <h3 className="item-title">John Wilson</h3>
-                  <p className="item-description">
-                    Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="item item--chat is-new">
-                  <img src="https://unsplash.it/100/100" className="item-status" />
-                  <h3 className="item-title">John Wilson</h3>
-                  <p className="item-description">
-                    Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
-                  </p>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="item item--chat">
-                  <img src="https://unsplash.it/100/100" className="item-status" />
-                  <h3 className="item-title">John Wilson</h3>
-                  <p className="item-description">
-                    Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </div>
+          {this.state.messages ? <CourseChatFeed /> :  <CourseChatList toggleMessages={this.toggleMessages} />}
         </div>
       </div>
     )
