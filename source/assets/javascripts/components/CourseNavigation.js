@@ -14,6 +14,13 @@ export default class extends Component {
     }
   }
   toggleChat() {
+    if (document.body.classList.contains("oh")) {
+      console.log("remove class")
+      document.body.classList = ""
+    } else {
+      console.log("add class")
+      document.body.classList = "oh"
+    }
     this.setState(prevState => ({
       chat: !prevState.chat
     }))
