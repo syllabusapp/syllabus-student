@@ -1,37 +1,29 @@
 // *************************************
 //
-//   Label
-//   -> Short text callouts
+//   Message
+//   -> Individual chat messages
 //
 // *************************************
 
-.label
-  background: $c-orange
-  border-radius: ($b-borderRadius * 0.75)
+.message
+  background: $c-blue
+  border-radius: ($b-borderRadius * 2) ($b-borderRadius * 2) 0 ($b-borderRadius * 2)
   color: white
-  display: inline-block
-  font-size: $t-fontSize-xs
-  letter-spacing: 0.125em
-  line-height: 1
-  padding: 5px 7px 4px
-  text-transform: uppercase
+  font-size: $t-fontSize-s
+  line-height: 1.2
+  margin: $b-space 0 0 ($b-space * 10)
+  padding: ($b-space * 1.25) ($b-space * 1.5)
+  width: calc(100% - #{$b-space * 10})
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-.label--number
-  background: $c-blue
-  border-radius: ($b-space * 10)
-  color: white !important
-  font-size: $t-fontSize-l
-  font-weight: 500
-  height: ($b-space * 4)
-  line-height: ($b-space * 4)
-  margin-right: $b-space
-  text-align: center
-  min-width: ($b-space * 4)
-  padding: 0 $b-space
+.message--received
+  background: $c-gray-light
+  border-radius: ($b-borderRadius * 2) ($b-borderRadius * 2) ($b-borderRadius * 2) 0
+  color: $c-gray-dark
+  margin: $b-space 0 0
 
 // -------------------------------------
 //   States

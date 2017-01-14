@@ -1,0 +1,80 @@
+// *************************************
+//
+//   Chat
+//   -> Chat modal containers
+//
+// *************************************
+
+.chat
+  padding: 0 !important
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .mv-module--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .mv-module.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-mv-module
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+.chat-close,
+.chat-new
+  border: none
+  border-radius: 50%
+  font-size: $t-heading-fontSize-l
+  height: ($b-space * 4)
+  line-height: ($b-space * 4)
+  margin-left: ($b-space * 1.5)
+  outline: none
+  padding: 0
+  text-align: center
+  width: ($b-space * 4)
+
+.chat-close
+  background: $c-gray-light
+  color: $c-gray
+  &:hover
+    background: $c-red
+    color: white
+
+.chat-content
+  height: calc(100vh - #{$b-space * 10})
+  overflow-y: auto
+  padding: $b-space ($b-space * 4)
+
+.chat-header
+  align-items: center
+  display: flex
+  flex-flow: row nowrap
+  height: ($b-space * 10)
+  justify-content: space-between
+  padding: ($b-space * 3) ($b-space * 4)
+  position: relative
+  &::after
+    background: $c-gray-light
+    bottom: 0
+    content: ''
+    height: 1px
+    left: ($b-space * 4)
+    position: absolute
+    right: ($b-space * 4)
+
+.chat-new
+  background: $c-green
+  color: white
+  transform: rotate(45deg)
+  &:hover
+    background: darken($c-green, 10%)

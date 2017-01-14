@@ -35,6 +35,20 @@
   .item-title
     color: $c-gray-dark
 
+.item--chat
+  padding: ($b-space * 2) 0
+  &::after
+    display: none
+  .item-status
+    border-radius: 50%
+    height: ($b-space * 4)
+    margin-right: $b-space
+    width: ($b-space * 4)
+  .item-title
+    line-height: 1.25
+    font-size: $t-fontSize
+    font-weight: 500
+
 // -------------------------------------
 //   States
 // -------------------------------------
@@ -67,6 +81,19 @@
       top: 0
       transform: rotate(45deg) translate(#{$b-space * -0.25}, #{$b-space * -0.25})
       width: $b-space
+
+.item.is-new
+  padding-left: ($b-space * 2)
+  &::before
+    background: $c-blue
+    border-radius: 50%
+    content: ''
+    height: $b-space
+    left: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: $b-space
 
 .item.is-urgent
   .item-status
