@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import ReactDOM from "react-dom"
 
 import CourseChatFeed from "../components/CourseChatFeed"
+import CourseChatHeader from "../components/CourseChatHeader"
 import CourseChatList from "../components/CourseChatList"
 
 export default class extends Component {
@@ -30,15 +31,7 @@ export default class extends Component {
       <div className="modal modal--chat">
         <div onClick={this.toggleChat} className="modal-overlay"></div>
         <div className="chat modal-content">
-          <div className="chat-header">
-            <div>
-              <h1 className="heading"><span className="label label--number">3</span>Messages</h1>
-            </div>
-            <div>
-              <button className="chat-new">&times;</button>
-              <button onClick={this.toggleChat} className="chat-close">&times;</button>
-            </div>
-          </div>
+          <CourseChatHeader messages={this.state.messages} toggleChat={this.toggleChat} toggleMessages={this.toggleMessages} />
           {this.state.messages ? <CourseChatFeed /> :  <CourseChatList toggleMessages={this.toggleMessages} />}
         </div>
       </div>

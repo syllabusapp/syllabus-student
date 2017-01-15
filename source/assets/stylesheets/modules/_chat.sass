@@ -30,6 +30,35 @@
 //   Submodules
 // -------------------------------------
 
+.chat-back
+  background: white
+  border: $b-border
+  border-radius: 50%
+  border-width: 2px
+  height: ($b-space * 4)
+  outline: none
+  position: relative
+  width: ($b-space * 4)
+  &::after, &::before
+    bottom: 0
+    content: ''
+    left: 0
+    margin: auto
+    position: absolute
+    right: 0
+    top: 0
+  &::after
+    background: $c-gray
+    height: 2px
+    transform: translateX(0.5px)
+    width: ($b-space * 1.5)
+  &::before
+    border-bottom: 2px solid $c-gray
+    border-left: 2px solid $c-gray
+    height: $b-space
+    transform: rotate(45deg) translate(-1px, 1px)
+    width: $b-space
+
 .chat-close,
 .chat-new
   border: none
@@ -87,6 +116,9 @@
     left: ($b-space * 4)
     position: absolute
     right: ($b-space * 4)
+  .heading
+    align-items: center
+    display: inline-flex
 
 .chat-new
   background: $c-green
