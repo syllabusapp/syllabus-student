@@ -26807,11 +26807,15 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _CourseGrade = __webpack_require__(238);
+	var _CourseChat = __webpack_require__(238);
+
+	var _CourseChat2 = _interopRequireDefault(_CourseChat);
+
+	var _CourseGrade = __webpack_require__(242);
 
 	var _CourseGrade2 = _interopRequireDefault(_CourseGrade);
 
-	var _CourseNavigation = __webpack_require__(239);
+	var _CourseNavigation = __webpack_require__(243);
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
 
@@ -26823,16 +26827,103 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var _class = function (_Component) {
-	  _inherits(_class, _Component);
+	var LateAssignment = function (_Component) {
+	  _inherits(LateAssignment, _Component);
+
+	  function LateAssignment() {
+	    _classCallCheck(this, LateAssignment);
+
+	    return _possibleConstructorReturn(this, (LateAssignment.__proto__ || Object.getPrototypeOf(LateAssignment)).apply(this, arguments));
+	  }
+
+	  _createClass(LateAssignment, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "heading heading--s" },
+	          "Late Assignments"
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "has-items" },
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: "/assignment-critical-thought", className: "item is-urgent" },
+	              _react2.default.createElement(
+	                "span",
+	                { className: "item-status" },
+	                _react2.default.createElement("img", { src: "/assets/images/icon-warning.svg" })
+	              ),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Critical Thought"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "Length:"
+	                ),
+	                " 5 paragraphs",
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "Subject:"
+	                ),
+	                " Macroeconomics and Large Corporations"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return LateAssignment;
+	}(_react.Component);
+
+	var _class = function (_Component2) {
+	  _inherits(_class, _Component2);
 
 	  function _class(props) {
 	    _classCallCheck(this, _class);
 
-	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+	    var _this2 = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this2.toggleChat = _this2.toggleChat.bind(_this2);
+	    _this2.state = {
+	      chat: false
+	    };
+	    return _this2;
 	  }
 
 	  _createClass(_class, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      if (document.body.classList.contains("oh")) {
+	        console.log("remove class");
+	        document.body.classList = "";
+	      } else {
+	        console.log("add class");
+	        document.body.classList = "oh";
+	      }
+	      this.setState(function (prevState) {
+	        return {
+	          chat: !prevState.chat
+	        };
+	      });
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -26851,7 +26942,12 @@
 	          _react2.default.createElement(
 	            "h1",
 	            { className: "heading heading--l mb5" },
-	            "Modern Entertainment & Media Communication"
+	            "Introduction to Syllabus",
+	            _react2.default.createElement(
+	              "small",
+	              null,
+	              "IS101"
+	            )
 	          ),
 	          _react2.default.createElement(
 	            "div",
@@ -26859,49 +26955,6 @@
 	            _react2.default.createElement(
 	              "div",
 	              { className: "g-b g-b--8of12" },
-	              _react2.default.createElement(
-	                "h2",
-	                { className: "heading heading--s" },
-	                "Late Assignments"
-	              ),
-	              _react2.default.createElement(
-	                "ul",
-	                { className: "has-items" },
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: "/assignment-critical-thought", className: "item is-urgent" },
-	                    _react2.default.createElement(
-	                      "span",
-	                      { className: "item-status" },
-	                      _react2.default.createElement("img", { src: "/assets/images/icon-warning.svg" })
-	                    ),
-	                    _react2.default.createElement(
-	                      "h3",
-	                      { className: "item-title" },
-	                      "Critical Thought"
-	                    ),
-	                    _react2.default.createElement(
-	                      "p",
-	                      { className: "item-description" },
-	                      _react2.default.createElement(
-	                        "strong",
-	                        null,
-	                        "Length:"
-	                      ),
-	                      " 5 paragraphs",
-	                      _react2.default.createElement(
-	                        "strong",
-	                        null,
-	                        "Subject:"
-	                      ),
-	                      " Macroeconomics and Large Corporations"
-	                    )
-	                  )
-	                )
-	              ),
 	              _react2.default.createElement(
 	                "h2",
 	                { className: "heading heading--s heading--borderless" },
@@ -26956,15 +27009,15 @@
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Length:"
+	                        "Subject:"
 	                      ),
-	                      " Chapters 1\u20135",
+	                      " Completing Coursework in Syllabus",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Book:"
+	                        "Length:"
 	                      ),
-	                      " Barron\u2019s AP Microeconomics/Macroeconomics AP, 5th Edition"
+	                      " 5 Paragraphs"
 	                    )
 	                  )
 	                ),
@@ -26986,15 +27039,15 @@
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Length:"
+	                        "Subject:"
 	                      ),
-	                      " 23m 5s",
+	                      " Microeconomics vs. Macroeconomics",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Subject:"
+	                        "Length:"
 	                      ),
-	                      " Microeconomics vs. Macroeconomics"
+	                      " 23m 5s"
 	                    )
 	                  )
 	                ),
@@ -27016,15 +27069,15 @@
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Length:"
+	                        "Subject:"
 	                      ),
-	                      " 5 paragraphs",
+	                      " Macroeconomics and Large Corporations",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Subject:"
+	                        "Length:"
 	                      ),
-	                      " Macroeconomics and Large Corporations"
+	                      " 5 paragraphs"
 	                    )
 	                  )
 	                ),
@@ -27046,15 +27099,15 @@
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Type:"
+	                        "Subject:"
 	                      ),
-	                      " PDF or PSD",
+	                      " Logo & branding for local government",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
-	                        "Subject:"
+	                        "Type:"
 	                      ),
-	                      " Logo & branding for local government"
+	                      " PDF or PSD"
 	                    )
 	                  )
 	                ),
@@ -27094,7 +27147,7 @@
 	              ),
 	              _react2.default.createElement(
 	                "a",
-	                { href: "#", className: "anchor anchor--l anchor--red" },
+	                { onClick: this.toggleChat, className: "anchor anchor--l anchor--red" },
 	                _react2.default.createElement(
 	                  "span",
 	                  { className: "anchor-count" },
@@ -27104,7 +27157,7 @@
 	              ),
 	              _react2.default.createElement(
 	                "a",
-	                { href: "#", className: "anchor anchor--l anchor--orange" },
+	                { onClick: this.toggleChat, className: "anchor anchor--l anchor--orange" },
 	                _react2.default.createElement(
 	                  "span",
 	                  { className: "anchor-count" },
@@ -27175,7 +27228,8 @@
 	              "\xA9 2016 The Syllabus Company, Inc. All rights reserved."
 	            )
 	          )
-	        )
+	        ),
+	        this.state.chat ? _react2.default.createElement(_CourseChat2.default, { toggleChat: this.toggleChat }) : null
 	      );
 	    }
 	  }]);
@@ -27187,6 +27241,501 @@
 
 /***/ },
 /* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _CourseChatFeed = __webpack_require__(239);
+
+	var _CourseChatFeed2 = _interopRequireDefault(_CourseChatFeed);
+
+	var _CourseChatHeader = __webpack_require__(240);
+
+	var _CourseChatHeader2 = _interopRequireDefault(_CourseChatHeader);
+
+	var _CourseChatList = __webpack_require__(241);
+
+	var _CourseChatList2 = _interopRequireDefault(_CourseChatList);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this.toggleChat = _this.toggleChat.bind(_this);
+	    _this.toggleMessages = _this.toggleMessages.bind(_this);
+	    _this.state = {
+	      messages: false
+	    };
+	    return _this;
+	  }
+
+	  _createClass(_class, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      var that = this;
+	      document.getElementsByClassName("modal")[0].classList += " is-exiting";
+	      setTimeout(function () {
+	        that.props.toggleChat();
+	      }, 275);
+	    }
+	  }, {
+	    key: "toggleMessages",
+	    value: function toggleMessages() {
+	      this.setState(function (prevState) {
+	        return {
+	          messages: !prevState.messages
+	        };
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "modal modal--chat" },
+	        _react2.default.createElement("div", { onClick: this.toggleChat, className: "modal-overlay" }),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "chat modal-content" },
+	          _react2.default.createElement(_CourseChatHeader2.default, { messages: this.state.messages, toggleChat: this.toggleChat, toggleMessages: this.toggleMessages }),
+	          this.state.messages ? _react2.default.createElement(_CourseChatFeed2.default, null) : _react2.default.createElement(_CourseChatList2.default, { toggleMessages: this.toggleMessages })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class() {
+	    _classCallCheck(this, _class);
+
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
+	  }
+
+	  _createClass(_class, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      var container = document.getElementById("message-container");
+	      container.scrollTop = 10000;
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "div",
+	          { className: "chat-content chat-content--short", id: "message-container" },
+	          _react2.default.createElement(
+	            "ol",
+	            null,
+	            _react2.default.createElement(
+	              "li",
+	              { className: "message message--received" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "message" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "message message--received" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "message" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "message message--received" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              { className: "message" },
+	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "chat-create" },
+	          _react2.default.createElement("input", { type: "input", placeholder: "New message..." })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var DefaultHeader = function (_Component) {
+	  _inherits(DefaultHeader, _Component);
+
+	  function DefaultHeader(props) {
+	    _classCallCheck(this, DefaultHeader);
+
+	    var _this = _possibleConstructorReturn(this, (DefaultHeader.__proto__ || Object.getPrototypeOf(DefaultHeader)).call(this, props));
+
+	    _this.toggleChat = _this.toggleChat.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(DefaultHeader, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      this.props.toggleChat();
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "chat-header" },
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "h1",
+	            { className: "heading" },
+	            _react2.default.createElement(
+	              "span",
+	              { className: "label label--number" },
+	              "3"
+	            ),
+	            "Messages"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "button",
+	            { className: "chat-new" },
+	            "\xD7"
+	          ),
+	          _react2.default.createElement(
+	            "button",
+	            { onClick: this.toggleChat, className: "chat-close" },
+	            "\xD7"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return DefaultHeader;
+	}(_react.Component);
+
+	var MessagesHeader = function (_Component2) {
+	  _inherits(MessagesHeader, _Component2);
+
+	  function MessagesHeader(props) {
+	    _classCallCheck(this, MessagesHeader);
+
+	    var _this2 = _possibleConstructorReturn(this, (MessagesHeader.__proto__ || Object.getPrototypeOf(MessagesHeader)).call(this, props));
+
+	    _this2.toggleChat = _this2.toggleChat.bind(_this2);
+	    _this2.toggleMessages = _this2.toggleMessages.bind(_this2);
+	    return _this2;
+	  }
+
+	  _createClass(MessagesHeader, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      this.props.toggleChat();
+	    }
+	  }, {
+	    key: "toggleMessages",
+	    value: function toggleMessages() {
+	      this.props.toggleMessages();
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "chat-header" },
+	        _react2.default.createElement("button", { onClick: this.toggleMessages, className: "chat-back" }),
+	        _react2.default.createElement(
+	          "div",
+	          null,
+	          _react2.default.createElement(
+	            "h1",
+	            { className: "heading" },
+	            _react2.default.createElement("img", { className: "label label--number", src: "https://unsplash.it/100/100" }),
+	            "John Wilson"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "button",
+	          { onClick: this.toggleChat, className: "chat-close" },
+	          "\xD7"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return MessagesHeader;
+	}(_react.Component);
+
+	var _class = function (_Component3) {
+	  _inherits(_class, _Component3);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    var _this3 = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this3.toggleChat = _this3.toggleChat.bind(_this3);
+	    _this3.toggleMessages = _this3.toggleMessages.bind(_this3);
+	    return _this3;
+	  }
+
+	  _createClass(_class, [{
+	    key: "toggleChat",
+	    value: function toggleChat() {
+	      this.props.toggleChat();
+	    }
+	  }, {
+	    key: "toggleMessages",
+	    value: function toggleMessages() {
+	      this.props.toggleMessages();
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      if (this.props.messages) {
+	        return _react2.default.createElement(MessagesHeader, { toggleChat: this.toggleChat, toggleMessages: this.toggleMessages });
+	      } else {
+	        return _react2.default.createElement(DefaultHeader, { toggleChat: this.toggleChat });
+	      }
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _class = function (_Component) {
+	  _inherits(_class, _Component);
+
+	  function _class(props) {
+	    _classCallCheck(this, _class);
+
+	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
+
+	    _this.toggleMessages = _this.toggleMessages.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(_class, [{
+	    key: "toggleMessages",
+	    value: function toggleMessages() {
+	      this.props.toggleMessages();
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "chat-content" },
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "has-items" },
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages, className: "item item--chat is-new" },
+	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "John Wilson"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages, className: "item item--chat is-new" },
+	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "John Wilson"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages, className: "item item--chat" },
+	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "John Wilson"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return _class;
+	}(_react.Component);
+
+	exports.default = _class;
+
+/***/ },
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27378,7 +27927,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 239 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27393,11 +27942,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Breadcrumbs = __webpack_require__(240);
+	var _Breadcrumbs = __webpack_require__(244);
 
 	var _Breadcrumbs2 = _interopRequireDefault(_Breadcrumbs);
 
-	var _CourseChat = __webpack_require__(241);
+	var _CourseChat = __webpack_require__(238);
 
 	var _CourseChat2 = _interopRequireDefault(_CourseChat);
 
@@ -27505,7 +28054,7 @@
 	exports.default = _class;
 
 /***/ },
-/* 240 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27601,501 +28150,6 @@
 	exports.default = _class;
 
 /***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(32);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	var _CourseChatFeed = __webpack_require__(242);
-
-	var _CourseChatFeed2 = _interopRequireDefault(_CourseChatFeed);
-
-	var _CourseChatHeader = __webpack_require__(243);
-
-	var _CourseChatHeader2 = _interopRequireDefault(_CourseChatHeader);
-
-	var _CourseChatList = __webpack_require__(244);
-
-	var _CourseChatList2 = _interopRequireDefault(_CourseChatList);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _class = function (_Component) {
-	  _inherits(_class, _Component);
-
-	  function _class(props) {
-	    _classCallCheck(this, _class);
-
-	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
-
-	    _this.toggleChat = _this.toggleChat.bind(_this);
-	    _this.toggleMessages = _this.toggleMessages.bind(_this);
-	    _this.state = {
-	      messages: false
-	    };
-	    return _this;
-	  }
-
-	  _createClass(_class, [{
-	    key: "toggleChat",
-	    value: function toggleChat() {
-	      var that = this;
-	      document.getElementsByClassName("modal")[0].classList += " is-exiting";
-	      setTimeout(function () {
-	        that.props.toggleChat();
-	      }, 275);
-	    }
-	  }, {
-	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.setState(function (prevState) {
-	        return {
-	          messages: !prevState.messages
-	        };
-	      });
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "modal modal--chat" },
-	        _react2.default.createElement("div", { onClick: this.toggleChat, className: "modal-overlay" }),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "chat modal-content" },
-	          _react2.default.createElement(_CourseChatHeader2.default, { messages: this.state.messages, toggleChat: this.toggleChat, toggleMessages: this.toggleMessages }),
-	          this.state.messages ? _react2.default.createElement(_CourseChatFeed2.default, null) : _react2.default.createElement(_CourseChatList2.default, { toggleMessages: this.toggleMessages })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return _class;
-	}(_react.Component);
-
-	exports.default = _class;
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(32);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _class = function (_Component) {
-	  _inherits(_class, _Component);
-
-	  function _class() {
-	    _classCallCheck(this, _class);
-
-	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
-	  }
-
-	  _createClass(_class, [{
-	    key: "componentDidMount",
-	    value: function componentDidMount() {
-	      var container = document.getElementById("message-container");
-	      container.scrollTop = 10000;
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        null,
-	        _react2.default.createElement(
-	          "div",
-	          { className: "chat-content chat-content--short", id: "message-container" },
-	          _react2.default.createElement(
-	            "ol",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message message--received" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message message--received" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message message--received" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "chat-create" },
-	          _react2.default.createElement("input", { type: "input", placeholder: "New message..." })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return _class;
-	}(_react.Component);
-
-	exports.default = _class;
-
-/***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(32);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var DefaultHeader = function (_Component) {
-	  _inherits(DefaultHeader, _Component);
-
-	  function DefaultHeader(props) {
-	    _classCallCheck(this, DefaultHeader);
-
-	    var _this = _possibleConstructorReturn(this, (DefaultHeader.__proto__ || Object.getPrototypeOf(DefaultHeader)).call(this, props));
-
-	    _this.toggleChat = _this.toggleChat.bind(_this);
-	    return _this;
-	  }
-
-	  _createClass(DefaultHeader, [{
-	    key: "toggleChat",
-	    value: function toggleChat() {
-	      this.props.toggleChat();
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "chat-header" },
-	        _react2.default.createElement(
-	          "div",
-	          null,
-	          _react2.default.createElement(
-	            "h1",
-	            { className: "heading" },
-	            _react2.default.createElement(
-	              "span",
-	              { className: "label label--number" },
-	              "3"
-	            ),
-	            "Messages"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          null,
-	          _react2.default.createElement(
-	            "button",
-	            { className: "chat-new" },
-	            "\xD7"
-	          ),
-	          _react2.default.createElement(
-	            "button",
-	            { onClick: this.toggleChat, className: "chat-close" },
-	            "\xD7"
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return DefaultHeader;
-	}(_react.Component);
-
-	var MessagesHeader = function (_Component2) {
-	  _inherits(MessagesHeader, _Component2);
-
-	  function MessagesHeader(props) {
-	    _classCallCheck(this, MessagesHeader);
-
-	    var _this2 = _possibleConstructorReturn(this, (MessagesHeader.__proto__ || Object.getPrototypeOf(MessagesHeader)).call(this, props));
-
-	    _this2.toggleChat = _this2.toggleChat.bind(_this2);
-	    _this2.toggleMessages = _this2.toggleMessages.bind(_this2);
-	    return _this2;
-	  }
-
-	  _createClass(MessagesHeader, [{
-	    key: "toggleChat",
-	    value: function toggleChat() {
-	      this.props.toggleChat();
-	    }
-	  }, {
-	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.props.toggleMessages();
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "chat-header" },
-	        _react2.default.createElement("button", { onClick: this.toggleMessages, className: "chat-back" }),
-	        _react2.default.createElement(
-	          "div",
-	          null,
-	          _react2.default.createElement(
-	            "h1",
-	            { className: "heading" },
-	            _react2.default.createElement("img", { className: "label label--number", src: "https://unsplash.it/100/100" }),
-	            "John Wilson"
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "button",
-	          { onClick: this.toggleChat, className: "chat-close" },
-	          "\xD7"
-	        )
-	      );
-	    }
-	  }]);
-
-	  return MessagesHeader;
-	}(_react.Component);
-
-	var _class = function (_Component3) {
-	  _inherits(_class, _Component3);
-
-	  function _class(props) {
-	    _classCallCheck(this, _class);
-
-	    var _this3 = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
-
-	    _this3.toggleChat = _this3.toggleChat.bind(_this3);
-	    _this3.toggleMessages = _this3.toggleMessages.bind(_this3);
-	    return _this3;
-	  }
-
-	  _createClass(_class, [{
-	    key: "toggleChat",
-	    value: function toggleChat() {
-	      this.props.toggleChat();
-	    }
-	  }, {
-	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.props.toggleMessages();
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      if (this.props.messages) {
-	        return _react2.default.createElement(MessagesHeader, { toggleChat: this.toggleChat, toggleMessages: this.toggleMessages });
-	      } else {
-	        return _react2.default.createElement(DefaultHeader, { toggleChat: this.toggleChat });
-	      }
-	    }
-	  }]);
-
-	  return _class;
-	}(_react.Component);
-
-	exports.default = _class;
-
-/***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(32);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var _class = function (_Component) {
-	  _inherits(_class, _Component);
-
-	  function _class(props) {
-	    _classCallCheck(this, _class);
-
-	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
-
-	    _this.toggleMessages = _this.toggleMessages.bind(_this);
-	    return _this;
-	  }
-
-	  _createClass(_class, [{
-	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.props.toggleMessages();
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "chat-content" },
-	        _react2.default.createElement(
-	          "ul",
-	          { className: "has-items" },
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat is-new" },
-	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
-	              _react2.default.createElement(
-	                "h3",
-	                { className: "item-title" },
-	                "John Wilson"
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat is-new" },
-	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
-	              _react2.default.createElement(
-	                "h3",
-	                { className: "item-title" },
-	                "John Wilson"
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat" },
-	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
-	              _react2.default.createElement(
-	                "h3",
-	                { className: "item-title" },
-	                "John Wilson"
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return _class;
-	}(_react.Component);
-
-	exports.default = _class;
-
-/***/ },
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -28168,7 +28222,7 @@
 
 	var _CourseList2 = _interopRequireDefault(_CourseList);
 
-	var _CourseNavigation = __webpack_require__(239);
+	var _CourseNavigation = __webpack_require__(243);
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
 
@@ -28290,21 +28344,32 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: "/course", className: "item is-urgent" },
+	              { to: "/course", className: "item is-caution" },
 	              _react2.default.createElement(
 	                "span",
 	                { className: "item-status" },
-	                "4"
+	                "3"
 	              ),
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
-	                "Microeconomics 101"
+	                "Introduction to Syllabus"
 	              ),
 	              _react2.default.createElement(
 	                "p",
 	                { className: "item-description" },
-	                "MIC101\xA0\xA0\u2022\xA0\xA0Ends on May 5, 2017"
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "Code:"
+	                ),
+	                " IS101 ",
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "Ends on:"
+	                ),
+	                " November 28, 2018"
 	              )
 	            )
 	          ),
@@ -28312,41 +28377,29 @@
 	            "li",
 	            null,
 	            _react2.default.createElement(
-	              "a",
-	              { href: "#", className: "item is-caution" },
-	              _react2.default.createElement(
-	                "span",
-	                { className: "item-status" },
-	                "1"
-	              ),
-	              _react2.default.createElement(
-	                "h3",
-	                { className: "item-title" },
-	                "Modern Entertainment & Media Communication"
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                { className: "item-description" },
-	                "MEMC\xA0\xA0\u2022\xA0\xA0Ends on May 1, 2017"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { href: "#", className: "item is-complete" },
+	              _reactRouter.Link,
+	              { to: "/course", className: "item is-complete" },
 	              _react2.default.createElement("span", { className: "item-status" }),
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
-	                "Art History"
+	                "Sample Course"
 	              ),
 	              _react2.default.createElement(
 	                "p",
 	                { className: "item-description" },
-	                "ARHI\xA0\xA0\u2022\xA0\xA0Ends on July 28, 2017"
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "Code:"
+	                ),
+	                " SC101 ",
+	                _react2.default.createElement(
+	                  "strong",
+	                  null,
+	                  "Ends on:"
+	                ),
+	                " November 28, 2018"
 	              )
 	            )
 	          )
@@ -28365,7 +28418,7 @@
 	            _react2.default.createElement(
 	              "h3",
 	              { className: "item-title" },
-	              "Macroeconomics & Corporate Finances"
+	              "Expanding Online Learning"
 	            ),
 	            _react2.default.createElement(
 	              "p",
@@ -37479,7 +37532,7 @@
 	            _react2.default.createElement(
 	              "h1",
 	              { className: "heading heading--l" },
-	              "Macroeconomics vs. Microeconomics"
+	              "Completing Coursework in Syllabus"
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -37488,62 +37541,75 @@
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "So as we\u2019re building this model, wei\u0301re going to want to include things, like consumer income, taxes, the stock market, and other factors that influence how much money people choose to spend. We can probably ignore other things that bear less on the consumer spending decision, such as the gender of the children or the color of the breadwinneri\u0301s hair. I mean, these are real facts from the real world, but they probably areni\u0301t very important."
+	              "Completing coursework and assignments in Syllabus is incredibly easy. Thanks to modern technologies, students can complete an entire course without having to download a single file (though the option to download will still be available). This allows students to securely complete their coursework on their computer or public devices. Depending on the assignment type, Syllabus will display the course material in the most efficient way. To progress through their coursework, students simply visit each assignment\u2019s page, complete the work, and mark the assignment as complete, all without having to navigate around the interface and download unnecessary files."
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "Margaret Mead once said that a model that is completely realistic is no more useful than a map with a scale of one-to- one. The only reason the map helps you is that iti\u0301s simple enough and simplified enough to help you see the big picture and the details that are necessary in helping you guide your way through the city. On a typical map you woni\u0301t see trees and dogs and cars, because theyi\u0301re not necessary. And by eliminating them, and showing you the grid of the streets, you are helped in navigating your way around New York."
+	              "To make coursework easy, Syllabus supports many different assignment types; you are currently in an ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "inline"
+	              ),
+	              " reading assignment. This specific article is written and presented within Syllabus itself. For other types of reading assignments, Syllabus will also support a ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "book reference"
+	              ),
+	              " for students who purchased a physical book for their coursework, as well as ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "uploaded PDFs"
+	              ),
+	              " where students can read the PDF without having to download anything."
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "So we build a model, and perhaps that model is a story whereby people make spending decisions based on their income, their taxes, and their age. People who are younger tend to spend more and save more in their middle years and spend it in retirement. We build a relationship among these variables and that becomes our model of how consumers make their spending decisions."
+	              "Syllabus also supports ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "file uploads"
+	              ),
+	              " for turning in assignments made in other programs and ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "critical thought"
+	              ),
+	              " assignments. Critical thought assignments allow students to compose complete papers within their browser using an advanced text editor. A demo of the critical thought editor is available within this introduction course."
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "Now, once wei\u0301ve got a model the relationships that we imagine hold among the variables allow us to derive certain hypotheses. Hypotheses are predictions about how the world works. One hypothesis might be than increase in consumer income leads to an increase in consumer spending. Now, that hypothesis is something we can test. We can go out and get data from the real world and compare the relationship between observed consumer income changes and changes in consumer spending. And if our data matches the predictions of our model, then we believe that wei\u0301ve explained something about the real world. We believe that since our story matches the facts, wei\u0301ve come to understand more thoroughly the way the world works."
+	              "Sometimes, reading and upload assignments aren\u2019t quite enough. For those assignments, Syllabus supports multimedia such as ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "audio"
+	              ),
+	              " and ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "video"
+	              ),
+	              " for prerecorded lectures, messages, programs, etc."
 	            ),
 	            _react2.default.createElement(
 	              "p",
 	              null,
-	              "So as we\u2019re building this model, wei\u0301re going to want to include things, like consumer income, taxes, the stock market, and other factors that influence how much money people choose to spend. We can probably ignore other things that bear less on the consumer spending decision, such as the gender of the children or the color of the breadwinneri\u0301s hair. I mean, these are real facts from the real world, but they probably areni\u0301t very important."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Margaret Mead once said that a model that is completely realistic is no more useful than a map with a scale of one-to- one. The only reason the map helps you is that iti\u0301s simple enough and simplified enough to help you see the big picture and the details that are necessary in helping you guide your way through the city. On a typical map you woni\u0301t see trees and dogs and cars, because theyi\u0301re not necessary. And by eliminating them, and showing you the grid of the streets, you are helped in navigating your way around New York."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "So we build a model, and perhaps that model is a story whereby people make spending decisions based on their income, their taxes, and their age. People who are younger tend to spend more and save more in their middle years and spend it in retirement. We build a relationship among these variables and that becomes our model of how consumers make their spending decisions."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Now, once wei\u0301ve got a model the relationships that we imagine hold among the variables allow us to derive certain hypotheses. Hypotheses are predictions about how the world works. One hypothesis might be than increase in consumer income leads to an increase in consumer spending. Now, that hypothesis is something we can test. We can go out and get data from the real world and compare the relationship between observed consumer income changes and changes in consumer spending. And if our data matches the predictions of our model, then we believe that wei\u0301ve explained something about the real world. We believe that since our story matches the facts, wei\u0301ve come to understand more thoroughly the way the world works."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "So as we\u2019re building this model, wei\u0301re going to want to include things, like consumer income, taxes, the stock market, and other factors that influence how much money people choose to spend. We can probably ignore other things that bear less on the consumer spending decision, such as the gender of the children or the color of the breadwinneri\u0301s hair. I mean, these are real facts from the real world, but they probably areni\u0301t very important."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Margaret Mead once said that a model that is completely realistic is no more useful than a map with a scale of one-to- one. The only reason the map helps you is that iti\u0301s simple enough and simplified enough to help you see the big picture and the details that are necessary in helping you guide your way through the city. On a typical map you woni\u0301t see trees and dogs and cars, because theyi\u0301re not necessary. And by eliminating them, and showing you the grid of the streets, you are helped in navigating your way around New York."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "So we build a model, and perhaps that model is a story whereby people make spending decisions based on their income, their taxes, and their age. People who are younger tend to spend more and save more in their middle years and spend it in retirement. We build a relationship among these variables and that becomes our model of how consumers make their spending decisions."
-	            ),
-	            _react2.default.createElement(
-	              "p",
-	              null,
-	              "Now, once wei\u0301ve got a model the relationships that we imagine hold among the variables allow us to derive certain hypotheses. Hypotheses are predictions about how the world works. One hypothesis might be than increase in consumer income leads to an increase in consumer spending. Now, that hypothesis is something we can test. We can go out and get data from the real world and compare the relationship between observed consumer income changes and changes in consumer spending. And if our data matches the predictions of our model, then we believe that wei\u0301ve explained something about the real world. We believe that since our story matches the facts, wei\u0301ve come to understand more thoroughly the way the world works."
+	              "Finally, standard ",
+	              _react2.default.createElement(
+	                "em",
+	                null,
+	                "questionnaire"
+	              ),
+	              " assignments are available for traditional-style testing. By randomizing both questions and answers, Syllabus reduces the changes of cheating."
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -37801,7 +37867,7 @@
 
 	var _reactPdfJs2 = _interopRequireDefault(_reactPdfJs);
 
-	var _CourseNavigation = __webpack_require__(239);
+	var _CourseNavigation = __webpack_require__(243);
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
 
@@ -98211,7 +98277,7 @@
 
 	var _reactRouter = __webpack_require__(179);
 
-	var _CourseNavigation = __webpack_require__(239);
+	var _CourseNavigation = __webpack_require__(243);
 
 	var _CourseNavigation2 = _interopRequireDefault(_CourseNavigation);
 
