@@ -11,31 +11,24 @@ export default class extends Component {
         <h2 className="heading heading--s">My Current Courses</h2>
         <ul className="has-items">
           <li>
-            <Link to="/course" className="item is-urgent">
-              <span className="item-status">4</span>
-              <h3 className="item-title">Microeconomics 101</h3>
-              <p className="item-description">MIC101&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 5, 2017</p>
+            <Link to="/course" className="item is-caution">
+              <span className="item-status">3</span>
+              <h3 className="item-title">Introduction to Syllabus</h3>
+              <p className="item-description"><strong>Code:</strong> IS101 <strong>Ends on:</strong> November 28, 2018</p>
             </Link>
           </li>
           <li>
-            <a href="#" className="item is-caution">
-              <span className="item-status">1</span>
-              <h3 className="item-title">Modern Entertainment &amp; Media Communication</h3>
-              <p className="item-description">MEMC&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on May 1, 2017</p>
-            </a>
-          </li>
-          <li>
-            <a href="#" className="item is-complete">
+            <Link to="/course" className="item is-complete">
               <span className="item-status"></span>
-              <h3 className="item-title">Art History</h3>
-              <p className="item-description">ARHI&nbsp;&nbsp;&bull;&nbsp;&nbsp;Ends on July 28, 2017</p>
-            </a>
+              <h3 className="item-title">Sample Course</h3>
+              <p className="item-description"><strong>Code:</strong> SC101 <strong>Ends on:</strong> November 28, 2018</p>
+            </Link>
           </li>
         </ul>
         <h2 className="heading heading--s">Upcoming Courses</h2>
         <ul className="has-items">
           <li className="item item--disabled">
-            <h3 className="item-title">Macroeconomics &amp; Corporate Finances</h3>
+            <h3 className="item-title">Expanding Online Learning</h3>
             <p className="item-description">Begins on August 20, 2017</p>
           </li>
         </ul>

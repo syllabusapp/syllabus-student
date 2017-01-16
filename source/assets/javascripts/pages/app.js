@@ -7,7 +7,7 @@ export default class extends Component {
     super(props)
     this.hideWelcome = this.hideWelcome.bind(this)
     this.state = {
-      welcome: true
+      welcome: false
     }
   }
   hideWelcome() {
