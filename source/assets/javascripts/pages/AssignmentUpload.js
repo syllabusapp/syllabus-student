@@ -16,13 +16,11 @@ export default class extends Component {
             <div className="g-b g-b--6of12">
               <p className="mb025 mt5">Week 1 &bull; Upload Assignment</p>
               <h1 className="heading heading--l">Directions</h1>
-              <p>Using Photoshop, take the lessons you learned this week to create a branding system for your local state government. The following elements must be created, combined into a single PDF and&nbsp;uploaded&nbsp;here.</p>
+              <p>This is a sample upload assignment. Though this prototype upload doesn't actually work, you can still see the ease and powerful simplicity of Syllabus.</p>
               <ol className="list list--ordered">
-                <li>One (1) primary logo and wordmark</li>
-                <li>One (2) secondary logo or wordmark</li>
-                <li>One (1) business card</li>
-                <li>Three (3) branding colors</li>
-                <li>One (1) letterhead</li>
+                <li>Instant access to assignment directions.</li>
+                <li>Easy and secure uploading of Word, Excel, Photoshop, Illustrator, Video, and many other file types.</li>
+                <li>Great for larger and open-ended assignments.</li>
               </ol>
             </div>
             <div className="g-b g-b--1of12 g-b--divider"></div>

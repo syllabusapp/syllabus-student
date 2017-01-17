@@ -23,25 +23,25 @@ export default class extends Component {
               <li>6</li>
               <li>7</li>
             </ol>
-            <h1 className="heading heading--l mb1">Which of the following is a central issue in macroeconomics?</h1>
+            <h1 className="heading heading--l mb1">What is Syllabus great at?</h1>
             <p>Only one (1) answer is needed for a correct response.</p>
           </header>
           <div className="has-radios">
             <div className="radio">
               <input type="radio" id="answer-a" name="question-1" />
-              <label htmlFor="answer-a">The deregulation of the banking industry</label>
+              <label htmlFor="answer-a">Taking care of your pet while you are on vacation.</label>
             </div>
             <div className="radio">
               <input type="radio" id="answer-b" name="question-1" />
-              <label htmlFor="answer-b">Inflation of prescription drug prices</label>
+              <label htmlFor="answer-b">Making online learning easy and enjoyable.</label>
             </div>
             <div className="radio">
               <input type="radio" id="answer-c" name="question-1" />
-              <label htmlFor="answer-c">The effect of excise taxes on consumers' buying patterns</label>
+              <label htmlFor="answer-c">Find and buy tickets to your favorite concert.</label>
             </div>
             <div className="radio">
               <input type="radio" id="answer-d" name="question-1" />
-              <label htmlFor="answer-d">None of the above</label>
+              <label htmlFor="answer-d">All of the above</label>
             </div>
           </div>
         </div>
