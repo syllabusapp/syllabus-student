@@ -27041,13 +27041,13 @@
 	                        null,
 	                        "Subject:"
 	                      ),
-	                      " Microeconomics vs. Macroeconomics",
+	                      " Sample Video",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
 	                        "Length:"
 	                      ),
-	                      " 23m 5s"
+	                      " 10s"
 	                    )
 	                  )
 	                ),
@@ -27071,13 +27071,13 @@
 	                        null,
 	                        "Subject:"
 	                      ),
-	                      " Macroeconomics and Large Corporations",
+	                      " Writing papers and responses in Syllabus",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
 	                        "Length:"
 	                      ),
-	                      " 5 paragraphs"
+	                      " 2 paragraphs"
 	                    )
 	                  )
 	                ),
@@ -27101,13 +27101,13 @@
 	                        null,
 	                        "Subject:"
 	                      ),
-	                      " Logo & branding for local government",
+	                      " Sample Upload",
 	                      _react2.default.createElement(
 	                        "strong",
 	                        null,
 	                        "Type:"
 	                      ),
-	                      " PDF or PSD"
+	                      " Any file type"
 	                    )
 	                  )
 	                ),
@@ -27131,7 +27131,7 @@
 	                        null,
 	                        "Length:"
 	                      ),
-	                      " 25 questions"
+	                      " 7 questions"
 	                    )
 	                  )
 	                )
@@ -27677,7 +27677,12 @@
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
-	                "John Wilson"
+	                "John Wilson ",
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "label label--green" },
+	                  "Advisor"
+	                )
 	              ),
 	              _react2.default.createElement(
 	                "p",
@@ -27696,7 +27701,30 @@
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
-	                "John Wilson"
+	                "Jackie Case ",
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "label label--blue" },
+	                  "IS101"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages, className: "item item--announcements item--chat is-new" },
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Announcements"
 	              ),
 	              _react2.default.createElement(
 	                "p",
@@ -27715,7 +27743,30 @@
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
-	                "John Wilson"
+	                "Geauxtrude Suedemont"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages, className: "item item--chat" },
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Group Discussion ",
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "label label--blue" },
+	                  "IS101"
+	                )
 	              ),
 	              _react2.default.createElement(
 	                "p",
@@ -29007,7 +29058,7 @@
 	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 
 	    _this.state = {
-	      text: '<h2>Writing in Syllabus</h2><p>Writing a paper or critical thought response in Syllabus is super easy and enjoyable. Simply begin typing, then highlight the text that you want to format. This text you are reading is a sample paper, so go ahead and give it a try: highlight this text. Writing a paper within Syllabus allows a student to save their work then pick up where the left off on a completely different device.</p><h2>Style Guides</h2><p>Many teachers prefer to have students type papers in a specific format such as Turabian or Chicago Manual of Style. With Syllabus, the teacher can decide if they want to create an upload assignment and have their students upload a Word document with the correct format.</p>'
+	      text: '<h2>✏️ Writing in Syllabus</h2><p>Writing a paper or critical thought response in Syllabus is super easy and enjoyable. Simply begin typing, then highlight the text that you want to format. This text you are reading is a sample paper, so go ahead and give it a try: highlight this text. Writing a paper within Syllabus allows a student to save their work then pick up where the left off on a completely different device.</p><h2>📖 Style Guides</h2><p>Many teachers prefer to have students type papers in a specific format such as Turabian or Chicago Manual of Style. With Syllabus, the teacher can decide if they want to create an upload assignment and have their students upload a Word document with the correct format.</p>'
 	    };
 	    return _this;
 	  }
@@ -29031,7 +29082,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                { className: "mb025 mt5" },
-	                "Week 1 \u2022 Critical Thought Assignment"
+	                "Week 1 \u2022 Critical Thought Assignment "
 	              ),
 	              _react2.default.createElement(
 	                "h1",
@@ -29041,19 +29092,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                null,
-	                "Please discuss the importance of respecting morals in modern entertainment. Your response must address the following points in ",
-	                _react2.default.createElement(
-	                  "em",
-	                  null,
-	                  "at least"
-	                ),
-	                " ",
-	                _react2.default.createElement(
-	                  "strong",
-	                  null,
-	                  "5\xA0paragraphs"
-	                ),
-	                ":"
+	                "Critial thought assignments within Syllabus are a unique way to compose full length papers, or short discussion-length responses. In the following assignment, please review the content and address the following bullet points:"
 	              ),
 	              _react2.default.createElement(
 	                "ol",
@@ -29061,27 +29100,22 @@
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "What are traditional morals?"
+	                  "After reading the content, delete it and try writing your own response."
 	                ),
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "What is modern entertainment?"
+	                  "Don't forget to highlight the text and make formatting changes with ease."
 	                ),
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "Traditional morals vs. modern entertainment"
+	                  "Brainstorm different ways that this type of assignment could be beneficial."
 	                ),
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "Traditional morals within modern entertainment"
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  "How modern entertainment affects traditional morals"
+	                  "Simply refresh to start all over, or if you forgot to read the content before deleting it \uD83D\uDE1C."
 	                )
 	              )
 	            ),
@@ -37416,7 +37450,7 @@
 	            _react2.default.createElement(
 	              "h1",
 	              { className: "heading heading--l mb1" },
-	              "Which of the following is a central issue in macroeconomics?"
+	              "What is Syllabus great at?"
 	            ),
 	            _react2.default.createElement(
 	              "p",
@@ -37434,7 +37468,7 @@
 	              _react2.default.createElement(
 	                "label",
 	                { htmlFor: "answer-a" },
-	                "The deregulation of the banking industry"
+	                "Taking care of your pet while you are on vacation."
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37444,7 +37478,7 @@
 	              _react2.default.createElement(
 	                "label",
 	                { htmlFor: "answer-b" },
-	                "Inflation of prescription drug prices"
+	                "Making online learning easy and enjoyable."
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37454,7 +37488,7 @@
 	              _react2.default.createElement(
 	                "label",
 	                { htmlFor: "answer-c" },
-	                "The effect of excise taxes on consumers' buying patterns"
+	                "Find and buy tickets to your favorite concert."
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37464,7 +37498,7 @@
 	              _react2.default.createElement(
 	                "label",
 	                { htmlFor: "answer-d" },
-	                "None of the above"
+	                "All of the above"
 	              )
 	            )
 	          )
@@ -37705,7 +37739,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                null,
-	                "Using Photoshop, take the lessons you learned this week to create a branding system for your local state government. The following elements must be created, combined into a single PDF and\xA0uploaded\xA0here."
+	                "This is a sample upload assignment. Though this prototype upload doesn't actually work, you can still see the ease and powerful simplicity of Syllabus."
 	              ),
 	              _react2.default.createElement(
 	                "ol",
@@ -37713,27 +37747,17 @@
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "One (1) primary logo and wordmark"
+	                  "Instant access to assignment directions."
 	                ),
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "One (2) secondary logo or wordmark"
+	                  "Easy and secure uploading of Word, Excel, Photoshop, Illustrator, Video, and many other file types."
 	                ),
 	                _react2.default.createElement(
 	                  "li",
 	                  null,
-	                  "One (1) business card"
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  "Three (3) branding colors"
-	                ),
-	                _react2.default.createElement(
-	                  "li",
-	                  null,
-	                  "One (1) letterhead"
+	                  "Great for larger and open-ended assignments."
 	                )
 	              )
 	            ),
