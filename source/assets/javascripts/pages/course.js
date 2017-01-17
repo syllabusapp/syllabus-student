@@ -93,7 +93,7 @@ export default class extends Component {
                     <span className="item-status"></span>
                     <h3 className="item-title">Critical Thought</h3>
                     <p className="item-description">
-                      <strong>Subject:</strong> Writing papers and responses in Syllabus.
+                      <strong>Subject:</strong> Writing papers and responses in Syllabus
                       <strong>Length:</strong> 2 paragraphs
                     </p>
                   </Link>
