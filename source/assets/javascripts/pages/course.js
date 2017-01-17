@@ -83,8 +83,8 @@ export default class extends Component {
                     <span className="item-status"></span>
                     <h3 className="item-title">Video</h3>
                     <p className="item-description">
-                      <strong>Subject:</strong> Microeconomics vs. Macroeconomics
-                      <strong>Length:</strong> 23m 5s
+                      <strong>Subject:</strong> Sample Video
+                      <strong>Length:</strong> 10s
                     </p>
                   </Link>
                 </li>
@@ -93,8 +93,8 @@ export default class extends Component {
                     <span className="item-status"></span>
                     <h3 className="item-title">Critical Thought</h3>
                     <p className="item-description">
-                      <strong>Subject:</strong> Macroeconomics and Large Corporations
-                      <strong>Length:</strong> 5 paragraphs
+                      <strong>Subject:</strong> Writing papers and responses in Syllabus.
+                      <strong>Length:</strong> 2 paragraphs
                     </p>
                   </Link>
                 </li>
@@ -103,8 +103,8 @@ export default class extends Component {
                     <span className="item-status"></span>
                     <h3 className="item-title">Upload</h3>
                     <p className="item-description">
-                      <strong>Subject:</strong> Logo &amp; branding for local government
-                      <strong>Type:</strong> PDF or PSD
+                      <strong>Subject:</strong> Sample Upload
+                      <strong>Type:</strong> Any file type
                     </p>
                   </Link>
                 </li>
@@ -113,7 +113,7 @@ export default class extends Component {
                     <span className="item-status"></span>
                     <h3 className="item-title">Questionaire</h3>
                     <p className="item-description">
-                      <strong>Length:</strong> 25 questions
+                      <strong>Length:</strong> 7 questions
                     </p>
                   </Link>
                 </li>
