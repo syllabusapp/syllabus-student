@@ -36,13 +36,13 @@ class MessagesHeader extends Component {
   toggleChat() {
     this.props.toggleChat()
   }
-  toggleMessages() {
-    this.props.toggleMessages()
+  toggleMessages(value) {
+    this.props.toggleMessages(value)
   }
   render() {
     return (
       <div className="chat-header">
-        <button onClick={this.toggleMessages} className="chat-back"></button>
+        <button onClick={this.toggleMessages.bind(this, "default")} className="chat-back"></button>
         <div>
           <h1 className="heading">
             <img className="label label--number" src="https://unsplash.it/100/100" />
@@ -64,11 +64,11 @@ export default class extends Component {
   toggleChat() {
     this.props.toggleChat()
   }
-  toggleMessages() {
-    this.props.toggleMessages()
+  toggleMessages(value) {
+    this.props.toggleMessages(value)
   }
   render() {
-    if (this.props.messages) {
+    if (this.props.messages != "default") {
       return <MessagesHeader toggleChat={this.toggleChat} toggleMessages={this.toggleMessages} />
     } else {
       return <DefaultHeader toggleChat={this.toggleChat} />

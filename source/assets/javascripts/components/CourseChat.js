@@ -11,7 +11,7 @@ export default class extends Component {
     this.toggleChat = this.toggleChat.bind(this)
     this.toggleMessages = this.toggleMessages.bind(this)
     this.state = {
-      messages: false
+      messages: "default"
     }
   }
   toggleChat() {
@@ -21,10 +21,10 @@ export default class extends Component {
       that.props.toggleChat()
     }, 275)
   }
-  toggleMessages() {
-    this.setState(prevState => ({
-      messages: !prevState.messages
-    }))
+  toggleMessages(value) {
+    this.setState({
+      messages: value
+    })
   }
   render() {
     return (
@@ -32,7 +32,10 @@ export default class extends Component {
         <div onClick={this.toggleChat} className="modal-overlay"></div>
         <div className="chat modal-content">
           <CourseChatHeader messages={this.state.messages} toggleChat={this.toggleChat} toggleMessages={this.toggleMessages} />
-          {this.state.messages ? <CourseChatFeed /> :  <CourseChatList toggleMessages={this.toggleMessages} />}
+          {
+            this.state.messages == "default" ? <CourseChatList toggleMessages={this.toggleMessages} /> :
+            <CourseChatFeed messages={this.state.messages} />
+          }
         </div>
       </div>
     )
