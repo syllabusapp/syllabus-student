@@ -17,7 +17,6 @@ class AdvisorFeed extends Component {
         <li className="message message--received">They will love talking with you through chat just as much as you enjoy it.</li>
         <li className="message message--sent">Excellent! This is going to be awesome. Thanks for the help!</li>
         <li className="message message--received">Sure thing! Glad to help. I'm always happy to answer any questions you may have.</li>
-        <li className="message message--received">Though I may not respond right away, I'll get a notification just like your teachers and will respond as soon as I return!</li>
       </ol>
     )
   }
@@ -26,9 +25,11 @@ class AdvisorFeed extends Component {
 class AnnouncementFeed extends Component {
   render() {
     return (
-      <ol>
-        <li className="message message--received"></li>
-        <li className="message message--sent"></li>
+      <ol className="has-announcements">
+        <li className="message message--received">Welcome to the first week of Introduction to Syllabus! This week's work is all about getting used to the Syllabus platform. We hope that you find it both easy and enjoyable to use.</li>
+        <li className="message message--received">If you have any questions about the platform, simply create a new message to "advisor" and Syllabus will direct your question accordingly.</li>
+        <li className="message message--received">If you have any questions about the course work, simply click on the "Contact Teacher" link in the lower right of the course's dashboard screen.</li>
+        <li className="message message--received">Finally, you can send a reply to this message thread to discuss anythying regarding these announcements with the rest of your class!</li>
       </ol>
     )
   }
