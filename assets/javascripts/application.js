@@ -27290,7 +27290,7 @@
 	    _this.toggleChat = _this.toggleChat.bind(_this);
 	    _this.toggleMessages = _this.toggleMessages.bind(_this);
 	    _this.state = {
-	      messages: false
+	      messages: "default"
 	    };
 	    return _this;
 	  }
@@ -27306,11 +27306,9 @@
 	    }
 	  }, {
 	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.setState(function (prevState) {
-	        return {
-	          messages: !prevState.messages
-	        };
+	    value: function toggleMessages(value) {
+	      this.setState({
+	        messages: value
 	      });
 	    }
 	  }, {
@@ -27324,7 +27322,7 @@
 	          "div",
 	          { className: "chat modal-content" },
 	          _react2.default.createElement(_CourseChatHeader2.default, { messages: this.state.messages, toggleChat: this.toggleChat, toggleMessages: this.toggleMessages }),
-	          this.state.messages ? _react2.default.createElement(_CourseChatFeed2.default, null) : _react2.default.createElement(_CourseChatList2.default, { toggleMessages: this.toggleMessages })
+	          this.state.messages == "default" ? _react2.default.createElement(_CourseChatList2.default, { toggleMessages: this.toggleMessages }) : _react2.default.createElement(_CourseChatFeed2.default, { messages: this.state.messages })
 	        )
 	      );
 	    }
@@ -27363,8 +27361,204 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var _class = function (_Component) {
-	  _inherits(_class, _Component);
+	var AdvisorFeed = function (_Component) {
+	  _inherits(AdvisorFeed, _Component);
+
+	  function AdvisorFeed() {
+	    _classCallCheck(this, AdvisorFeed);
+
+	    return _possibleConstructorReturn(this, (AdvisorFeed.__proto__ || Object.getPrototypeOf(AdvisorFeed)).apply(this, arguments));
+	  }
+
+	  _createClass(AdvisorFeed, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "ol",
+	        null,
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Hi! I need some help, but I'm not sure where to start."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "That's what I'm here for! What's going on? How can I help? \uD83D\uDE01"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "I'm not sure what the best way is to contact my teacher."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "I know her email is provided, but I have some questions about my coursework that is semi time-sensitive."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Can I chat with her even though she might not be at her computer?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Ah! Yes. That's what is great about Syllabus."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "You can chat with your teacher at any time and they will get the notification that a message is waiting on them the next time they long it."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Oh! Wow. That's pretty sweet. Will I bug her by messaging her too much?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Your teacher will actually prefer to discuss things with you through chat as it doesn't fill up her email inbox. \uD83D\uDE01 \xA0So no need to worry about bugging your teachers."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "They will love talking with you through chat just as much as you enjoy it."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Excellent! This is going to be awesome. Thanks for the help!"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Sure thing! Glad to help. I'm always happy to answer any questions you may have."
+	        )
+	      );
+	    }
+	  }]);
+
+	  return AdvisorFeed;
+	}(_react.Component);
+
+	var AnnouncementFeed = function (_Component2) {
+	  _inherits(AnnouncementFeed, _Component2);
+
+	  function AnnouncementFeed() {
+	    _classCallCheck(this, AnnouncementFeed);
+
+	    return _possibleConstructorReturn(this, (AnnouncementFeed.__proto__ || Object.getPrototypeOf(AnnouncementFeed)).apply(this, arguments));
+	  }
+
+	  _createClass(AnnouncementFeed, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "ol",
+	        { className: "has-announcements" },
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Welcome to the first week of Introduction to Syllabus! This week's work is all about getting used to the Syllabus platform. We hope that you find it both easy and enjoyable to use."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "If you have any questions about the platform, simply create a new message to \"advisor\" and Syllabus will direct your question accordingly."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "If you have any questions about the course work, simply click on the \"Contact Teacher\" link in the lower right of the course's dashboard screen."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Finally, you can send a reply to this message thread to discuss anythying regarding these announcements with the rest of your class!"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return AnnouncementFeed;
+	}(_react.Component);
+
+	var GroupFeed = function (_Component3) {
+	  _inherits(GroupFeed, _Component3);
+
+	  function GroupFeed() {
+	    _classCallCheck(this, GroupFeed);
+
+	    return _possibleConstructorReturn(this, (GroupFeed.__proto__ || Object.getPrototypeOf(GroupFeed)).apply(this, arguments));
+	  }
+
+	  _createClass(GroupFeed, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "ol",
+	        null,
+	        _react2.default.createElement("li", { className: "message message--received" }),
+	        _react2.default.createElement("li", { className: "message message--sent" })
+	      );
+	    }
+	  }]);
+
+	  return GroupFeed;
+	}(_react.Component);
+
+	var StudentFeed = function (_Component4) {
+	  _inherits(StudentFeed, _Component4);
+
+	  function StudentFeed() {
+	    _classCallCheck(this, StudentFeed);
+
+	    return _possibleConstructorReturn(this, (StudentFeed.__proto__ || Object.getPrototypeOf(StudentFeed)).apply(this, arguments));
+	  }
+
+	  _createClass(StudentFeed, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "ol",
+	        null,
+	        _react2.default.createElement("li", { className: "message message--received" }),
+	        _react2.default.createElement("li", { className: "message message--sent" })
+	      );
+	    }
+	  }]);
+
+	  return StudentFeed;
+	}(_react.Component);
+
+	var TeacherFeed = function (_Component5) {
+	  _inherits(TeacherFeed, _Component5);
+
+	  function TeacherFeed() {
+	    _classCallCheck(this, TeacherFeed);
+
+	    return _possibleConstructorReturn(this, (TeacherFeed.__proto__ || Object.getPrototypeOf(TeacherFeed)).apply(this, arguments));
+	  }
+
+	  _createClass(TeacherFeed, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "ol",
+	        null,
+	        _react2.default.createElement("li", { className: "message message--received" }),
+	        _react2.default.createElement("li", { className: "message message--sent" })
+	      );
+	    }
+	  }]);
+
+	  return TeacherFeed;
+	}(_react.Component);
+
+	var _class = function (_Component6) {
+	  _inherits(_class, _Component6);
 
 	  function _class() {
 	    _classCallCheck(this, _class);
@@ -27387,40 +27581,7 @@
 	        _react2.default.createElement(
 	          "div",
 	          { className: "chat-content chat-content--short", id: "message-container" },
-	          _react2.default.createElement(
-	            "ol",
-	            null,
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message message--received" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message message--received" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message message--received" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia"
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              { className: "message" },
-	              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit"
-	            )
-	          )
+	          this.props.messages == "advisor" ? _react2.default.createElement(AdvisorFeed, null) : this.props.messages == "announcements" ? _react2.default.createElement(AnnouncementFeed, null) : this.props.messages == "group" ? _react2.default.createElement(GroupFeed, null) : this.props.messages == "student" ? _react2.default.createElement(StudentFeed, null) : this.props.messages == "teacher" ? _react2.default.createElement(TeacherFeed, null) : this.props.messages
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -27542,8 +27703,8 @@
 	    }
 	  }, {
 	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.props.toggleMessages();
+	    value: function toggleMessages(value) {
+	      this.props.toggleMessages(value);
 	    }
 	  }, {
 	    key: "render",
@@ -27551,7 +27712,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "chat-header" },
-	        _react2.default.createElement("button", { onClick: this.toggleMessages, className: "chat-back" }),
+	        _react2.default.createElement("button", { onClick: this.toggleMessages.bind(this, "default"), className: "chat-back" }),
 	        _react2.default.createElement(
 	          "div",
 	          null,
@@ -27594,13 +27755,13 @@
 	    }
 	  }, {
 	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.props.toggleMessages();
+	    value: function toggleMessages(value) {
+	      this.props.toggleMessages(value);
 	    }
 	  }, {
 	    key: "render",
 	    value: function render() {
-	      if (this.props.messages) {
+	      if (this.props.messages != "default") {
 	        return _react2.default.createElement(MessagesHeader, { toggleChat: this.toggleChat, toggleMessages: this.toggleMessages });
 	      } else {
 	        return _react2.default.createElement(DefaultHeader, { toggleChat: this.toggleChat });
@@ -27647,16 +27808,13 @@
 	  function _class(props) {
 	    _classCallCheck(this, _class);
 
-	    var _this = _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
-
-	    _this.toggleMessages = _this.toggleMessages.bind(_this);
-	    return _this;
+	    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).call(this, props));
 	  }
 
 	  _createClass(_class, [{
 	    key: "toggleMessages",
-	    value: function toggleMessages() {
-	      this.props.toggleMessages();
+	    value: function toggleMessages(value) {
+	      this.props.toggleMessages(value);
 	    }
 	  }, {
 	    key: "render",
@@ -27665,6 +27823,11 @@
 	        "div",
 	        { className: "chat-content" },
 	        _react2.default.createElement(
+	          "div",
+	          { className: "card card--notification" },
+	          "Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support."
+	        ),
+	        _react2.default.createElement(
 	          "ul",
 	          { className: "has-items" },
 	          _react2.default.createElement(
@@ -27672,7 +27835,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat is-new" },
+	              { onClick: this.toggleMessages.bind(this, "advisor"), className: "item item--chat is-new" },
 	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
 	              _react2.default.createElement(
 	                "h3",
@@ -27687,7 +27850,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	                "Though I may not respond right away, I'll get a notification just like your teach"
 	              )
 	            )
 	          ),
@@ -27696,7 +27859,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat is-new" },
+	              { onClick: this.toggleMessages.bind(this, "teacher"), className: "item item--chat is-new" },
 	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
 	              _react2.default.createElement(
 	                "h3",
@@ -27720,7 +27883,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages, className: "item item--announcements item--chat is-new" },
+	              { onClick: this.toggleMessages.bind(this, "announcements"), className: "item item--announcements item--chat is-new" },
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
@@ -27729,7 +27892,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	                "Finally, you can send a reply to this message thread to discuss anythying regardin"
 	              )
 	            )
 	          ),
@@ -27738,7 +27901,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat" },
+	              { onClick: this.toggleMessages.bind(this, "student"), className: "item item--chat" },
 	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
 	              _react2.default.createElement(
 	                "h3",
@@ -27757,7 +27920,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages, className: "item item--chat" },
+	              { onClick: this.toggleMessages.bind(this, "group"), className: "item item--chat" },
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
