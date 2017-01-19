@@ -27151,7 +27151,7 @@
 	                _react2.default.createElement(
 	                  "span",
 	                  { className: "anchor-count" },
-	                  "3"
+	                  "4"
 	                ),
 	                "Announcements"
 	              ),
@@ -27161,7 +27161,7 @@
 	                _react2.default.createElement(
 	                  "span",
 	                  { className: "anchor-count" },
-	                  "2"
+	                  "1"
 	                ),
 	                "Discussions"
 	              ),
@@ -27499,9 +27499,23 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "ol",
-	        null,
-	        _react2.default.createElement("li", { className: "message message--received" }),
-	        _react2.default.createElement("li", { className: "message message--sent" })
+	        { className: "has-several" },
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--subject" },
+	          "Please address Syllabus's role in higher education and how you believe it will help improve online and in-classroom education for universities and other higher education institutions."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "message-avatar" }),
+	          "There are two reasons I believe Syllabus will make headway in the online higher education space. The first reason pertains to in-browser capabilities. I get to complete all my schoolwork for my degree without having to download a single piece of software, PDF or other file. The second reason pertains to the enjoyment of using Syllabus. I'm not confused at all as to what's due and when. Idon't feel like I'll ever be late on an assignment."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received is-typing" },
+	          _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "message-avatar" })
+	        )
 	      );
 	    }
 	  }]);
@@ -27577,8 +27591,72 @@
 	      return _react2.default.createElement(
 	        "ol",
 	        null,
-	        _react2.default.createElement("li", { className: "message message--received" }),
-	        _react2.default.createElement("li", { className: "message message--sent" })
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Hi Dr. Case! I have a few questions. Is it okay to message you here?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Sure! Happy to help!"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "What questions do you have?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Thanks! My first set of questions are..."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "What happens if I miss a deadline for an assignment?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Do I miss my opprotunity to finish the assignment?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Great question! Syllabus does a great job of letting you know what assignments are late. It will highlight late assignments in red so that you are sure to see it."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "You'll still get the opportunity to finish the assignment, but be aware that you might get some points deducted if I so choose."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "With that said, please keep in mind that I'll be understanding if a late assignment is unavoidable due to personal reasons."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Oh! Okay, that's great! I'm certainly not planning on being late on any assignments. I just like to be aware of all that could possibly happen."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Certainly! Now, if you do plan on being out for a vacation, for example, you can simply notify me that you will be absent by clicking on the link in the bottom right of the course dashboard."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "The sooner you let me know that you will be absent, the higher chance you will have of not having any points deducted."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "That makes sense! I will definitely keep that in mind!"
+	        ),
+	        _react2.default.createElement("li", { className: "message message--received is-typing" })
 	      );
 	    }
 	  }]);
@@ -27883,30 +27961,6 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages.bind(this, "teacher"), className: "item item--chat is-new" },
-	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
-	              _react2.default.createElement(
-	                "h3",
-	                { className: "item-title" },
-	                "Jackie Case ",
-	                _react2.default.createElement(
-	                  "span",
-	                  { className: "label label--blue" },
-	                  "IS101"
-	                )
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
 	              { onClick: this.toggleMessages.bind(this, "announcements"), className: "item item--announcements item--chat is-new" },
 	              _react2.default.createElement(
 	                "h3",
@@ -27925,26 +27979,7 @@
 	            null,
 	            _react2.default.createElement(
 	              "a",
-	              { onClick: this.toggleMessages.bind(this, "student"), className: "item item--chat" },
-	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
-	              _react2.default.createElement(
-	                "h3",
-	                { className: "item-title" },
-	                "Geauxtrude Suedemont"
-	              ),
-	              _react2.default.createElement(
-	                "p",
-	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              { onClick: this.toggleMessages.bind(this, "group"), className: "item item--chat" },
+	              { onClick: this.toggleMessages.bind(this, "group"), className: "item item--chat is-new" },
 	              _react2.default.createElement(
 	                "h3",
 	                { className: "item-title" },
@@ -27961,12 +27996,55 @@
 	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
 	              )
 	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages.bind(this, "teacher"), className: "item item--chat" },
+	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Dr. Jackie Case ",
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "label label--blue" },
+	                  "IS101"
+	                )
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "That makes sense! I will definitely keep that in mind!"
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement(
+	              "a",
+	              { onClick: this.toggleMessages.bind(this, "student"), className: "item item--chat" },
+	              _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "item-status" }),
+	              _react2.default.createElement(
+	                "h3",
+	                { className: "item-title" },
+	                "Geauxtrude Suedemont"
+	              ),
+	              _react2.default.createElement(
+	                "p",
+	                { className: "item-description" },
+	                "Not at all! So what's up?"
+	              )
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
 	          { className: "card card--notification" },
-	          "Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support."
+	          "At this time, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support."
 	        )
 	      );
 	    }
