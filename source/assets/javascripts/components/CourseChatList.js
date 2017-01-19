@@ -22,15 +22,6 @@ export default class extends Component {
             </a>
           </li>
           <li>
-            <a onClick={this.toggleMessages.bind(this, "teacher")} className="item item--chat is-new">
-              <img src="https://unsplash.it/100/100" className="item-status" />
-              <h3 className="item-title">Dr. Jackie Case <span className="label label--blue">IS101</span></h3>
-              <p className="item-description">
-                Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
-              </p>
-            </a>
-          </li>
-          <li>
             <a onClick={this.toggleMessages.bind(this, "announcements")} className="item item--announcements item--chat is-new">
               <h3 className="item-title">Announcements</h3>
               <p className="item-description">
@@ -39,19 +30,28 @@ export default class extends Component {
             </a>
           </li>
           <li>
-            <a onClick={this.toggleMessages.bind(this, "student")} className="item item--chat">
-              <img src="https://unsplash.it/100/100" className="item-status" />
-              <h3 className="item-title">Geauxtrude Suedemont</h3>
+            <a onClick={this.toggleMessages.bind(this, "group")} className="item item--chat is-new">
+              <h3 className="item-title">Group Discussion <span className="label label--blue">IS101</span></h3>
               <p className="item-description">
                 Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
               </p>
             </a>
           </li>
           <li>
-            <a onClick={this.toggleMessages.bind(this, "group")} className="item item--chat">
-              <h3 className="item-title">Group Discussion <span className="label label--blue">IS101</span></h3>
+            <a onClick={this.toggleMessages.bind(this, "teacher")} className="item item--chat">
+              <img src="https://unsplash.it/100/100" className="item-status" />
+              <h3 className="item-title">Dr. Jackie Case <span className="label label--blue">IS101</span></h3>
               <p className="item-description">
-                Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
+                That makes sense! I will definitely keep that in mind!
+              </p>
+            </a>
+          </li>
+          <li>
+            <a onClick={this.toggleMessages.bind(this, "student")} className="item item--chat">
+              <img src="https://unsplash.it/100/100" className="item-status" />
+              <h3 className="item-title">Geauxtrude Suedemont</h3>
+              <p className="item-description">
+                Not at all! So what's up?
               </p>
             </a>
           </li>

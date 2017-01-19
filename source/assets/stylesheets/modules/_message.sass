@@ -18,6 +18,7 @@
   margin-top: ($b-space * 2)
   max-width: calc(100% - #{$b-space * 10})
   padding: ($b-space * 1.25) ($b-space * 1.5)
+  position: relative
 
 // -------------------------------------
 //   Modifiers
@@ -35,6 +36,15 @@
 .message--sent + .message--sent
   border-radius: ($b-borderRadius * 2) 0 0 ($b-borderRadius * 2)
   margin-top: 1px
+
+.message--subject
+  background: lighten($c-orange, 25%)
+  border-radius: ($b-borderRadius * 2)
+  color: darken($c-orange, 10%)
+  float: none
+  max-width: none
+  text-align: center
+  width: 100%
 
 // -------------------------------------
 //   States
@@ -71,11 +81,22 @@
     background: $c-red
     color: white
 
+.has-several
+  .message--received
+    margin-top: ($b-space * 2) !important
+    border-radius: ($b-borderRadius * 2) ($b-borderRadius * 2) ($b-borderRadius * 2) 0
+
 // -------------------------------------
 //   Submodules
 // -------------------------------------
 
-// .mv-module-submodules
+.message-avatar
+  border-radius: 50%
+  bottom: ($b-space * -1.5)
+  height: ($b-space * 3)
+  left: ($b-space * -1.5)
+  position: absolute
+  width: ($b-space * 3)
 
 // -------------------------------------
 //   Submodules
