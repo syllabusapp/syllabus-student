@@ -27509,7 +27509,12 @@
 	          "li",
 	          { className: "message message--received" },
 	          _react2.default.createElement("img", { src: "https://unsplash.it/100/100", className: "message-avatar" }),
-	          "There are two reasons I believe Syllabus will make headway in the online higher education space. The first reason pertains to in-browser capabilities. I get to complete all my schoolwork for my degree without having to download a single piece of software, PDF or other file. The second reason pertains to the enjoyment of using Syllabus. I'm not confused at all as to what's due and when. Idon't feel like I'll ever be late on an assignment."
+	          "There are two reasons I believe Syllabus will make headway in the online higher education space. The first reason pertains to in-browser capabilities. I get to complete all my schoolwork for my degree without having to download a single piece of software, PDF or other file. The second reason pertains to the enjoyment of using Syllabus. I'm not confused at all as to what's due and when. I don't feel like I'll ever be late on an assignment."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Yeah, I totally agree with you! The simplicity of Syllabus is the best part. It's not confusing and it does a great job of helping me stay organized throughout all the work."
 	        ),
 	        _react2.default.createElement(
 	          "li",
@@ -27993,7 +27998,7 @@
 	              _react2.default.createElement(
 	                "p",
 	                { className: "item-description" },
-	                "Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on"
+	                "Yeah, I totally agree with you! The simplicity of Syllabus is the best part. It's not confusing and it does a great job of helping me stay organized throughout all the work."
 	              )
 	            )
 	          ),
