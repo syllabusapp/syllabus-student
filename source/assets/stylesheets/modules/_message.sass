@@ -8,12 +8,16 @@
 .message
   background: $c-green
   border-radius: ($b-borderRadius * 2) ($b-borderRadius * 2) 0 ($b-borderRadius * 2)
+  clear: both
   color: white
+  display: inline-block
+  float: right
   font-size: $t-fontSize-s
   line-height: 1.4
-  margin: ($b-space * 2) 0 0 ($b-space * 10)
+  margin-bottom: 0
+  margin-top: ($b-space * 2)
+  max-width: calc(100% - #{$b-space * 10})
   padding: ($b-space * 1.25) ($b-space * 1.5)
-  width: calc(100% - #{$b-space * 10})
 
 // -------------------------------------
 //   Modifiers
@@ -23,7 +27,7 @@
   background: $c-gray-light
   border-radius: ($b-borderRadius * 2) ($b-borderRadius * 2) ($b-borderRadius * 2) 0
   color: $c-gray-dark
-  margin-left: 0
+  float: left
   + .message--received
     border-radius: 0 ($b-borderRadius * 2) ($b-borderRadius * 2) 0
     margin-top: 1px
@@ -36,7 +40,27 @@
 //   States
 // -------------------------------------
 
-// .mv-module.is-state
+.message.is-typing
+  height: ($b-space * 3)
+  position: relative
+  width: ($b-space * 5)
+  &::after,
+  &::before
+    background: $c-gray
+    border-radius: $b-space
+    bottom: 0
+    content: ''
+    height: $b-space
+    left: 0
+    margin: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: $b-space
+  &::after
+    animation: typing-a 2s infinite linear
+  &::before
+    animation: typing-b 2s infinite linear
 
 // -------------------------------------
 //   Context
@@ -52,3 +76,33 @@
 // -------------------------------------
 
 // .mv-module-submodules
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+@keyframes typing-a
+  0%, 100%
+    opacity: 0.5
+    transform: scale(0.8)
+  25%
+    opacity: 1
+    transform: scale(0.9) translateX(-100%)
+  50%
+    transform: scale(1) translateX(0%)
+  75%
+    opacity: 1
+    transform: scale(0.9) translateX(100%)
+
+@keyframes typing-b
+  0%, 100%
+    transform: scale(1) translateX(0%)
+  25%
+    opacity: 1
+    transform: scale(0.9) translateX(100%)
+  50%
+    opacity: 0.5
+    transform: scale(0.8)
+  75%
+    opacity: 1
+    transform: scale(0.9) translateX(-100%)

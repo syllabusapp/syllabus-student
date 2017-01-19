@@ -50,8 +50,13 @@ class StudentFeed extends Component {
   render() {
     return (
       <ol>
-        <li className="message message--received"></li>
-        <li className="message message--sent"></li>
+        <li className="message message--received">Hey! Did you find our homework for MICEC difficult this week?</li>
+        <li className="message message--received">I can't seem to wrap my head around it.</li>
+        <li className="message message--sent">Yo! It definitely was a bit more difficult than normal, but I *think* I got it correct.</li>
+        <li className="message message--sent">I'm happy to help if you'd like it.</li>
+        <li className="message message--received">That would be fantastic! You don't mind?</li>
+        <li className="message message--sent">Not at all! So what's up?</li>
+        <li className="message message--received is-typing"></li>
       </ol>
     )
   }

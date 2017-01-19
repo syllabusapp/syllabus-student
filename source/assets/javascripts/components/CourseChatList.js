@@ -11,7 +11,6 @@ export default class extends Component {
   render() {
     return (
       <div className="chat-content">
-        <div className="card card--notification">Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support.</div>
         <ul className="has-items">
           <li>
             <a onClick={this.toggleMessages.bind(this, "advisor")} className="item item--chat is-new">
@@ -57,6 +56,7 @@ export default class extends Component {
             </a>
           </li>
         </ul>
+        <div className="card card--notification">Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support.</div>
       </div>
     )
   }
