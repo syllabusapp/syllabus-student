@@ -66,8 +66,20 @@ class TeacherFeed extends Component {
   render() {
     return (
       <ol>
-        <li className="message message--received"></li>
-        <li className="message message--sent"></li>
+        <li className="message message--sent">Hi Dr. Case! I have a few questions. Is it okay to message you here?</li>
+        <li className="message message--received">Sure! Happy to help!</li>
+        <li className="message message--received">What questions do you have?</li>
+        <li className="message message--sent">Thanks! My first set of questions are...</li>
+        <li className="message message--sent">What happens if I miss a deadline for an assignment?</li>
+        <li className="message message--sent">Do I miss my opprotunity to finish the assignment?</li>
+        <li className="message message--received">Great question! Syllabus does a great job of letting you know what assignments are late. It will highlight late assignments in red so that you are sure to see it.</li>
+        <li className="message message--received">You'll still get the opportunity to finish the assignment, but be aware that you might get some points deducted if I so choose.</li>
+        <li className="message message--received">With that said, please keep in mind that I'll be understanding if a late assignment is unavoidable due to personal reasons.</li>
+        <li className="message message--sent">Oh! Okay, that's great! I'm certainly not planning on being late on any assignments. I just like to be aware of all that could possibly happen.</li>
+        <li className="message message--received">Certainly! Now, if you do plan on being out for a vacation, for example, you can simply notify me that you will be absent by clicking on the link in the bottom right of the course dashboard.</li>
+        <li className="message message--received">The sooner you let me know that you will be absent, the higher chance you will have of not having any points deducted.</li>
+        <li className="message message--sent">That makes sense! I will definitely keep that in mind!</li>
+        <li className="message message--received is-typing"></li>
       </ol>
     )
   }

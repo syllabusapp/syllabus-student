@@ -122,11 +122,11 @@ export default class extends Component {
             <div className="g-b g-b--4of12">
               <h2 className="heading heading--s heading--borderless">Course Details</h2>
               <a onClick={this.toggleChat} className="anchor anchor--l anchor--red">
-                <span className="anchor-count">3</span>
+                <span className="anchor-count">4</span>
                 Announcements
               </a>
               <a onClick={this.toggleChat} className="anchor anchor--l anchor--orange">
-                <span className="anchor-count">2</span>
+                <span className="anchor-count">1</span>
                 Discussions
               </a>
               <CourseGrade />

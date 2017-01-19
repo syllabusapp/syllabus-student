@@ -24,7 +24,7 @@ export default class extends Component {
           <li>
             <a onClick={this.toggleMessages.bind(this, "teacher")} className="item item--chat is-new">
               <img src="https://unsplash.it/100/100" className="item-status" />
-              <h3 className="item-title">Jackie Case <span className="label label--blue">IS101</span></h3>
+              <h3 className="item-title">Dr. Jackie Case <span className="label label--blue">IS101</span></h3>
               <p className="item-description">
                 Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
               </p>
@@ -56,7 +56,7 @@ export default class extends Component {
             </a>
           </li>
         </ul>
-        <div className="card card--notification">Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support.</div>
+        <div className="card card--notification">At this time, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support.</div>
       </div>
     )
   }
