@@ -27524,8 +27524,37 @@
 	      return _react2.default.createElement(
 	        "ol",
 	        null,
-	        _react2.default.createElement("li", { className: "message message--received" }),
-	        _react2.default.createElement("li", { className: "message message--sent" })
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "Hey! Did you find our homework for MICEC difficult this week?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "I can't seem to wrap my head around it."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Yo! It definitely was a bit more difficult than normal, but I *think* I got it correct."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "I'm happy to help if you'd like it."
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--received" },
+	          "That would be fantastic! You don't mind?"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { className: "message message--sent" },
+	          "Not at all! So what's up?"
+	        ),
+	        _react2.default.createElement("li", { className: "message message--received is-typing" })
 	      );
 	    }
 	  }]);
@@ -27823,11 +27852,6 @@
 	        "div",
 	        { className: "chat-content" },
 	        _react2.default.createElement(
-	          "div",
-	          { className: "card card--notification" },
-	          "Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support."
-	        ),
-	        _react2.default.createElement(
 	          "ul",
 	          { className: "has-items" },
 	          _react2.default.createElement(
@@ -27938,6 +27962,11 @@
 	              )
 	            )
 	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "card card--notification" },
+	          "Unfortunately, this demo doesn't support full chat capabilities. With that said, you can still visit each chat thread to read about the different types of chats that Syllabus will support."
 	        )
 	      );
 	    }
