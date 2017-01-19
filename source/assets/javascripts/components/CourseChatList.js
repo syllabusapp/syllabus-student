@@ -33,7 +33,7 @@ export default class extends Component {
             <a onClick={this.toggleMessages.bind(this, "group")} className="item item--chat is-new">
               <h3 className="item-title">Group Discussion <span className="label label--blue">IS101</span></h3>
               <p className="item-description">
-                Hey! Did you find our homework difficult for MICEC? I can't seem to get a grasp on
+                Yeah, I totally agree with you! The simplicity of Syllabus is the best part. It's not confusing and it does a great job of helping me stay organized throughout all the work.
               </p>
             </a>
           </li>

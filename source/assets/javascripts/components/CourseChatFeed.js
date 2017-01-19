@@ -42,8 +42,9 @@ class GroupFeed extends Component {
         <li className="message message--subject">Please address Syllabus's role in higher education and how you believe it will help improve online and in-classroom education for universities and other higher education institutions.</li>
         <li className="message message--received">
           <img src="https://unsplash.it/100/100" className="message-avatar" />
-          There are two reasons I believe Syllabus will make headway in the online higher education space. The first reason pertains to in-browser capabilities. I get to complete all my schoolwork for my degree without having to download a single piece of software, PDF or other file. The second reason pertains to the enjoyment of using Syllabus. I'm not confused at all as to what's due and when. Idon't feel like I'll ever be late on an assignment.
+          There are two reasons I believe Syllabus will make headway in the online higher education space. The first reason pertains to in-browser capabilities. I get to complete all my schoolwork for my degree without having to download a single piece of software, PDF or other file. The second reason pertains to the enjoyment of using Syllabus. I'm not confused at all as to what's due and when. I don't feel like I'll ever be late on an assignment.
         </li>
+        <li className="message message--sent">Yeah, I totally agree with you! The simplicity of Syllabus is the best part. It's not confusing and it does a great job of helping me stay organized throughout all the work.</li>
         <li className="message message--received is-typing">
           <img src="https://unsplash.it/100/100" className="message-avatar" />
         </li>
